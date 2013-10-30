@@ -2,19 +2,14 @@
 
 body {
 	background: @colorfondo;
+	color: @colorprincipal;
 	font-family: @mainfont;
 	font-size: 16px;
-	color: @colorprincipal;
-}
-::selection {
-	background: orange;
-	color: white;
+	line-height: 1.9;
 }
 #contenedor {
 	margin: 0 auto;
 	max-width: 1130px;
-}
-#menu {
 }
 #home {
 	background: white;
@@ -22,4 +17,20 @@ body {
 	display: block;
 	float: left;
 	width: 825px;
+}
+.row .col-md-4 #menu ul li {
+	color: @menutexto;
+}
+.row .col-md-4 #menu li#titulo {
+	color: @menutitulo;
+	font-weight: bold;
+	margin: 12px 0 0 0;
+}
+.row .col-md-4 #menu li#titulo li{
+	font-weight: normal;
+	margin: 0 0 0 30px;
+}
+::selection {
+	background: orange;
+	color: white;
 }

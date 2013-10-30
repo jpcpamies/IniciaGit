@@ -86,13 +86,10 @@ a {
 /* Layout */
 body {
   background: #edf1f3;
+  color: #6f8194;
   font-family: 'pt sans', sans-serif;
   font-size: 16px;
-  color: #6f8194;
-}
-::selection {
-  background: orange;
-  color: white;
+  line-height: 1.9;
 }
 #contenedor {
   margin: 0 auto;
@@ -104,4 +101,20 @@ body {
   display: block;
   float: left;
   width: 825px;
+}
+.row .col-md-4 #menu ul li {
+  color: #585858;
+}
+.row .col-md-4 #menu li#titulo {
+  color: #909cac;
+  font-weight: bold;
+  margin: 12px 0 0 0;
+}
+.row .col-md-4 #menu li#titulo li {
+  font-weight: normal;
+  margin: 0 0 0 30px;
+}
+::selection {
+  background: orange;
+  color: white;
 }
