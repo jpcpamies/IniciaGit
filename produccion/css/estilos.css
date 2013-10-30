@@ -84,3 +84,13 @@ a {
   text-decoration: none;
 }
 /* Layout */
+body {
+  background: #edf1f3;
+  font-family: 'pt sans', sans-serif;
+  font-size: 16px;
+  color: #6f8194;
+}
+::selection {
+  background: orange;
+  color: white;
+}
