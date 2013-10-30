@@ -94,3 +94,12 @@ body {
   background: orange;
   color: white;
 }
+#contenedor {
+  margin: 0 auto;
+  max-width: 1130px;
+}
+#home {
+  display: block;
+  float: left;
+  width: 825px;
+}
