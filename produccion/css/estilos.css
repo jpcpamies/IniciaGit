@@ -118,3 +118,34 @@ body {
   background: orange;
   color: white;
 }
+@media screen and (min-width: 992px) {
+  body {
+    background: red;
+  }
+  #contenedor {
+    margin: 0 auto;
+    max-width: 1130px;
+  }
+  #home {
+    background: white;
+    border-radius: 4px;
+    display: block;
+    float: left;
+    width: 825px;
+  }
+  .row .col-md-4 #menu ul li {
+    color: #585858;
+  }
+  .row .col-md-4 #menu li#titulo {
+    color: #909cac;
+    font-weight: bold;
+    margin: 12px 0 0 0;
+  }
+  .row .col-md-4 #menu li#titulo li {
+    font-weight: normal;
+    margin: 0 0 0 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  
+}

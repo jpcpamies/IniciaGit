@@ -1,11 +1,7 @@
-/* Layout */
+// Break point 2
 
 body {
-	background: @colorfondo;
-	color: @colorprincipal;
-	font-family: @mainfont;
-	font-size: 16px;
-	line-height: 1.9;
+	background: red;
 }
 #contenedor {
 	margin: 0 auto;
@@ -29,17 +25,4 @@ body {
 .row .col-md-4 #menu li#titulo li{
 	font-weight: normal;
 	margin: 0 0 0 30px;
-}
-::selection {
-	background: orange;
-	color: white;
-}
-
-// Break points
-@media screen and (min-width: 992px) {
-	@import "bp2.less";
-}
-
-@media screen and (max-width: 992px) {
-	@import "bp1.less";
 }
