@@ -126,6 +126,17 @@ h2 {
     padding-top: 10px;
     width: 60px;
   }
+  #menu {
+    padding: 20px 0 10px 0;
+  }
+  #mm0 {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #6f8194;
+    color: grey;
+    font-size: 18px;
+    height: 38px;
+  }
 }
 @media screen and (max-width: 480px) {
   

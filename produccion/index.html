@@ -12,82 +12,96 @@
     <link rel="stylesheet" href="css/estilos.css" />
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/vendor/jquery.mobilemenu.js"></script>
+    <script>
+      $(function(){
+        $('#mobileMenu').mobileMenu({
+          combine: false,         
+          groupPageText: '',     
+          nested: true,        
+          prependTo: '#menu',      
+          switchWidth: 992,     
+          topOptionText: ''
+        });
+      })
+    </script>
 </head>
+
 <body>
 <!-- Contenedor principal -->
 <section id="contenedor">
 
-  <header id="header">
-    <figure id="logo">
-      <img src="img/logo.png" alt="IniciaGit" width="577" height="577" />
-     <h1>IniciaGit</h1>
-     <h2>Cómo empezar con GitHub</h2>
-    </figure>
-  </header> 
+<header id="header">
+  <figure id="logo">
+    <img src="img/logo.png" alt="IniciaGit" width="577" height="577" />
+   <h1>IniciaGit</h1>
+   <h2>Cómo empezar con GitHub</h2>
+  </figure>
 
-  <aside id="social">
-    
-  </aside>
-
-  <section id="home">
-      <article id="empezando">
-          <h1>Empezando con GitHub</h1>
-          <h2>Instalar GitHub</h2>
-          <p>Descargar GitHub para tu SO</p>
-          <p>Comprovar que se ha instalado GitHub en el ordenador</p>
-          <pre>
-              <span>git —version</span>
-          </pre>
-      </article>
-      <article id="trabajando"></article>
-      <article id="colaborando"></article>
-      <article id="merge"></article>
-  </section>
+<!-- MobileMenu -->
   <nav id="menu">
-     <ul>
-         <li id='titulo'>Empezando con GitHub
-              <ul>
-                  <li>Instalar GitHub</li>
-                  <li>identificarte como usuario</li>
-              </ul>
+     <ul id='mobileMenu'>
+         <li><a href="empezando_con_github">Empezando con GitHub</a>
+            <ul>
+                <li><a href="instalar_Gigithub">Instalar GitHub</a></li>
+                <li><a href="Identificarte como usuario">Identificarte como usuario</a></li>
+            </ul>
          </li>
-         <li id='titulo'>Trabajando con GitHub
-              <ul>
-                  <li>Crear repo en GitHub</li>
-                  <li>Crear repo en local</li>
-                  <li>Enlazar repo local con GitHub</li>
-                  <li>Hacer cambios en la repo local</li>
-                  <li>Mandar los cambios a GitHub</li>
-              </ul>
+         <li><a href="trabajando_con_github">Trabajando con GitHub</a>
+            <ul>
+                <li><a href="crear_repo_en_github">Crear repo en GitHub</a></li>
+                <li><a href="crear_repo_en_local">Crear repo en local</a></li>
+                <li><a href="enlazar_repo_local_con_github">Enlazar repo local con GitHub</a></li>
+                <li><a href="hacer_cambios_en_la_repo_local">Hacer cambios en la repo local</a></li>
+                <li><a href="mandar_los_cambios_a_github">Mandar los cambios a GitHub</a></li>
+            </ul>
          </li>
-         <li id='titulo'>Colaborando con GitHub
-              <ul>
-                  <li>Hacer Fork a un proyecto</li>
-                  <li>Clonar el proyecto en local</li>
-                  <li>Hacer cambios en local</li>
-                  <li>Mandar los cambios a GitHub</li>
-                  <li>Hacer un Pull request</li>
-              </ul>
+         <li><a href="colaborando_con_github">Colaborando con GitHub</a>
+            <ul>
+                <li><a href="hacer_fork_a_un_proyecto">Hacer Fork a un proyecto</a></li>
+                <li><a href="clonar_el_proyecto_en_local">Clonar el proyecto en local</a></li>
+                <li><a href="hacer_cambios_en_local">Hacer cambios en local</a></li>
+                <li><a href="mandar_los_cambios_a_github">Mandar los cambios a GitHub</a></li>
+                <li><a href="hacer_un_pull_request">Hacer un Pull request</a></li>
+            </ul>
          </li>
-         <li id='titulo'>Merge con GitHub
-
-              <ul>
-                  <li>Localizar Pull request</li>
-                  <li>Hacer Merge</li>
-              </ul>
+         <li><a href="merge_con_github">Merge con GitHub</a>
+            <ul>
+                <li><a href="localizar_pull_request">Localizar Pull request</a></li>
+                <li><a href="hacer_merge">Hacer Merge</a></li>
+            </ul>
          </li>
      </ul>
   </nav>
-  <footer id="footer">
+<!--/ MobileMenu -->
 
-  </footer>
+</header> 
+
+<aside id="social"></aside>
+
+<section id="home">
+
+  <article id="empezando">
+      <h1>Empezando con GitHub</h1>
+      <h2>Instalar GitHub</h2>
+      <p>Descargar GitHub para tu SO</p>
+      <p>Comprovar que se ha instalado GitHub en el ordenador</p>
+      <pre>
+          <span>git —version</span>
+      </pre>
+  </article>
+  <article id="trabajando"></article>
+  <article id="colaborando"></article>
+  <article id="merge"></article>
+
+  </section>
+ 
+  <footer id="footer"></footer>
+
 </section>
 <!--/ Contenedor principal -->
-
-
-<!-- Libreria jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
 <!-- Google Analytics -->
 <script>
