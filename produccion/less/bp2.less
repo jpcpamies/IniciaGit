@@ -2,7 +2,7 @@
 
 #empezando {
 	background: white;
-	padding: 20px 5px;
+	padding: 0 5px;
 }
 #empezando h1 {
 	color: @tituloarticle;
@@ -10,7 +10,7 @@
 	font-size: 2.5em;
 	letter-spacing: -4px;
 	text-align: center;
-	padding: 0 0 20px 0;
+	padding: 20px 0 20px 0;
 }
 #empezando h2 {
 	color: @subtituloarticle;
@@ -47,9 +47,6 @@
 	padding: 10px 0 3px 0;
 	width: 60px;
 }
-#menu {
-	padding: 20px 0 0 0;
-}
 #mm0 {
 	background: @colorprincipal;
 	border: 1px solid @colorprincipal;
@@ -57,8 +54,27 @@
 	font-size: 18px;
 	height: 38px;
 	left: -4px;
+	opacity: .95;
 	position: relative;
-	width: 105%;
+	width: 107%;
+}
+.fixed {
+    position:fixed;
+    top: -20px;
+    left: 0px;
+   	width: 109%;
+   	margin-bottom: 30px;
+}
+.menu {
+	padding: 20px 0 0 0;
+	overflow: hidden;
+	z-index: 5;
+}
+.terminal {
+	position: absolute;
+	top: 2px;
+	left: 45%;
+	font-size: .9em;
 }
 .ventana_ternminal {
 	background: lightgrey;
@@ -68,10 +84,4 @@
 	position: absolute;
 	top: -20px;
 	width: 100%;
-}
-.terminal {
-	position: absolute;
-	top: 2px;
-	left: 45%;
-	font-size: .9em;
 }
