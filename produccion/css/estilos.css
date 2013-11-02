@@ -187,11 +187,11 @@ h2 {
   }
 }
 @media screen and (max-width: 992px) {
-  #empezando {
+  article {
     background: white;
     padding: 0 5px;
   }
-  #empezando h1 {
+  article h1 {
     color: #6a747e;
     font-family: 'Quicksand', cursive;
     font-size: 2.5em;
@@ -199,23 +199,23 @@ h2 {
     text-align: center;
     padding: 20px 0 20px 0;
   }
-  #empezando h2 {
+  article h2 {
     color: #535c64;
     font-family: 'Raleway', sans-serif;
     font-size: 1.4em;
     padding: 0 0 7px 0;
   }
-  #empezando p {
+  article p {
     color: #6f8194;
     font-size: 1em;
     padding: 0 0 0 10px;
   }
-  #empezando pre {
+  article pre {
     background: rgba(0, 0, 0, 0.65);
     margin: 35px 0 10px 0;
     position: relative;
   }
-  #empezando pre span {
+  article pre span {
     color: #99bb67;
     position: absolute;
     top: 18px;
