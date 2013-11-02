@@ -103,9 +103,6 @@ h2 {
   
 }
 @media screen and (max-width: 992px) {
-  header {
-    background: rgba(0, 0, 0, 0.05);
-  }
   #empezando {
     background: white;
     padding: 20px 5px;
@@ -178,7 +175,15 @@ h2 {
   .terminal {
     position: absolute;
     top: 2px;
-    left: 37%;
+    left: 45%;
+    font-size: .9em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .terminal {
+    position: absolute;
+    top: 2px;
+    left: 38%;
     font-size: .9em;
   }
 }
