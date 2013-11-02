@@ -105,7 +105,40 @@ h2 {
 @media screen and (max-width: 992px) {
   header {
     background: rgba(0, 0, 0, 0.05);
-    margin-bottom: 12px;
+  }
+  #empezando {
+    background: white;
+    padding: 20px 5px;
+  }
+  #empezando h1 {
+    color: #6a747e;
+    font-family: 'Quicksand', cursive;
+    font-size: 2.5em;
+    letter-spacing: -4px;
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+  #empezando h2 {
+    color: #535c64;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4em;
+    padding: 0 0 7px 0;
+  }
+  #empezando p {
+    color: #6f8194;
+    font-size: 1em;
+    padding: 0 0 0 10px;
+  }
+  #empezando pre {
+    background: rgba(0, 0, 0, 0.65);
+    margin: 35px 0 10px 0;
+    position: relative;
+  }
+  #empezando pre span {
+    color: #99bb67;
+    position: absolute;
+    top: 18px;
+    left: 10px;
   }
   #logo {
     text-align: center;
@@ -132,5 +165,20 @@ h2 {
     left: -4px;
     position: relative;
     width: 105%;
+  }
+  .ventana_ternminal {
+    background: lightgrey;
+    border-radius: 4px 4px 0 0;
+    height: 23px;
+    left: 0px;
+    position: absolute;
+    top: -20px;
+    width: 100%;
+  }
+  .terminal {
+    position: absolute;
+    top: 2px;
+    left: 37%;
+    font-size: .9em;
   }
 }
