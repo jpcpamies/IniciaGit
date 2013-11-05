@@ -100,10 +100,16 @@ h2 {
   color: white;
 }
 @media screen and (min-width: 992px) {
+  section#contenedor header#header {
+    max-width: 400px;
+    padding: 10px 30px 0 30px;
+    width: 25%;
+    position: fixed;
+    top: 0px;
+  }
   section#contenedor header#header figure#logo {
     text-align: center;
-    position: fixed;
-    margin: 0 0 0 25px;
+    margin: 0 0 20px 0;
   }
   section#contenedor header#header figure#logo h1 {
     font-size: 3.6em;
@@ -113,27 +119,22 @@ h2 {
     line-height: 25px;
   }
   section#contenedor header#header figure#logo img {
-    display: block;
     margin: 0 auto;
     height: auto;
     padding: 10px 0 3px 0;
     width: 80px;
   }
-  section#contenedor header#header figure#logo nav.menu {
-    background: red;
-    width: 200px;
-    height: 100%;
-    position: fixed;
-  }
   section#contenedor section#home {
-    margin: 0 auto;
+    float: left;
     max-width: 1000px;
+    margin-left: 25%;
+    width: 75%;
   }
   section#contenedor section#home article {
     background: white;
     border-radius: 7px;
     border: 1px solid #c6cfd3;
-    margin: 35px 0 35px 0;
+    margin: 35px 10px 35px 0;
     padding: 0 30px 30px 30px;
   }
   section#contenedor section#home article h1 {
