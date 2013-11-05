@@ -115,8 +115,10 @@ h2 {
     font-size: 3.6em;
   }
   section#contenedor header#header figure#logo h2 {
+    border-top: 1px solid #c6cfd3;
     font-size: 1.2em;
     line-height: 25px;
+    margin-top: 5px;
   }
   section#contenedor header#header figure#logo img {
     margin: 20px auto 20px auto;
