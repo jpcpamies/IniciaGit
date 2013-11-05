@@ -1,32 +1,46 @@
 // Break point 1
 
+
 article {
 	background: white;
-	padding: 0 5px;
+	padding: 0 20px 10px 20px;
 	 h1 {
 		color: @tituloarticle;
 		font-family: @tituloarticulo;
 		font-size: 2.5em;
 		letter-spacing: -4px;
 		text-align: center;
-		padding: 35px 0;
+		padding: 52px 0 25px 0;
 	}
 	h2 {
+		border-bottom: 1px solid @colorborde;
 		color: @subtituloarticle;
 		font-family: @mainfont;
 		font-size: 1.4em;
-		padding: 0 0 7px 0;
+		margin-bottom: 5px;
+		padding: 30px 0 10px 0;
+		span {
+			color: @subtituloarticle2;
+			font-weight: bold;
+		}
 	}
 	p {
 		color: @colorprincipal;
-		font-size: 1em;
-		padding: 0 0 0 10px;
+		font-size: .9em;
+		margin-bottom: 15px;
+		line-height: 1.6;
+	}
+
+	ul {
+		padding: 10px 0 20px 20px;
+		line-height: 2.2em;
+		font-size: .9em;
+		li {
+			list-style-type: circle;
+		}
 	}
 }
-p {
-	line-height: 1.5;
-	margin-bottom: 5px;
-}
+
 #logo {
 	text-align: center;
 }
@@ -35,7 +49,7 @@ p {
 }
 #logo img {
 	display: block;
-	margin: 0 auto;
+	margin: 10px auto 0 auto;
 	height: auto;
 	padding: 10px 0 3px 0;
 	width: 60px;
@@ -113,7 +127,6 @@ p {
 .social {
 	background: rgba(237,241,243,.5);
 	border-top: 1px solid @colorborde;
-	// border-bottom: 1px solid @colorborde;
 	margin-top: 30px;
 	padding: 35px;
 	position: relative;

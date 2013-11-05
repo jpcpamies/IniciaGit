@@ -274,7 +274,7 @@ h2 {
 @media screen and (max-width: 992px) {
   article {
     background: white;
-    padding: 0 5px;
+    padding: 0 20px 10px 20px;
   }
   article h1 {
     color: #6a747e;
@@ -282,22 +282,33 @@ h2 {
     font-size: 2.5em;
     letter-spacing: -4px;
     text-align: center;
-    padding: 35px 0;
+    padding: 52px 0 25px 0;
   }
   article h2 {
+    border-bottom: 1px solid #c6cfd3;
     color: #535c64;
     font-family: 'Raleway', sans-serif;
     font-size: 1.4em;
-    padding: 0 0 7px 0;
+    margin-bottom: 5px;
+    padding: 30px 0 10px 0;
+  }
+  article h2 span {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: bold;
   }
   article p {
     color: #6f8194;
-    font-size: 1em;
-    padding: 0 0 0 10px;
+    font-size: .9em;
+    margin-bottom: 15px;
+    line-height: 1.6;
   }
-  p {
-    line-height: 1.5;
-    margin-bottom: 5px;
+  article ul {
+    padding: 10px 0 20px 20px;
+    line-height: 2.2em;
+    font-size: .9em;
+  }
+  article ul li {
+    list-style-type: circle;
   }
   #logo {
     text-align: center;
@@ -307,7 +318,7 @@ h2 {
   }
   #logo img {
     display: block;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     height: auto;
     padding: 10px 0 3px 0;
     width: 60px;
@@ -387,5 +398,11 @@ h2 {
     margin-top: 30px;
     padding: 35px;
     position: relative;
+  }
+}
+@media screen and (max-width: 480px) {
+  article {
+    background: white;
+    padding: 0 10px 10px 10px;
   }
 }
