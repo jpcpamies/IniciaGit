@@ -7,6 +7,8 @@ section#contenedor {
 		width: 25%;
 		position: fixed;
 		top: 0px;
+		left: 0px;
+		bottom: 0px;
 			figure#logo {
 				text-align: center;
 				margin: 0 0 20px 0;
@@ -27,6 +29,7 @@ section#contenedor {
 					width: 80px;
 					}
 			nav.menu {
+				position: relative;
 			}
 }
 	}
@@ -79,6 +82,17 @@ section#contenedor {
 		}
 	}
 } 
+#mobileMenu {
+	overflow-y: scroll;
+	width: 85%;
+	height: 50%;
+	position: absolute;
+		ul, li {
+			font-size: .98em;
+			color: @menutexto;
+		}
+	
+}
 .barra {
 	background: lightgrey;
 	border-radius: 6px 6px 0 0;
