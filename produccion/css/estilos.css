@@ -111,7 +111,9 @@ h2 {
   }
   section#contenedor header#header figure#logo {
     text-align: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
+    position: relative;
+    top: -7px;
   }
   section#contenedor header#header figure#logo h1 {
     font-size: 3.6em;
@@ -142,7 +144,7 @@ h2 {
     background: white;
     border-radius: 7px;
     border: 1px solid #c6cfd3;
-    margin: 35px 10px 35px 0;
+    margin: 20px 10px 35px 0;
     padding: 0 30px 30px 30px;
   }
   section#contenedor section#home article h1 {
@@ -181,14 +183,27 @@ h2 {
   }
   #mobileMenu {
     overflow-y: scroll;
-    width: 85%;
-    height: 50%;
+    height: 58%;
     position: absolute;
+    left: 15px;
+    right: 15px;
   }
-  #mobileMenu ul,
   #mobileMenu li {
-    font-size: .98em;
+    border-bottom: 1px solid #c6cfd3;
+    font-weight: bold;
+    line-height: 2.2;
+    padding: 5px 0;
+  }
+  #mobileMenu li a {
     color: #585858;
+    font-size: .95em;
+    font-weight: normal;
+  }
+  #mobileMenu li a:hover {
+    text-decoration: none;
+  }
+  #mobileMenu li:hover {
+    background: rgba(0, 0, 0, 0.03);
   }
   .barra {
     background: lightgrey;
