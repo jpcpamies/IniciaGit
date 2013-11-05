@@ -100,10 +100,43 @@ h2 {
   color: white;
 }
 @media screen and (min-width: 992px) {
-  article {
-    padding: 0 0 20px 0;
+  section#contenedor header#header figure#logo {
+    text-align: center;
+    position: fixed;
+    margin: 0 0 0 25px;
   }
-  article h1 {
+  section#contenedor header#header figure#logo h1 {
+    font-size: 3.6em;
+  }
+  section#contenedor header#header figure#logo h2 {
+    font-size: 1.2em;
+    line-height: 25px;
+  }
+  section#contenedor header#header figure#logo img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px 0 3px 0;
+    width: 80px;
+  }
+  section#contenedor header#header figure#logo nav.menu {
+    background: red;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+  }
+  section#contenedor section#home {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  section#contenedor section#home article {
+    background: white;
+    border-radius: 7px;
+    border: 1px solid #c6cfd3;
+    margin: 35px 0 35px 0;
+    padding: 0 30px 30px 30px;
+  }
+  section#contenedor section#home article h1 {
     color: #6a747e;
     font-family: 'Quicksand', cursive;
     font-size: 2.5em;
@@ -111,7 +144,7 @@ h2 {
     text-align: center;
     padding: 52px 0 25px 0;
   }
-  article h2 {
+  section#contenedor section#home article h2 {
     border-bottom: 1px solid #c6cfd3;
     color: #535c64;
     font-family: 'Raleway', sans-serif;
@@ -119,68 +152,35 @@ h2 {
     margin-bottom: 5px;
     padding: 30px 0 10px 0;
   }
-  article h2 span {
+  section#contenedor section#home article h2 span {
     color: rgba(0, 0, 0, 0.75);
     font-weight: bold;
   }
-  article p {
+  section#contenedor section#home article p {
     color: #6f8194;
-    font-size: 1em;
+    font-size: .9em;
     margin-bottom: 15px;
     line-height: 1.6;
   }
-  article ul {
+  section#contenedor section#home article ul {
     padding: 10px 0 20px 20px;
     line-height: 2.2em;
+    font-size: .9em;
   }
-  article ul li {
+  section#contenedor section#home article ul li {
     list-style-type: circle;
   }
-  header {
-    width: 25%;
-    float: left;
+  .barra {
+    background: lightgrey;
+    border-radius: 6px 6px 0 0;
+    position: absolute;
+    width: 100%;
+    top: -10px;
   }
-  section#contenedor {
-    max-width: 1124px;
-  }
-  section#home {
-    background: white;
-    margin: 10px 10px 10px 25%;
-    max-width: 1000px;
-    border-radius: 5px;
-    border: 1px solid #c6cfd3;
-    padding: 0 30px 30px 30px;
-  }
-  nav.menu {
-    margin: 200px 0 0 25px;
-    position: fixed;
-  }
-  nav.menu a {
-    color: #585858;
-    font-size: .9em;
-  }
-  nav.menu a {
-    color: #585858;
-    font-size: .9em;
-  }
-  #logo {
+  .barra #barra {
+    font-size: .8em;
+    line-height: 2;
     text-align: center;
-    position: fixed;
-    margin: 0 0 0 25px;
-  }
-  #logo h1 {
-    font-size: 3.6em;
-  }
-  #logo h2 {
-    font-size: 1.2em;
-    line-height: 25px;
-  }
-  #logo img {
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    padding: 10px 0 3px 0;
-    width: 80px;
   }
   .boton_google {
     display: inline-block;
@@ -193,6 +193,17 @@ h2 {
     position: absolute;
     left: 20%;
     top: 35%;
+  }
+  .nota {
+    position: relative;
+    bottom: -35px;
+    color: grey;
+    left: 10px;
+    font-size: .9em;
+  }
+  .nota span {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
   }
   .nota_terminal {
     margin: -25px 0 30px 60px;
@@ -216,29 +227,6 @@ h2 {
     color: #99bb67;
     line-height: 1.5;
     padding: 35px 15px 0 20px;
-  }
-  .barra {
-    background: lightgrey;
-    border-radius: 6px 6px 0 0;
-    position: absolute;
-    width: 100%;
-    top: -10px;
-  }
-  .barra #barra {
-    font-size: .8em;
-    line-height: 2;
-    text-align: center;
-  }
-  .nota {
-    position: relative;
-    bottom: -35px;
-    color: grey;
-    left: 10px;
-    font-size: .9em;
-  }
-  .nota span {
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
   }
 }
 @media screen and (max-width: 992px) {
@@ -357,21 +345,5 @@ h2 {
     margin-top: 30px;
     padding: 35px;
     position: relative;
-  }
-}
-@media screen and (max-width: 480px) {
-  .terminal {
-    position: absolute;
-    top: 2px;
-    left: 38%;
-    font-size: .9em;
-  }
-  .boton_google {
-    left: 10%;
-    top: 35%;
-  }
-  .boton_twitter {
-    left: 35%;
-    top: 35%;
   }
 }

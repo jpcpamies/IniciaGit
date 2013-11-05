@@ -1,79 +1,80 @@
 // Break point 2
 
-article {
-	background: white;
-	padding: 0 5px;
-	 h1 {
-		color: @tituloarticle;
-		font-family: @tituloarticulo;
-		font-size: 2.5em;
-		letter-spacing: -4px;
-		text-align: center;
-		padding: 35px 0;
+section#contenedor {
+	header#header {
+		figure#logo {
+			text-align: center;
+			position: fixed;
+			margin: 0 0 0 25px;
+			h1 {
+			font-size: 3.6em;
+			}
+			h2 {
+			font-size: 1.2em;
+			line-height: 25px;
+			}
+			img {
+			display: block;
+			margin: 0 auto;
+			height: auto;
+			padding: 10px 0 3px 0;
+			width: 80px;
+			}
+		nav.menu {
+			background: red;
+			width: 200px;
+			height: 100%;
+			position: fixed;
+		}
+}
 	}
-	h2 {
-		color: @subtituloarticle;
-		font-family: @mainfont;
-		font-size: 1.4em;
-		padding: 0 0 7px 0;
+	section#home {
+		margin: 0 auto;
+		max-width: 1000px;
+		article {
+			background: white;
+			border-radius: 7px;
+			border: 1px solid @colorborde;
+			margin: 35px 0 35px 0;
+			padding: 0 30px 30px 30px;
+			 h1 {
+				color: @tituloarticle;
+				font-family: @tituloarticulo;
+				font-size: 2.5em;
+				letter-spacing: -4px;
+				text-align: center;
+				padding: 52px 0 25px 0;
+			}
+			h2 {
+				border-bottom: 1px solid @colorborde;
+				color: @subtituloarticle;
+				font-family: @mainfont;
+				font-size: 1.4em;
+				margin-bottom: 5px;
+				padding: 30px 0 10px 0;
+				span {
+					color: @subtituloarticle2;
+					font-weight: bold;
+				}
+			}
+			p {
+				color: @colorprincipal;
+				font-size: .9em;
+				margin-bottom: 15px;
+				line-height: 1.6;
+			}
+
+			ul {
+				padding: 10px 0 20px 20px;
+				line-height: 2.2em;
+				font-size: .9em;
+				li {
+					list-style-type: circle;
+				}
+			}
+		}
 	}
-	p {
-		color: @colorprincipal;
-		font-size: 1em;
-		padding: 0 0 0 10px;
-	}
-}
-p {
-	line-height: 1.5;
-	margin-bottom: 5px;
-}
-#logo {
-	text-align: center;
-}
-#logo h1 {
-	font-size: 3em;
-}
-#logo img {
-	display: block;
-	margin: 0 auto;
-	height: auto;
-	padding: 10px 0 3px 0;
-	width: 60px;
-}
-#mm0 {
-	background: @colorprincipal;
-	border: 1px solid @colorprincipal;
-	color: @colorfondo;
-	font-size: 18px;
-	height: 38px;
-	left: -4px;
-	opacity: .95;
-	position: relative;
-	width: 107%;
-}
-.fixed {
-    position: fixed;
-    top: -20px;
-    left: 0px;
-   	width: 109%;
-}
-.menu {
-	padding: 20px 0 0 0;
-	overflow: hidden;
-	z-index: 5;
-}
-.terminal {
-	background: rgba(0,0,0,.65);
-	border-radius: 0 0 4px 4px;
-	-webkit-box-shadow: 0px 1px 2px rgba(111,129,148,.7);
-	margin: 35px 35px 70px 35px;
-	position: relative;
-	#maquina pre {
-		color: @textoterminal;
-		line-height: 1.5;
-		padding: 35px 15px 0 20px;
-	}
-}
+} 
 .barra {
 	background: lightgrey;
 	border-radius: 6px 6px 0 0;
@@ -85,17 +86,6 @@ p {
 		line-height: 2;
 		text-align: center;
 
-	}
-}
-.nota {
-	position: relative;
-	bottom: -35px;
-	color: grey;
-	left: 10px;
-	font-size: .9em;
-	span {
-		font-weight: bold;
-		color: rgba(0,0,0,.8);
 	}
 }
 .boton_google {
@@ -110,11 +100,37 @@ p {
 	left: 20%;
 	top: 35%;
 }
+.nota {
+	position: relative;
+	bottom: -35px;
+	color: grey;
+	left: 10px;
+	font-size: .9em;
+	span {
+		font-weight: bold;
+		color: rgba(0,0,0,.8);
+	}
+}
+.nota_terminal {
+	margin: -25px 0 30px 60px;
+	font-size: .95em;
+}
 .social {
 	background: rgba(237,241,243,.5);
 	border-top: 1px solid @colorborde;
-	// border-bottom: 1px solid @colorborde;
-	margin-top: 30px;
+	margin-top: 40px;
 	padding: 35px;
 	position: relative;
+}
+.terminal {
+	background: rgba(0,0,0,.65);
+	border-radius: 0 0 4px 4px;
+	-webkit-box-shadow: 0px 1px 2px rgba(111,129,148,.7);
+	margin: 35px 35px 70px 35px;
+	position: relative;
+	#maquina pre {
+		color: @textoterminal;
+		line-height: 1.5;
+		padding: 35px 15px 0 20px;
+	}
 }
