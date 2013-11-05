@@ -125,11 +125,11 @@ h2 {
     margin-top: 5px;
   }
   section#contenedor header#header figure#logo img {
-    margin: 20px auto 20px auto;
+    margin: 20px auto 15px auto;
     height: auto;
     display: block;
     padding: 10px 0 3px 0;
-    width: 80px;
+    width: 120px;
   }
   section#contenedor header#header figure#logo nav.menu {
     position: relative;
@@ -190,12 +190,11 @@ h2 {
   }
   #mobileMenu li {
     border-bottom: 1px solid #c6cfd3;
-    font-weight: bold;
-    line-height: 2.2;
-    padding: 5px 0;
+    line-height: 1.1;
+    padding: 13px 0 13px 10px;
   }
   #mobileMenu li a {
-    color: #585858;
+    color: #6f8194;
     font-size: .95em;
     font-weight: normal;
   }
@@ -204,6 +203,14 @@ h2 {
   }
   #mobileMenu li:hover {
     background: rgba(0, 0, 0, 0.03);
+  }
+  #mobileMenu li#titulo:hover {
+    background: #909cac;
+    color: #edf1f3;
+  }
+  #titulo {
+    background: #909cac;
+    color: #edf1f3;
   }
   .barra {
     background: lightgrey;
