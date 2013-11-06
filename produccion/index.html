@@ -10,24 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lobster|Quicksand:300|Raleway:400,700' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/estilos.css" />
-
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="js/vendor/jquery.mobilemenu.js"></script>
-    <!-- Script mobileMenu -->
-    <script>
-      $(function(){
-        $('#mobileMenu').mobileMenu({
-          combine: false,         
-          groupPageText: '',     
-          nested: true,        
-          prependTo: 'nav',      
-          switchWidth: 992,     
-          topOptionText: ''
-        });
-      })
-    </script>
 </head>
 
 <body>
@@ -280,18 +263,9 @@
     </article>
   </section>
 </section>
-<script type="text/javascript" src="js/vendor/scrolltop.js"></script>
-<script>
-  var num = 163; //number of pixels before modifying styles
 
-  $(window).bind('scroll', function () {
-      if ($(window).scrollTop() > num) {
-          $('.menu').addClass('fixed');
-      } else {
-          $('.menu').removeClass('fixed');
-      }
-  });
-</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src='js/main.js'></script>
 
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
   {lang: 'es'}

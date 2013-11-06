@@ -1,3 +1,22 @@
+
+// Plugin scrollTop
+$(function(){
+	//clic en un enlace de la lista
+	$('ul li a').on('click',function(e){
+		//prevenir en comportamiento predeterminado del enlace
+		e.preventDefault();
+		//obtenemos el id del elemento en el que debemos posicionarnos
+		var strAncla=$(this).attr('href');
+		
+		//utilizamos body y html, ya que dependiendo del navegador uno u otro no funciona
+		$('body,html').stop(true,true).animate({
+			//realizamos la animacion hacia el ancla
+			scrollTop: $(strAncla).offset().top
+		},1000);
+	});
+});
+
+// Plugin mobileMenu
 (function($){
 	
 	//plugin's default options
@@ -257,3 +276,28 @@
 	};//mobileMenu()
 	
 })(jQuery);
+
+
+// Script mobileMenu
+$(function(){
+$('#mobileMenu').mobileMenu({
+  combine: false,         
+  groupPageText: '',     
+  nested: true,        
+  prependTo: 'nav',      
+  switchWidth: 992,     
+  topOptionText: ''
+});
+})
+
+
+// Script nav fixed
+  var num = 163; //number of pixels before modifying styles
+
+  $(window).bind('scroll', function () {
+      if ($(window).scrollTop() > num) {
+          $('.menu').addClass('fixed');
+      } else {
+          $('.menu').removeClass('fixed');
+      }
+  });
