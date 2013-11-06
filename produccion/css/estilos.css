@@ -324,19 +324,35 @@ h2 {
     width: auto;
   }
   .boton_google {
-    display: inline-block;
     position: absolute;
     left: 5%;
     top: 35%;
   }
-  .boton_twitter {
-    display: inline-block;
+  .boton_fb {
     position: absolute;
-    left: 20%;
+    top: 35%;
+    left: 30%;
+  }
+  .boton_twitter {
+    position: absolute;
+    left: 16%;
     top: 35%;
   }
   .comentario {
     margin: 15px 0 0 0;
+  }
+  .comparte {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 30%;
+    right: 6%;
+  }
+  .delicious {
+    position: absolute;
+    left: 50%;
+    top: 34%;
   }
   .nota_terminal {
     margin: -25px 0 30px 60px;

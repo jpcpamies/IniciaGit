@@ -14,6 +14,7 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
 <section id="contenedor">
 
   <header id="header">
@@ -106,7 +107,7 @@ iMac-de-Jordi:~ jordiimac$ </pre>
         <li>Comprovar que se ha instalado GitHub en el ordenador</li>
       </ul>
 
-      <!-- Terminal -->
+     <!-- Terminal -->
       <figure>
         <div class='terminal'>
           <div class="barra">
@@ -115,11 +116,19 @@ iMac-de-Jordi:~ jordiimac$ </pre>
           <div id='maquina'>
             <pre>Last login: Wed Nov  6 11:48:18 on console
 iMac-de-Jordi:~ jordiimac$ <span class='tipear'>git --version</span>
-xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', <span class='copiar'>requesting install. Choose an option in the dialog to download the command line developer tools.</span>
 iMac-de-Jordi:~ jordiimac$ </pre>
           </div>
           <div class="nota">
-            <p><span>Nota </span>que el verde claro es lo que tu debes tipear.</p>
+            <div class="color_maquina">
+              <p><span>Texto</span> máquina.</p>
+            </div>
+            <div class="color_tipear">
+              <p><span>Texto</span> a tipear.</p>
+            </div>
+            <div class="color_copiar">
+              <p><span>Texto</span> a copiar.</p>
+            </div>
           </div>
         </div>
       </figure>
@@ -129,16 +138,29 @@ iMac-de-Jordi:~ jordiimac$ </pre>
 
       <!-- Botones sociales -->
       <div class='social'>
+        <div class="comparte">
+          <span>Compártelo</span>
+        </div>
         <div class='boton_twitter'>
           <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
+
         <div class='boton_google'>
           <div class="g-plusone" data-size="medium" data-href="http://asiestudio.site88.net/git"></div>
         </div>
-      </div>
 
+        <div class="boton_fb">
+          <div class="fb-like" data-href="http://asiestudio.site88.net/" data-width="50" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+        </div>
+
+        <div class="delicious">
+          <a href="#" onclick="window.open('https://delicious.com/save?v=5&provider={IniciaGit | Hacer un commit es como pegar un tiro}&noui&jump=close&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;">
+          <img src="http://delicious.com/img/logo.png" height="16" width="16" alt="Delicious"></a>
+        </div>
+      </div>
       <!--/ Botones sociales -->
+
       <div class="comentario">
         <div id="disqus_thread"></div>
       </div>
