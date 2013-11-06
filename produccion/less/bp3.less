@@ -33,37 +33,67 @@ header {
 }
 	header nav ul {
 		overflow-y: scroll;
-		height: 58%;
+		height: 55%;
 		position: absolute;
+		top: 290px;
 		left: 15px;
 		right: 15px;
 	}
 		header nav ul li {
 			border-bottom: 1px solid @colorborde;
 			line-height: 1.1;
-			padding: 13px 0 13px 10px;
+			padding: 12px 5px 8px 10px;
 		}
 		header nav ul li:hover {
 			background: rgba(0,0,0,.03);
 			-webkit-transition: all .2s ease;
 			transition: all .2s ease;
 		}
-		header nav ul li#titulo {
-			background: @menutitulo;
-			color: @colorfondo
-		}
-		header nav ul li#titulo:hover {
-			background: @menutitulo;
-			color: @colorfondo;	
-		}
 			header nav ul li a {
 				color: @menutexto;
 				font-size: .95em;
 				font-weight: normal;
+				display: block;
+				padding: 12px 0 0 0;
 			}
 			header nav ul li a:hover {
+				color: @menutexto;
 				text-decoration: none;
 			}
+		header nav ul li#uno {
+			background: rgba(144,156,172,1);
+			color: @colorfondo;
+			padding: 12px 5px 12px 10px;
+		}
+		header nav ul li#dos {
+			background: rgba(144,156,172,.8);
+			color: @colorfondo;
+			padding: 12px 5px 12px 10px;
+		}
+		header nav ul li#tres {
+			background: rgba(144,156,172,.6);
+			color: @colorfondo;
+			padding: 12px 5px 12px 10px;
+		}
+		header nav ul li#cuatro {
+			background: rgba(144,156,172,.4);
+			color: white;
+			padding: 12px 5px 12px 10px;
+		}
+		header nav ul li#cinco {
+			background: rgba(144,156,172,.3);
+			border-radius: 3px;
+			color: white;
+			padding: 12px 5px 12px 10px;
+		}
+		header nav ul li#fuentes, #contacto {
+			background: rgba(144,156,172,1);
+			color: @colorfondo;
+		}
+		header nav ul li#contacto a, #fuentes a {
+			color: @colorfondo;
+			font-size: 1em;
+		}
 section#home {
 	float: left;
 	max-width: 1000px;
@@ -130,7 +160,7 @@ figure .terminal {
 		figure .terminal #maquina pre .copiar {
 			background: @ventanaterminalcopiar;
 			border-radius: 10px;
-			padding: 0 5px;
+			padding: 2px 5px;
 			color: @textoterminal;
 		}
 	figure .terminal .barra {
@@ -158,7 +188,7 @@ figure .terminal {
 			width: 30%;
 		}	
 			figure .terminal .nota .color_tipear span {
-				background: @ventanaterminal;
+				background: rgba(0,0,0,.5);
 				border-radius: 15px;
 				color: @textoterminaltipear;
 				height: 20px;
@@ -171,7 +201,7 @@ figure .terminal {
 			width: 30%;
 		}
 			figure .terminal .nota .color_maquina span {
-				background: @ventanaterminal;
+				background: rgba(0,0,0,.5);
 				border-radius: 15px;
 				color: @textoterminal;
 				height: 20px;
@@ -184,7 +214,7 @@ figure .terminal {
 			width: 30%;
 		}
 			figure .terminal .nota .color_copiar span {
-				background: @ventanaterminalcopiar;
+				background: rgba(0,0,0,.7);
 				border-radius: 15px;
 				color: @textoterminal;
 				height: 20px;
