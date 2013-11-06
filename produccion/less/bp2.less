@@ -1,134 +1,107 @@
 // Break point 2
 
-section#contenedor {
-	header#header {
-		max-width: 400px;
-		padding: 10px 30px 0 30px;
-		width: 25%;
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		bottom: 0px;
-			figure#logo {
-				text-align: center;
-				margin: 0 0 30px 0;
-				position: relative;
-				top: -7px;
-					h1 {
-					font-size: 3.6em;
-					}
-					h2 {
-					border-top: 1px solid @colorborde;
-					font-size: 1.2em;
-					line-height: 25px;
-					margin-top: 5px;
-					}
-					img {
-					margin: 20px auto 15px auto;
-					height: auto;
-					display: block;
-					padding: 10px 0 3px 0;
-					width: 120px;
-					}
-			nav.menu {
-				position: relative;
-			}
+figure#logo {
+	text-align: center;
 }
+figure#logo h1 {
+	font-size: 3em;
+}
+figure#logo img {
+	display: block;
+	margin: 10px auto 0 auto;
+	height: auto;
+	padding: 10px 0 3px 0;
+	width: 80px;	
+}
+figure .terminal {
+	background: rgba(0,0,0,.65);
+	border-radius: 0 0 4px 4px;
+	-webkit-box-shadow: 0px 1px 1px rgba(111,129,148,.5);
+	margin: 35px 35px 70px 35px;
+	position: relative;
+}
+	figure .terminal #maquina pre {
+		color: @textoterminal;
+		line-height: 1.5;
+		padding: 35px 15px 0 20px;
 	}
-	section#home {
-		float: left;
-		max-width: 1000px;
-		margin-left: 25%;
-		width: 75%;
-		article {
-			background: white;
-			border-radius: 7px;
-			border: 1px solid @colorborde;
-			margin: 20px 10px 35px 0;
-			padding: 0 30px 30px 30px;
-			 h1 {
-				color: @tituloarticle;
-				font-family: @tituloarticulo;
-				font-size: 2.5em;
-				letter-spacing: -4px;
-				text-align: center;
-				padding: 52px 0 25px 0;
-			}
-			h2 {
-				border-bottom: 1px solid @colorborde;
-				color: @subtituloarticle;
-				font-family: @mainfont;
-				font-size: 1.4em;
-				margin-bottom: 5px;
-				padding: 30px 0 10px 0;
-				span {
-					color: @subtituloarticle2;
-					font-weight: bold;
-				}
-			}
-			p {
-				color: @colorprincipal;
-				font-size: .9em;
-				margin-bottom: 15px;
-				line-height: 1.6;
-			}
-
-			ul {
-				padding: 10px 0 20px 20px;
-				line-height: 2.2em;
-				font-size: .9em;
-				li {
-					list-style-type: circle;
-				}
-			}
-		}
+	figure .terminal .barra {
+		background: lightgrey;
+		border-radius: 6px 6px 0 0;
+		position: absolute;
+		width: 100%;
+		top: -10px;
 	}
-} 
-#mobileMenu {
-	overflow-y: scroll;
-	height: 58%;
-	position: absolute;
-	left: 15px;
-	right: 15px;
-		li {
-			border-bottom: 1px solid @colorborde;
-			line-height: 1.1;
-			padding: 13px 0 13px 10px;
-				a {
-					color: @menutexto;
-					font-size: .95em;
-					font-weight: normal;
-				}
-				a:hover {
-					text-decoration: none;
-				}
+		figure .terminal .barra #barra {
+			color: grey;
+			font-size: .8em;
+			line-height: 2;
+			text-align: center;
 		}
+	figure .terminal .nota {
+		position: relative;
+		bottom: -35px;
+		color: grey;
+		left: 10px;
+		font-size: .9em
+	}	
+		figure .terminal .nota span {
+			font-weight: bold;
+		}
+nav.menu {
+	padding: 20px 0 0 0;
+	overflow: hidden;
+	z-index: 5;
 }
-#mobileMenu li:hover {
-	background: rgba(0,0,0,.03);
-	-webkit-transition: all .2s ease;
-	transition: all .2s ease;
+section#home article {
+	background: white;
+	border-bottom: 5px solid @colorprincipal;
+	padding: 0 20px 10px 20px;
 }
-#mobileMenu li#titulo:hover {
-	background: @menutitulo;
-	color: @colorfondo;
-}
-#titulo {
-	background: @menutitulo;
-	color: @colorfondo;
-}
-.barra {
-	background: lightgrey;
-	border-radius: 6px 6px 0 0;
-	position: absolute;
-	width: 100%;
-	top: -10px;
-	#barra {
-		font-size: .8em;
-		line-height: 2;
+	section#home article h1 {
+		color: @tituloarticle;
+		font-family: @tituloarticulo;
+		font-size: 2.5em;
+		letter-spacing: -4px;
 		text-align: center;
-
+		padding: 52px 0 25px 0;
 	}
+	section#home article h2 {
+		border-bottom: 1px solid @colorborde;
+		color: @subtituloarticle;
+		font-family: @mainfont;
+		font-size: 1.4em;
+		margin-bottom: 5px;
+		padding: 30px 0 10px 0;
+	}
+		section#home article h2 span {
+			color: @subtituloarticle2;
+			font-weight: bold;
+		}
+	section#home article p {
+		color: @colorprincipal;
+		font-size: .9em;
+		margin-bottom: 15px;
+		line-height: 1.6;
+	} 
+	section#home article ul {
+		padding: 10px 0 20px 20px;
+		line-height: 2.2em;
+		font-size: .9em;
+	}
+		section#home article ul li {
+			list-style-type: circle;
+		}
+#mm0 {
+	background: @colorprincipal;
+	border: 1px solid @colorprincipal;
+	color: @colorfondo;
+	font-size: 18px;
+	height: 38px;
+	left: -4px;
+	opacity: .95;
+	position: relative;
+	width: 107%;
 }
 .boton_google {
 	display: inline-block;
@@ -143,39 +116,18 @@ section#contenedor {
 	top: 35%;
 }
 .comentario{
-	margin-top: 10px;
+	margin: 15px 0 0 0;
 }
-.nota {
-	position: relative;
-	bottom: -35px;
-	color: grey;
-	left: 10px;
-	font-size: .9em;
-	span {
-		font-weight: bold;
-		color: rgba(0,0,0,.8);
-	}
-}
-.nota_terminal {
-	margin: -25px 0 30px 60px;
-	font-size: .95em;
+.fixed {
+    position: fixed;
+    top: -20px;
+    left: 0px;
+   	width: 109%;
 }
 .social {
 	background: rgba(237,241,243,.5);
 	border-top: 1px solid @colorborde;
-	margin-top: 40px;
+	margin-top: 30px;
 	padding: 35px;
 	position: relative;
-}
-.terminal {
-	background: rgba(0,0,0,.65);
-	border-radius: 0 0 4px 4px;
-	-webkit-box-shadow: 0px 1px 2px rgba(111,129,148,.7);
-	margin: 35px 35px 70px 35px;
-	position: relative;
-	#maquina pre {
-		color: @textoterminal;
-		line-height: 1.5;
-		padding: 35px 15px 0 20px;
-	}
 }

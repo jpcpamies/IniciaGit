@@ -100,7 +100,29 @@ h2 {
   color: white;
 }
 @media screen and (min-width: 992px) {
-  section#contenedor header#header {
+  figure#logo {
+    text-align: center;
+    margin: 0 0 30px 0;
+    position: relative;
+    top: -7px;
+  }
+  figure#logo h1 {
+    font-size: 3.6em;
+  }
+  figure#logo h2 {
+    border-top: 1px solid #c6cfd3;
+    font-size: 1.2em;
+    line-height: 25px;
+    margin-top: 5px;
+  }
+  figure#logo img {
+    margin: 20px auto 15px auto;
+    height: auto;
+    display: block;
+    padding: 10px 0 3px 0;
+    width: 120px;
+  }
+  header {
     max-width: 400px;
     padding: 10px 30px 0 30px;
     width: 25%;
@@ -109,45 +131,53 @@ h2 {
     left: 0px;
     bottom: 0px;
   }
-  section#contenedor header#header figure#logo {
-    text-align: center;
-    margin: 0 0 30px 0;
-    position: relative;
-    top: -7px;
+  header nav ul {
+    overflow-y: scroll;
+    height: 58%;
+    position: absolute;
+    left: 15px;
+    right: 15px;
   }
-  section#contenedor header#header figure#logo h1 {
-    font-size: 3.6em;
+  header nav ul li {
+    border-bottom: 1px solid #c6cfd3;
+    line-height: 1.1;
+    padding: 13px 0 13px 10px;
   }
-  section#contenedor header#header figure#logo h2 {
-    border-top: 1px solid #c6cfd3;
-    font-size: 1.2em;
-    line-height: 25px;
-    margin-top: 5px;
+  header nav ul li:hover {
+    background: rgba(0, 0, 0, 0.03);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
   }
-  section#contenedor header#header figure#logo img {
-    margin: 20px auto 15px auto;
-    height: auto;
-    display: block;
-    padding: 10px 0 3px 0;
-    width: 120px;
+  header nav ul li#titulo {
+    background: #909cac;
+    color: #edf1f3;
   }
-  section#contenedor header#header figure#logo nav.menu {
-    position: relative;
+  header nav ul li#titulo:hover {
+    background: #909cac;
+    color: #edf1f3;
   }
-  section#contenedor section#home {
+  header nav ul li a {
+    color: #6f8194;
+    font-size: .95em;
+    font-weight: normal;
+  }
+  header nav ul li a:hover {
+    text-decoration: none;
+  }
+  section#home {
     float: left;
     max-width: 1000px;
     margin-left: 25%;
     width: 75%;
   }
-  section#contenedor section#home article {
+  section#home article {
     background: white;
     border-radius: 7px;
     border: 1px solid #c6cfd3;
     margin: 20px 10px 35px 0;
     padding: 0 30px 30px 30px;
   }
-  section#contenedor section#home article h1 {
+  section#home article h1 {
     color: #6a747e;
     font-family: 'Quicksand', cursive;
     font-size: 2.5em;
@@ -155,7 +185,7 @@ h2 {
     text-align: center;
     padding: 52px 0 25px 0;
   }
-  section#contenedor section#home article h2 {
+  section#home article h2 {
     border-bottom: 1px solid #c6cfd3;
     color: #535c64;
     font-family: 'Raleway', sans-serif;
@@ -163,68 +193,58 @@ h2 {
     margin-bottom: 5px;
     padding: 30px 0 10px 0;
   }
-  section#contenedor section#home article h2 span {
+  section#home article h2 span {
     color: rgba(0, 0, 0, 0.75);
     font-weight: bold;
   }
-  section#contenedor section#home article p {
+  section#home article p {
     color: #6f8194;
     font-size: .9em;
     margin-bottom: 15px;
     line-height: 1.6;
   }
-  section#contenedor section#home article ul {
+  section#home article ul {
     padding: 10px 0 20px 20px;
     line-height: 2.2em;
     font-size: .9em;
   }
-  section#contenedor section#home article ul li {
+  section#home article ul li {
     list-style-type: circle;
   }
-  #mobileMenu {
-    overflow-y: scroll;
-    height: 58%;
-    position: absolute;
-    left: 15px;
-    right: 15px;
+  figure .terminal {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0px 1px 1px rgba(111, 129, 148, 0.5);
+    margin: 35px 35px 70px 35px;
+    position: relative;
   }
-  #mobileMenu li {
-    border-bottom: 1px solid #c6cfd3;
-    line-height: 1.1;
-    padding: 13px 0 13px 10px;
+  figure .terminal #maquina pre {
+    color: #99bb67;
+    line-height: 1.5;
+    padding: 35px 15px 0 20px;
   }
-  #mobileMenu li a {
-    color: #6f8194;
-    font-size: .95em;
-    font-weight: normal;
-  }
-  #mobileMenu li a:hover {
-    text-decoration: none;
-  }
-  #mobileMenu li:hover {
-    background: rgba(0, 0, 0, 0.03);
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-  }
-  #mobileMenu li#titulo:hover {
-    background: #909cac;
-    color: #edf1f3;
-  }
-  #titulo {
-    background: #909cac;
-    color: #edf1f3;
-  }
-  .barra {
+  figure .terminal .barra {
     background: lightgrey;
     border-radius: 6px 6px 0 0;
     position: absolute;
     width: 100%;
     top: -10px;
   }
-  .barra #barra {
+  figure .terminal .barra #barra {
+    color: grey;
     font-size: .8em;
     line-height: 2;
     text-align: center;
+  }
+  figure .terminal .nota {
+    position: relative;
+    bottom: -35px;
+    color: grey;
+    left: 10px;
+    font-size: .9em;
+  }
+  figure .terminal .nota span {
+    font-weight: bold;
   }
   .boton_google {
     display: inline-block;
@@ -239,18 +259,7 @@ h2 {
     top: 35%;
   }
   .comentario {
-    margin-top: 10px;
-  }
-  .nota {
-    position: relative;
-    bottom: -35px;
-    color: grey;
-    left: 10px;
-    font-size: .9em;
-  }
-  .nota span {
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
+    margin: 15px 0 0 0;
   }
   .nota_terminal {
     margin: -25px 0 30px 60px;
@@ -263,25 +272,67 @@ h2 {
     padding: 35px;
     position: relative;
   }
-  .terminal {
+}
+@media screen and (max-width: 992px) {
+  figure#logo {
+    text-align: center;
+  }
+  figure#logo h1 {
+    font-size: 3em;
+  }
+  figure#logo img {
+    display: block;
+    margin: 10px auto 0 auto;
+    height: auto;
+    padding: 10px 0 3px 0;
+    width: 80px;
+  }
+  figure .terminal {
     background: rgba(0, 0, 0, 0.65);
     border-radius: 0 0 4px 4px;
-    -webkit-box-shadow: 0px 1px 2px rgba(111, 129, 148, 0.7);
+    -webkit-box-shadow: 0px 1px 1px rgba(111, 129, 148, 0.5);
     margin: 35px 35px 70px 35px;
     position: relative;
   }
-  .terminal #maquina pre {
+  figure .terminal #maquina pre {
     color: #99bb67;
     line-height: 1.5;
     padding: 35px 15px 0 20px;
   }
-}
-@media screen and (max-width: 992px) {
-  article {
+  figure .terminal .barra {
+    background: lightgrey;
+    border-radius: 6px 6px 0 0;
+    position: absolute;
+    width: 100%;
+    top: -10px;
+  }
+  figure .terminal .barra #barra {
+    color: grey;
+    font-size: .8em;
+    line-height: 2;
+    text-align: center;
+  }
+  figure .terminal .nota {
+    position: relative;
+    bottom: -35px;
+    color: grey;
+    left: 10px;
+    font-size: 0.9em;
+  }
+  figure .terminal .nota span {
+    font-weight: bold;
+  }
+  nav.menu {
+    padding: 20px 0 0 0;
+    overflow: hidden;
+    z-index: 5;
+  }
+  section#home article {
     background: white;
+    border-bottom: 5px solid #6f8194;
     padding: 0 20px 10px 20px;
   }
-  article h1 {
+  section#home article h1 {
     color: #6a747e;
     font-family: 'Quicksand', cursive;
     font-size: 2.5em;
@@ -289,7 +340,7 @@ h2 {
     text-align: center;
     padding: 52px 0 25px 0;
   }
-  article h2 {
+  section#home article h2 {
     border-bottom: 1px solid #c6cfd3;
     color: #535c64;
     font-family: 'Raleway', sans-serif;
@@ -297,36 +348,23 @@ h2 {
     margin-bottom: 5px;
     padding: 30px 0 10px 0;
   }
-  article h2 span {
+  section#home article h2 span {
     color: rgba(0, 0, 0, 0.75);
     font-weight: bold;
   }
-  article p {
+  section#home article p {
     color: #6f8194;
     font-size: .9em;
     margin-bottom: 15px;
     line-height: 1.6;
   }
-  article ul {
+  section#home article ul {
     padding: 10px 0 20px 20px;
     line-height: 2.2em;
     font-size: .9em;
   }
-  article ul li {
+  section#home article ul li {
     list-style-type: circle;
-  }
-  #logo {
-    text-align: center;
-  }
-  #logo h1 {
-    font-size: 3em;
-  }
-  #logo img {
-    display: block;
-    margin: 10px auto 0 auto;
-    height: auto;
-    padding: 10px 0 3px 0;
-    width: 60px;
   }
   #mm0 {
     background: #6f8194;
@@ -338,52 +376,6 @@ h2 {
     opacity: .95;
     position: relative;
     width: 107%;
-  }
-  .fixed {
-    position: fixed;
-    top: -20px;
-    left: 0px;
-    width: 109%;
-  }
-  .menu {
-    padding: 20px 0 0 0;
-    overflow: hidden;
-    z-index: 5;
-  }
-  .terminal {
-    background: rgba(0, 0, 0, 0.65);
-    border-radius: 0 0 4px 4px;
-    -webkit-box-shadow: 0px 1px 2px rgba(111, 129, 148, 0.7);
-    margin: 35px 35px 70px 35px;
-    position: relative;
-  }
-  .terminal #maquina pre {
-    color: #99bb67;
-    line-height: 1.5;
-    padding: 35px 15px 0 20px;
-  }
-  .barra {
-    background: lightgrey;
-    border-radius: 6px 6px 0 0;
-    position: absolute;
-    width: 100%;
-    top: -10px;
-  }
-  .barra #barra {
-    font-size: .8em;
-    line-height: 2;
-    text-align: center;
-  }
-  .nota {
-    position: relative;
-    bottom: -35px;
-    color: grey;
-    left: 10px;
-    font-size: .9em;
-  }
-  .nota span {
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
   }
   .boton_google {
     display: inline-block;
@@ -397,6 +389,15 @@ h2 {
     left: 20%;
     top: 35%;
   }
+  .comentario {
+    margin: 15px 0 0 0;
+  }
+  .fixed {
+    position: fixed;
+    top: -20px;
+    left: 0px;
+    width: 109%;
+  }
   .social {
     background: rgba(237, 241, 243, 0.5);
     border-top: 1px solid #c6cfd3;
@@ -406,8 +407,19 @@ h2 {
   }
 }
 @media screen and (max-width: 480px) {
-  article {
+  figure .terminal {
+    margin: 35px 10px 70px 10px;
+  }
+  figure .terminal .nota {
+    bottom: -50px;
+    left: 10px;
+  }
+  section#home article {
     background: white;
     padding: 0 10px 10px 10px;
+  }
+  section#home article h1 {
+    text-align: center;
+    padding: 45px 0 10px 0;
   }
 }
