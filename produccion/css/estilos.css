@@ -160,30 +160,9 @@ h2 {
     color: #6f8194;
     text-decoration: none;
   }
-  header nav ul li#uno {
-    background: #909cac;
-    color: #edf1f3;
-    padding: 12px 5px 12px 10px;
-  }
-  header nav ul li#dos {
+  header nav ul li#titulo {
     background: rgba(144, 156, 172, 0.8);
     color: #edf1f3;
-    padding: 12px 5px 12px 10px;
-  }
-  header nav ul li#tres {
-    background: rgba(144, 156, 172, 0.6);
-    color: #edf1f3;
-    padding: 12px 5px 12px 10px;
-  }
-  header nav ul li#cuatro {
-    background: rgba(144, 156, 172, 0.4);
-    color: white;
-    padding: 12px 5px 12px 10px;
-  }
-  header nav ul li#cinco {
-    background: rgba(144, 156, 172, 0.3);
-    border-radius: 3px;
-    color: white;
     padding: 12px 5px 12px 10px;
   }
   header nav ul li#fuentes,
