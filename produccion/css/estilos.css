@@ -215,13 +215,22 @@ h2 {
     background: rgba(0, 0, 0, 0.65);
     border-radius: 0 0 4px 4px;
     -webkit-box-shadow: 0px 1px 1px rgba(111, 129, 148, 0.5);
-    margin: 35px 35px 70px 35px;
+    margin: 20px 35px 70px 35px;
     position: relative;
   }
   figure .terminal #maquina pre {
-    color: #99bb67;
+    color: #66bb67;
     line-height: 1.5;
     padding: 35px 15px 0 20px;
+  }
+  figure .terminal #maquina pre .tipear {
+    color: #3efc30;
+  }
+  figure .terminal #maquina pre .copiar {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 0 5px;
+    color: #66bb67;
   }
   figure .terminal .barra {
     background: lightgrey;
@@ -238,13 +247,49 @@ h2 {
   }
   figure .terminal .nota {
     position: relative;
-    bottom: -35px;
+    bottom: -55px;
     color: grey;
-    left: 10px;
+    left: 20px;
     font-size: .9em;
   }
-  figure .terminal .nota span {
-    font-weight: bold;
+  figure .terminal .nota .color_tipear {
+    display: inline-block;
+    width: 30%;
+  }
+  figure .terminal .nota .color_tipear span {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+    color: #3efc30;
+    height: 20px;
+    margin-right: 5px;
+    padding: 5px 10px 5px 10px;
+    width: auto;
+  }
+  figure .terminal .nota .color_maquina {
+    display: inline-block;
+    width: 30%;
+  }
+  figure .terminal .nota .color_maquina span {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+    color: #66bb67;
+    height: 20px;
+    margin-right: 5px;
+    padding: 5px 10px 5px 10px;
+    width: auto;
+  }
+  figure .terminal .nota .color_copiar {
+    display: inline-block;
+    width: 30%;
+  }
+  figure .terminal .nota .color_copiar span {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    color: #66bb67;
+    height: 20px;
+    margin-right: 5px;
+    padding: 5px 10px 5px 10px;
+    width: auto;
   }
   .boton_google {
     display: inline-block;
@@ -291,13 +336,22 @@ h2 {
     background: rgba(0, 0, 0, 0.65);
     border-radius: 0 0 4px 4px;
     -webkit-box-shadow: 0px 1px 1px rgba(111, 129, 148, 0.5);
-    margin: 35px 35px 70px 35px;
+    margin: 20px 35px 70px 35px;
     position: relative;
   }
   figure .terminal #maquina pre {
-    color: #99bb67;
+    color: #66bb67;
     line-height: 1.5;
     padding: 35px 15px 0 20px;
+  }
+  figure .terminal #maquina pre .tipear {
+    color: #3efc30;
+  }
+  figure .terminal #maquina pre .copiar {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 0 5px;
+    color: #66bb67;
   }
   figure .terminal .barra {
     background: lightgrey;
@@ -314,13 +368,49 @@ h2 {
   }
   figure .terminal .nota {
     position: relative;
-    bottom: -35px;
+    bottom: -55px;
     color: grey;
-    left: 10px;
-    font-size: 0.9em;
+    left: 20px;
+    font-size: .9em;
   }
-  figure .terminal .nota span {
-    font-weight: bold;
+  figure .terminal .nota .color_tipear {
+    display: inline-block;
+    width: 30%;
+  }
+  figure .terminal .nota .color_tipear span {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+    color: #3efc30;
+    height: 20px;
+    margin-right: 5px;
+    padding: 5px 10px 5px 10px;
+    width: auto;
+  }
+  figure .terminal .nota .color_maquina {
+    display: inline-block;
+    width: 30%;
+  }
+  figure .terminal .nota .color_maquina span {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+    color: #66bb67;
+    height: 20px;
+    margin-right: 5px;
+    padding: 5px 10px 5px 10px;
+    width: auto;
+  }
+  figure .terminal .nota .color_copiar {
+    display: inline-block;
+    width: 30%;
+  }
+  figure .terminal .nota .color_copiar span {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    color: #66bb67;
+    height: 20px;
+    margin-right: 5px;
+    padding: 5px 10px 5px 10px;
+    width: auto;
   }
   nav.menu {
     padding: 20px 0 0 0;
@@ -408,11 +498,20 @@ h2 {
 }
 @media screen and (max-width: 480px) {
   figure .terminal {
-    margin: 35px 10px 70px 10px;
+    margin: 20px 10px 150px 10px;
   }
   figure .terminal .nota {
-    bottom: -50px;
+    bottom: -135px;
     left: 10px;
+  }
+  figure .terminal .nota .color_tipear {
+    width: 100%;
+  }
+  figure .terminal .nota .color_maquina {
+    width: 100%;
+  }
+  figure .terminal .nota .color_copiar {
+    width: 100%;
   }
   section#home article {
     background: white;

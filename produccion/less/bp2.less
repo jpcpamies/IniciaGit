@@ -12,12 +12,11 @@ figure#logo img {
 	height: auto;
 	padding: 10px 0 3px 0;
 	width: 80px;	
-}
-figure .terminal {
-	background: rgba(0,0,0,.65);
+}figure .terminal {
+	background: @ventanaterminal;
 	border-radius: 0 0 4px 4px;
 	-webkit-box-shadow: 0px 1px 1px rgba(111,129,148,.5);
-	margin: 35px 35px 70px 35px;
+	margin: 20px 35px 70px 35px;
 	position: relative;
 }
 	figure .terminal #maquina pre {
@@ -25,6 +24,15 @@ figure .terminal {
 		line-height: 1.5;
 		padding: 35px 15px 0 20px;
 	}
+		figure .terminal #maquina pre .tipear {
+			color: @textoterminaltipear;
+		}
+		figure .terminal #maquina pre .copiar {
+			background: @ventanaterminalcopiar;
+			border-radius: 10px;
+			padding: 0 5px;
+			color: @textoterminal;
+		}
 	figure .terminal .barra {
 		background: lightgrey;
 		border-radius: 6px 6px 0 0;
@@ -40,14 +48,50 @@ figure .terminal {
 		}
 	figure .terminal .nota {
 		position: relative;
-		bottom: -35px;
+		bottom: -55px;
 		color: grey;
-		left: 10px;
-		font-size: .9em
+		left: 20px;
+		font-size: .9em;
 	}	
-		figure .terminal .nota span {
-			font-weight: bold;
+		figure .terminal .nota .color_tipear {
+			display: inline-block;
+			width: 30%;
+		}	
+			figure .terminal .nota .color_tipear span {
+				background: @ventanaterminal;
+				border-radius: 15px;
+				color: @textoterminaltipear;
+				height: 20px;
+				margin-right: 5px;
+				padding: 5px 10px 5px 10px;
+				width: auto;
+			}
+		figure .terminal .nota .color_maquina {
+			display: inline-block;
+			width: 30%;
 		}
+			figure .terminal .nota .color_maquina span {
+				background: @ventanaterminal;
+				border-radius: 15px;
+				color: @textoterminal;
+				height: 20px;
+				margin-right: 5px;
+				padding: 5px 10px 5px 10px;
+				width: auto;
+			}
+		figure .terminal .nota .color_copiar {
+			display: inline-block;
+			width: 30%;
+		}
+			figure .terminal .nota .color_copiar span {
+				background: @ventanaterminalcopiar;
+				border-radius: 15px;
+				color: @textoterminal;
+				height: 20px;
+				margin-right: 5px;
+				padding: 5px 10px 5px 10px;
+				width: auto;
+			}
 nav.menu {
 	padding: 20px 0 0 0;
 	overflow: hidden;
