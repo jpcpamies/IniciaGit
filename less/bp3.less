@@ -2,7 +2,7 @@
 
 header#header {
 	border:2px solid blue;	
-	width: 310px;
+	width: 325px;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -24,7 +24,7 @@ section#contenido {
 	border:2px solid yellow;
 	float: left;
 	max-width: 1000px;
-	margin-left: 310px;
+	margin-left: 325px;
 	display: inline-block;
 }
 	section#contenido article {
@@ -46,19 +46,51 @@ section#contenido {
 	}
 footer#footer {
 	border:2px solid purple;
-	bottom: 0px;
-	margin-left: 310px;
-	position: relative;
-	width: 100%;
-	max-width: 1000px;
-	height: 250px;
 	display: inline-block;
+	height: 200px;
+	margin-left: 325px;
+	max-width: 1000px;
+	width: 100%;
 }
-footer#footer #avatar figure img{
-	width: 80px;
-	height: auto;
-	border-radius: 80px;
-	border: 3px solid white;
-
-}
-
+	footer#footer #avatar {
+		border: 2px solid;
+		display: inline-block;
+		width: 33%;
+	}
+		footer#footer #avatar figure img{
+			border-radius: 70px;
+			border: 3px solid white;
+			height: auto;
+			width: 70px;
+		}
+		footer#footer #avatar p#nombre {
+			color: @colorprincipal;											
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+		footer#footer #avatar p#twitter {
+			color: @colorprincipal;											
+			font-size: 1.2em;
+		}
+	footer#footer #emial {
+		display: inline-block;
+		border: 2px solid;
+		width: 33%;
+	} 
+		footer#footer .icon-mail {
+		background: #0d65f0;
+		border-radius: 40px;
+		height: 70px;
+		width: 70px
+		}
+	footer#footer #github {
+		display: inline-block;
+		border: 2px solid;
+		width: 33%;
+	} 
+		footer#footer #github .icon-github {
+			background: #8f8f8f;
+			border-radius: 40px;
+			height: 70px;
+			width: 70px
+		}
