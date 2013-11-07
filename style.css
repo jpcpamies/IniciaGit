@@ -99,7 +99,7 @@ h2 {
 @media screen and (min-width: 992px) {
   header#header {
     border: 2px solid blue;
-    width: 25%;
+    width: 310px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -118,7 +118,8 @@ h2 {
     border: 2px solid yellow;
     float: left;
     max-width: 1000px;
-    margin-left: 25%;
+    margin-left: 310px;
+    display: inline-block;
   }
   section#contenido article {
     border: 2px solid brown;
@@ -139,6 +140,19 @@ h2 {
   }
   footer#footer {
     border: 2px solid purple;
+    bottom: 0px;
+    margin-left: 310px;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 250px;
+    display: inline-block;
+  }
+  footer#footer #avatar figure img {
+    width: 80px;
+    height: auto;
+    border-radius: 80px;
+    border: 3px solid white;
   }
 }
 @media screen and (max-width: 992px) {
