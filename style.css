@@ -138,6 +138,64 @@ pre {
 a {
   text-decoration: none;
 }
+.avatar {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.fContainer {
+  perspective: 1000;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+.fContainer .fPanel {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all .6s linear;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all .6s linear;
+  -o-transform-style: preserve-3d;
+  -o-transition: all .6s linear;
+  transform-style: preserve-3d;
+  transition: all .6s linear;
+}
+.fContainer:hover .fPanel {
+  -webkit-transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  -moz-transform: rotateY(180deg);
+  -moz-box-sizing: border-box;
+  -o-transform: rotateY(180deg);
+  -o-box-sizing: border-box;
+  transform: rotateY(180deg);
+}
+.fContainer .back {
+  display: block;
+  font-size: 2.2em;
+  -webkit-transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  -moz-transform: rotateY(180deg);
+  -moz-box-sizing: border-box;
+  -o-transform: rotateY(180deg);
+  -o-box-sizing: border-box;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #6f8194;
+}
+.back .icon-twitter {
+  color: #edf1f3;
+  line-height: 1.5;
+}
 body {
   background: #edf1f3;
   color: #6f8194;
