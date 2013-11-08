@@ -80,6 +80,11 @@ footer#footer {
 			top: 90px;
 			left: 370px;
 		}
+		footer#footer #logo_giratorio {
+			position: absolute;
+			top: 60px;
+			left: 270px;
+		}
 	footer#footer #emial {
 		// border: 2px solid;
 		width: 33%;
@@ -136,3 +141,69 @@ footer#footer {
 
 
 // Avatar giratorio
+
+.rotateY() {
+  -webkit-transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  -moz-transform: rotateY(180deg);
+  -moz-box-sizing: border-box;
+  -o-transform: rotateY(180deg);
+  -o-box-sizing: border-box;
+  transform: rotateY(180deg);
+}
+
+.hiddenBackface() {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.avatar {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  .hiddenBackface();
+}
+
+.fContainer {
+  perspective: 1000;
+  position: relative;
+  width: 70px; height: 70px;
+  z-index: 1;
+  
+  .fPanel {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all .6s linear;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: all .6s linear;
+    -o-transform-style: preserve-3d;
+    -o-transition: all .6s linear;
+    transform-style: preserve-3d;
+    transition: all .6s linear;
+  }
+  
+  &:hover {
+    .fPanel {
+      .rotateY();
+    }
+  }
+  
+  .back {
+    display: block;
+    font-size: 2.2em;
+    .rotateY();    
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: @colorprincipal;
+  }
+}
+.back .icon-twitter {
+	color: @colorfondo;
+	line-height: 1.5;
+}
