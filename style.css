@@ -218,7 +218,6 @@ h2 {
     left: 0px;
     bottom: 0px;
     margin: 10px;
-    display: inline-block;
   }
   header#header div#titulo_principal {
     text-align: center;
@@ -274,6 +273,9 @@ h2 {
     width: 120px;
     height: auto;
     margin: 20px auto 10px auto;
+  }
+  section#wrapper {
+    overflow: hidden;
   }
   section#contenido {
     max-width: 1000px;
