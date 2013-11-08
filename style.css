@@ -1,3 +1,59 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot');
+  src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf') format('truetype'), url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class*="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-github:before {
+  content: "\e601";
+}
+.icon-link:before {
+  content: "\e604";
+}
+.icon-twitter:before {
+  content: "\e606";
+}
+.icon-books:before {
+  content: "\e607";
+}
+.icon-bubble:before {
+  content: "\e614";
+}
+.icon-play:before {
+  content: "\e600";
+}
+.icon-book:before {
+  content: "\e60b";
+}
+.icon-arrow-up:before {
+  content: "\e610";
+}
+.icon-mail:before {
+  content: "\e602";
+}
+.icon-graduation:before {
+  content: "\e611";
+}
+.icon-network:before {
+  content: "\e612";
+}
+.icon-uniE613:before {
+  content: "\e613";
+}
 html,
 body,
 body div,
@@ -98,7 +154,6 @@ h2 {
 }
 @media screen and (min-width: 992px) {
   header#header {
-    border: 2px solid blue;
     width: 325px;
     position: fixed;
     top: 0px;
@@ -111,11 +166,7 @@ h2 {
   header#header figure#logo {
     border: 2px solid green;
   }
-  section#wrapper {
-    border: 2px solid red;
-  }
   section#contenido {
-    border: 2px solid yellow;
     float: left;
     max-width: 1000px;
     margin-left: 325px;
@@ -139,54 +190,89 @@ h2 {
     border: 2px solid orange;
   }
   footer#footer {
-    border: 2px solid purple;
     display: inline-block;
     height: 200px;
     margin-left: 325px;
     max-width: 1000px;
     width: 100%;
+    position: relative;
   }
   footer#footer #avatar {
-    border: 2px solid;
-    display: inline-block;
     width: 33%;
   }
   footer#footer #avatar figure img {
     border-radius: 70px;
-    border: 3px solid white;
+    border: 3px solid #6f8194;
     height: auto;
     width: 70px;
+    position: absolute;
+    top: 60px;
+    left: 270px;
   }
   footer#footer #avatar p#nombre {
     color: #6f8194;
     font-size: 1.2em;
     font-weight: bold;
+    position: absolute;
+    top: 70px;
+    left: 370px;
   }
   footer#footer #avatar p#twitter {
     color: #6f8194;
     font-size: 1.2em;
+    position: absolute;
+    top: 90px;
+    left: 370px;
   }
   footer#footer #emial {
-    display: inline-block;
-    border: 2px solid;
     width: 33%;
+    position: absolute;
+    top: 60px;
+    left: 70px;
   }
-  footer#footer .icon-mail {
+  footer#footer #emial .icon-mail {
     background: #0d65f0;
     border-radius: 40px;
     height: 70px;
     width: 70px;
+    color: #edf1f3;
+    text-align: center;
+    line-height: 1.85;
+    font-size: 2.3em;
+  }
+  footer#footer #emial .icon-mail:before {
+    content: "\e602";
+    font-family: 'icomoon';
+  }
+  footer#footer #emial .icon-mail:hover {
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
   }
   footer#footer #github {
-    display: inline-block;
-    border: 2px solid;
     width: 33%;
+    position: absolute;
+    top: 60px;
+    left: 170px;
   }
   footer#footer #github .icon-github {
-    background: #8f8f8f;
+    background: #6f8194;
     border-radius: 40px;
     height: 70px;
     width: 70px;
+    color: #edf1f3;
+    text-align: center;
+    line-height: 1.75;
+    font-size: 2.5em;
+  }
+  footer#footer #github .icon-github:before {
+    content: "\e601";
+    font-family: 'icomoon';
+  }
+  footer#footer #github .icon-github:hover {
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
   }
 }
 @media screen and (max-width: 992px) {
