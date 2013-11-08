@@ -47,23 +47,38 @@ section#contenido {
 	display: inline-block;
 }
 	section#contenido article {
-		border:2px solid brown;
+		box-shadow: 0 0 6px rgba(0,0,0,0.2);		
 		background: white;
-		border-radius: 7px;
-		border: 1px solid @colorborde;
+		border-radius: 5px;
 		margin: @margenE;
 		padding: @margenI;
 	}
 	section#contenido article header.titulo {
-		border:2px solid blue;
+		// border:2px solid blue;
+	}
+		section#contenido article header.titulo h1 {
+		// border:2px solid blue;
+		color: @tituloarticle;
+		font-family: @tituloarticulo;
+		font-size: 2.5em;
+		letter-spacing: -4px;
+		text-align: center;
+		padding: 25px 0 35px 0;
 	}
 	section#contenido article div.contenido {
-		border:2px solid pink;
+		// border:2px solid pink;
+		// padding: @margenI;
+	}
+	section#contenido article div.contenido p {
+		// border:2px solid pink;
+		margin: 0 10px 15px 10px;
+		font-size: .9em;
 	}
 	section#contenido article footer.social {
-		border:2px solid orange;
+		// border:2px solid orange;
 	}
 footer#footer {
+	// border: 2px solid;
 	display: inline-block;
 	height: 200px;
 	margin-left: 335px;
@@ -84,7 +99,7 @@ footer#footer {
 			top: 60px;
 			left: 270px;
 		}
-		footer#footer #avatar p#nombre {
+		footer#footer #avatar a#nombre {
 			color: @colorprincipal;											
 			font-size: 1.2em;
 			font-weight: bold;
@@ -92,7 +107,7 @@ footer#footer {
 			top: 70px;
 			left: 370px;
 		}
-		footer#footer #avatar p#twitter {
+		footer#footer #avatar a#twitter {
 			color: @colorprincipal;											
 			font-size: 1.2em;
 			position: absolute;
@@ -130,6 +145,14 @@ footer#footer {
 			-webkit-transition: all .2s ease;
 			transition: all .2s ease;
 		}
+	footer#footer #fin_pagina {
+		height: 2px;
+		width: 95%;
+		background: @colorprincipal;
+		position: absolute;
+		top: 170px;
+		left: 28px;
+	}
 	footer#footer #github {
 		// border: 2px solid;
 		width: 33%;
