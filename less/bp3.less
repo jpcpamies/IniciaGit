@@ -27,34 +27,65 @@ header#header {
 		// border:2px solid orange;
 		margin: 25px 7px 25px 7px ;
 		overflow-y: scroll;
-		height: 600px;
+		height: 60%;
 		border-radius: 5px;
 
 	}
-	header#header nav#menu h3 {
+	header#header nav#menu a {
+		text-decoration: none;
+		position: relative;
+	}
+	header#header nav#menu a .icon-uniE613 {
+		position: absolute;
+		right: 5px;
+		top: 28%;
+	}
+	header#header nav#menu a .icon-uniE613:before {
+		content: "\e613";	
+	}
+	header#header nav#menu a:hover {
+		text-decoration: none;
+	}
+	header#header nav#menu a h3 {
 		background: #0d65f0;
 		border-radius: 5px;
 		padding: 5px 0 5px 10px;
 		margin: 20px 0 5px 0;
 		color: @colorfondo;
+		position: relative;
+	}
+	header#header nav#menu a h3 .icon-number, .icon-number2, .icon-number3 {
+		position: absolute;
+		right: 5px;
+		top: 3px;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	header#header nav#menu a h3 .icon-number:before {
+		content: "\e608";
+	}
+	header#header nav#menu a h3 .icon-number2:before {
+		content: "\e609";
+	}
+	header#header nav#menu a h3 .icon-number3:before {
+		content: "\e60a";
+	}
+	header#header nav#menu h3:hover {
+		background: @colorhover;
 	}
 	header#header nav#menu ul {
 		border: 1px solid rgba(111,129,148, .5);
 		border-radius: 5px;
-		padding: 4px 0 4px 10px;
-	}
-	header#header nav#menu ul:hover {
-		background: rgba(0,0,0,.05);
-		-webkit-transition: all .2s ease;
-		transition: all .2s ease;
-		color: @menutexto;
 	}
 		header#header nav#menu ul a {
 			text-decoration: none;
 			color: #0d65f0;
 			display: block;
-			padding: 4px 0;
+			padding: 4px 30px 4px 10px;
 			border-bottom: 1px solid rgba(111,129,148, .5);
+		}
+		header#header nav#menu ul a:hover {
+			color: @colorhover;
 		}
 		header#header nav#menu ul a:last-child {
 			border-bottom: none;
@@ -165,7 +196,7 @@ footer#footer {
 		width: 70px;
 		color: @colorfondo;
 		text-align: center;
-		line-height: 1.85;
+		line-height: 1.93;
 		font-size: 2.3em;
 		}
 		footer#footer #emial .icon-mail:before {
