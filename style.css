@@ -302,7 +302,7 @@ h2 {
   header#header nav#menu a .icon-uniE613 {
     position: absolute;
     right: 5px;
-    top: 28%;
+    top: 5px;
   }
   header#header nav#menu a .icon-uniE613:before {
     content: "\e613";
@@ -310,30 +310,31 @@ h2 {
   header#header nav#menu a:hover {
     text-decoration: none;
   }
-  header#header nav#menu a p {
+  header#header nav#menu a h3 {
     background: #0d65f0;
     border-radius: 5px;
-    padding: 5px 0 5px 10px;
+    font-weight: normal;
+    padding: 5px 0 6px 10px;
     margin: 20px 0 5px 0;
     color: #edf1f3;
     position: relative;
   }
-  header#header nav#menu a p .icon-number,
+  header#header nav#menu a h3 .icon-number,
   .icon-number2,
   .icon-number3 {
     position: absolute;
     right: 5px;
-    top: 5px;
+    top: 4px;
     font-size: 1.2em;
     font-weight: bold;
   }
-  header#header nav#menu a p .icon-number:before {
+  header#header nav#menu a h3 .icon-number:before {
     content: "\e605";
   }
-  header#header nav#menu a p .icon-number2:before {
+  header#header nav#menu a h3 .icon-number2:before {
     content: "\e617";
   }
-  header#header nav#menu a p .icon-number3:before {
+  header#header nav#menu a h3 .icon-number3:before {
     content: "\e618";
   }
   header#header nav#menu p:hover {
@@ -344,17 +345,20 @@ h2 {
     border-radius: 5px;
   }
   header#header nav#menu ul a {
-    text-decoration: none;
+    border-bottom: 1px solid rgba(111, 129, 148, 0.5);
     color: #0d65f0;
     display: block;
-    padding: 4px 30px 4px 10px;
-    border-bottom: 1px solid rgba(111, 129, 148, 0.5);
+    padding: 4px 30px 6px 10px;
+    text-decoration: none;
   }
   header#header nav#menu ul a:hover {
     color: rgba(0, 0, 0, 0.7);
   }
   header#header nav#menu ul a:last-child {
     border-bottom: none;
+  }
+  header#header nav#menu ul a li h4 {
+    font-weight: normal;
   }
   header#header figure#logo {
     text-align: center;
@@ -378,18 +382,6 @@ h2 {
     border-radius: 5px;
     margin: 15px;
     padding: 20px;
-  }
-  section#contenido article header.titulo h1 {
-    color: #6a747e;
-    font-family: 'Quicksand', cursive;
-    font-size: 2.5em;
-    letter-spacing: -4px;
-    text-align: center;
-    padding: 25px 0 35px 0;
-  }
-  section#contenido article div.contenido p {
-    margin: 0 10px 15px 10px;
-    font-size: .9em;
   }
   footer#footer {
     display: inline-block;

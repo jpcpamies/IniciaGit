@@ -16,7 +16,7 @@
 <!-- Barra lateral con logo + menu -->
 <header id="header">
 	<figure id="logo">
-		<img src="img/logo.png" width='245' height='200'alt="IniciaGit | Logo">
+		<img src="img/IniciaGit_logo.png" width='245' height='200'alt="IniciaGit | Logo">
 	</figure>
 	<div id='titulo_principal'>
 		<h1>IniciaGit</h1>
@@ -24,29 +24,29 @@
 	</div>
 	<nav id="menu">
 		<ul>
-			<a href="#descripcion"><li>Descripción de la guía <span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Descripción de la guía</h4><span class="icon-uniE613"></span></li></a>
 		</ul>
-		<a href=""><p>Comandos básicos de terminal<span class="icon-number"></span></p></a>
+		<a href="#comandos"><h3>Comandos básicos de terminal<span class="icon-number"></span></h3></a>
 		<ul>
-			<a href="#descripcion"><li>Ver contenido del directorio <span class="icon-uniE613"></span></li></a>
-			<a href="#descripcion"><li>Ubicarse en un directorio <span class="icon-uniE613"></span></li></a>
-			<a href="#descripcion"><li>Crear nuevo directorio <span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Ver contenido del directorio</h4><span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Ubicarse en un directorio</h4><span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Crear nuevo directorio</h4><span class="icon-uniE613"></span></li></a>
 		</ul>
-		<a href=""><p>Empezar con GitHub<span class="icon-number2"></span></p></a>
+		<a href=""><h3>Empezar con GitHub<span class="icon-number2"></span></h3></a>
 		<ul>
-			<a href="#descripcion"><li>Crear una cuenta en GitHub <span class="icon-uniE613"></span></li></a>
-			<a href="#descripcion"><li>Instalar GitHub <span class="icon-uniE613"></span></li></a>
-			<a href="#descripcion"><li>Identificarse como usuario <span class="icon-uniE613"></span></li></a>
-			<a href="#descripcion"><li>Vincular el ordenador con GitHub por SSH <span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Crear una cuenta en GitHub</h4><span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Instalar GitHub</h4><span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Identificarse como usuario</h4><span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Vincular el ordenador con GitHub por SSH</h4><span class="icon-uniE613"></span></li></a>
 		</ul>
-		<a href=""><p>Trabajar con GitHub<span class="icon-number3"></span></p></a>
+		<a href=""><h3>Trabajar con GitHub<span class="icon-number3"></span></h3></a>
 		<ul>
-			<a href="#descripcion"><li>Crear repositorio en GitHub <span class="icon-uniE613"></span></li></a>
-			<a href="#descripcion"><li>Crear repositorio en local <span class="icon-uniE613"></span></li></a>
-			<a href="#descripcion"><li>Enlazar repositorio local con GitHub <span class="icon-uniE613"></span></li></a>
-			<a href="#descripcion"><li>Hacer cambios en el repositorio local <span class="icon-uniE613"></span></li></a>
-			<a href="#descripcion"><li>Hacer un commit es como pegar un tiro <span class="icon-uniE613"></span></li></a>
-			<a href="#descripcion"><li>Mandar los cambios a GitHub <span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Crear repositorio en GitHub</h4><span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Crear repositorio en local</h4><span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Enlazar repositorio local con GitHub</h4><span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Hacer cambios en el repositorio local</h4><span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Hacer un commit es como pegar un tiro</h4><span class="icon-uniE613"></span></li></a>
+			<a href="#descripcion"><li><h4>Mandar los cambios a GitHub</h4><span class="icon-uniE613"></span></li></a>
 		</ul>
 		<br>
 	</nav>
@@ -66,15 +66,52 @@
 			</div>
 		</div>
 	</article>
-	<article id="">
-		<header class="">
-			<h1></h1>
-			<h2></h2>
+	<article id="comandos">
+		<header class="titulo">
+			<h1>Comandos básicos de terminal</h1>
 		</header>
-		<div class="contenido">
-			<div class="terminal">
-			</div>
-		</div>
+		<section class="contenido">
+			<article id="ver_contenido">
+				<p>Empezar a usar GitHub desde la terminal se hace sencillo usando solo tres comandos. Si tu ya conoces el funcionamiento de la terminal puedes omitir este punto, esto para tí  está chupado.</p>
+				<h2><span>Ver contenido</span> del directorio</h2>
+				<p>Puedes ver el contenido de una carpeta con el siguiente comando.</p>
+		      	<!-- Terminal -->
+		      	<figure>
+			        <div class='terminal'>
+			          	<div class="barra"><pre id='barra'>Terminal</pre></div>
+			         	<div id='maquina'>
+			        		<pre>jordiimac$ <span class='tipear'>git --version</span><span class='copiar'>requesting install.</pre>
+		          		</div>
+		          		<div class="nota">
+				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
+				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
+				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p></div>
+		          		</div>
+		        	</div>
+		      	</figure>
+		      	<!--/ Terminal -->
+			</article>
+			<article id="dos">
+				<p>Empezar a usar GitHub desde la terminal se hace sencillo usando solo tres comandos. Si tu ya conoces el funcionamiento de la terminal puedes omitir este punto, esto para tí  está chupado.</p>
+				<h2><span>Ver contenido</span> del directorio</h2>
+				<p>Puedes ver el contenido de una carpeta con el siguiente comando.</p>
+		      	<!-- Terminal -->
+		      	<figure>
+			        <div class='terminal'>
+			          	<div class="barra"><pre id='barra'>Terminal</pre></div>
+			         	<div id='maquina'>
+			        		<pre>jordiimac$ <span class='tipear'>git --version</span><span class='copiar'>requesting install.</pre>
+		          		</div>
+		          		<div class="nota">
+				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
+				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
+				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p></div>
+		          		</div>
+		        	</div>
+		      	</figure>
+		      	<!--/ Terminal -->
+			</article>
+		</section>
 		<footer class="social">
 			
 		</footer>
