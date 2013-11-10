@@ -111,7 +111,7 @@ section#contenido {
 			padding: @I 0;
 		}
 			section#contenido article header#intra_article div.capitulo {
-				background: @azul;
+				background: @colorprincipal;
 				border-radius: 0 50px 50px 0;
 				color: @colorfondo;
 				display: inline-block;
@@ -131,6 +131,9 @@ section#contenido {
 				section#contenido article header#intra_article div.capitulo span.icon-rocket {
 					right: 12px;
 					top: 8px;
+				}
+				section#contenido article header#intra_article div.capitulo span.icon-books {
+					right: 12px;
 				}
 				section#contenido article header#intra_article h3 {
 					display: inline-block;
@@ -152,18 +155,18 @@ section#contenido {
 			line-height: 1.6;
 		}
 		section#contenido article section#tema {
-			margin: 0 @I @I @I;
+			// margin: 0 @I @I @I;
 		}
 			section#contenido article section#tema article header#tema {
 
 			}
 				section#contenido article section#tema article header#tema h4 {
-					color: @colorhover;
+					color: @colorprincipal;
 					font-size: 1.5em;
 					font-weight: normal;
-					border-bottom: 1px solid @colorborde;
+					// border-bottom: 1px solid @colorborde;
 					padding-bottom: 5px;
-					margin: 0 0 10px 0;
+					// margin: 0 0 10px 0;
 				}
 					section#contenido article section#tema article header#tema h4 span {
 						font-weight: bold;
@@ -255,6 +258,18 @@ section#contenido {
 								padding: 5px 10px 5px 10px;
 								width: auto;
 								}
+		section#contenido article section#tema figure div.imagen {
+			background: #ebf0f4;			
+			width: 100%;
+			height: auto;
+			padding: 30px 0;
+			border-top: 1px solid #c6ced2;
+			border-bottom: 1px solid #c6ced2;
+			}
+			section#contenido article section#tema figure div.imagen img {
+				display: block;
+				margin: 0 auto;
+			} 
 		section#contenido article section#tema p {
 			margin: 0 0 @I 0;
 		}
@@ -308,7 +323,7 @@ footer#footer {
 		left: 70px;
 	} 
 		footer#footer #emial .icon-mail {
-		background: #0d65f0;
+		background: @azul;
 		border-radius: 40px;
 		height: 70px;
 		width: 70px;

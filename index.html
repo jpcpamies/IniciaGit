@@ -57,17 +57,12 @@
 	</ul>
 	<!-- =============================================================================== -->
 
-	<!-- Capñitulo 3-->
-	<ul class='capitulo'>
-		<li><a href="#trabajar_con_github">Trabajar con GitHub<span class="icon-number3"></span></a></li>
-	</ul>
-	<!-- Temas -->
+	<!-- Más contenido y contacto-->
+	<br>
 	<ul>
-		<li><a href="#instalar_github">Instalar GitHub</a></li>
-		<li><a href="#identificarse_como_usuario">Identificarse como usuario</a></li>
-		<li><a href="#vincular_el_ordenador_con_GitHub_por_SSH">Vincular el ordenador con GitHub por SSH</a></li>
-		<li><a href="#cuatro">cuatro</a></li>
-		<li><a href="#cuatro">cuatro</a></li>
+		<li><a href="#resumen_de_comandos">Resumen de comnados<span class="icon-code"></span></a></li>
+		<li><a href="#mas_material">Más material<span class="icon-books"></span></a></li>
+		<li><a href="#footer">Contáctame<span class="icon-bubble"></span></a></li>
 	</ul>
 	<br>
 	</nav>
@@ -160,12 +155,92 @@
 		      	</figure>
 		     	<!--/ Terminal -->
 		     	<p>Esto creará un directorio llamado “Mi nuevo directorio” justo en la hubicación en la que te encuentres. </p>
-		     	<figure>
-		     		<img src="http://placehold.it/600x300" alt="Documento creado">
+		     	<figure class='imagen'>
+		     		<div class="imagen">
+		     			<img src="http://placehold.it/600x300" alt="Documento creado">
+		     		</div>
 		     	</figure>
 			</article>
 		</section>
 	</article>
+	<article class='main' id="resumen_de_comandos">
+		<header id="intra_article">
+			<div class="capitulo"><span class='icon-code'></span></div>
+			<h3>Resumen de comandos</h3>
+			<p>Usa este resumen de los comandos explicados en los capituloes previos. brDescargate el PDF a tenlo a mano.</p>
+		</header>
+		<section id=''>
+			<article id=''>
+				<header id=''>
+					<div class="capitulo"><span class='icon-number'></span></div>
+					<h4>Comandos báscos de terminal</h4>					
+				</header>
+				<section>
+					<article>
+						<p>Ver contenido del directorio.</p>
+						<pre>ls</pre>
+					</article>
+					<article>
+						<p>Entrar en un directorio.</p>
+						<pre>cd</pre>
+						<p>Subir un nivel en el directorio</p>
+						<pre>cd ..</pre>
+					</article>
+					<article>
+						<p>Crear un directorio.</p>
+						<pre>mkdir nombreProyecto</pre>
+					</article>
+				</section>
+			</article>
+			<article id=''>
+				<header id=''>
+					<div class="capitulo"><span class='icon-number2'></span></div>
+					<h4>Empezando con GitHub</h4>					
+				</header>
+				<section>
+					<article>
+						<p>Comprobar que GitHub está instalado.</p>
+						<pre>git --version</pre>
+					</article>
+					<article>
+						<p>Identificarse como usuario.</p>
+						<pre>git config user.name “nombre”</pre>
+						<pre>git config user.email “tu@email.com”</pre>
+						<p>Comprobar que los datos se han registrado correctamente.</p>
+						<pre>git config list</pre>
+					</article>
+					<article>
+						<p>Generar una llave SSH.</p>
+						<pre>$ssh-keygengit</pre>
+						<p>Agrega una contraseña.</p>
+						<pre>Enter passphrase (empty for no passphrase): [Contraseña] <br> Enter same passphrase again: [Repetir contraseña]</pre>
+						<p>Ver la llave SSH.</p>
+						<pre>$cd .ssh <br>$cat id_rsa.pub</pre>
+						<p>Comprueba que tu ordenador está vinculado</p>
+						<pre>ssh -T git@github.com</pre>
+					</article>
+				</section>
+			</article>
+		</section>
+		<footer>
+			<div class="boton_descarga">
+				<p><span class='icon-in'></span>PDF RESUMEN COMANDOS</p>
+			</div>
+		</footer>
+	</article>
+	<article class='main' id="mas_material">
+		<header id="intra_article">
+			<div class="capitulo"><span class='icon-books'></span></div>
+			<h3>Más material</h3>
+			<p>Hay mucho material en varios formatos que te ayudará a comprender mejor GitHub.</p>
+		</header>
+		<section id='tema'>
+			<article id=''>
+				
+			</article>
+		</section>
+	</article>
+	
 </section>
 <!--/ Contenido princial -->
 <!-- Footer principal -->
