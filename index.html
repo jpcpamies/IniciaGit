@@ -77,27 +77,29 @@
 
 <!-- Contenido princial -->
 <section id="contenido">
-	<article id="iniciando">
+	<article class='main' id="iniciando">
 		<header id="intra_article">
 			<div class="capitulo"><span class='icon-rocket'></span></div>
 			<h3>Iniciando</h3>
-			<p>&nbsp</p>
 		</header>
+		<section id='tema'>
 			<p>Esta guía básica te ayudará a <strong>usar GitHub con la terminal</strong> desde cero. En ella encontrarás un resumen de los pasos y comandos básicos necesarios para empezar a trabajar con GitHub desde tu ordenador con la terminal. Tanto si ya usas GitHub como si empiezas hoy mismo esta guía</p>
 			<p>Con esta guía empezarás un proyecto propio en local y subirás cambios a tu repositorio en GitHub. <strong>Trabajarás en colaboración</strong> con personas de todo el mundo, haciendo Fork, Pull request y Merge. Además podrás alojar tu proyecto en un subdominio de GitHub, igual que lo está esta guía.</p>
 			<p>No encontrarás explicaciones teóricas explicando que es un sistema de control de versiones o funcionan las entrañas de GitHub. Pero sí encontrarás enlaces a varias fuentes en vídeo y texto que bien seguro te ayudarán asimilar mejor los conceptos.</p>
+		</section>
 	</article>
-	<article id="comandos_basicos_de_terminal">
+	<article class='main' id="comandos_basicos_de_terminal">
 		<header id="intra_article">
 			<div class="capitulo"><span class='icon-number'></span></div>
 			<h3>Comandos básicos de terminal</h3>
-			<p>&nbsp</p>
 			<p>Empezar a usar GitHub desde la terminal se hace sencillo usando solo tres comandos. Si tu ya conoces el funcionamiento de la terminal puedes omitir este punto, esto para tí  está chupado.</p>
 		</header>
-		<section>
+		<section id='tema'>
 			<article id='ver_contenido_del_directorio'>
-				<h4><strong>Ver contenido</strong> del directorio</h4>
-				<p>Puedes ver el contenido de una carpeta con el siguiente comando.</p>
+				<header id="tema">
+					<h4><span>Ver contenido</span> del directorio</h4>
+					<p>Puedes ver el contenido de una carpeta con el siguiente comando.</p>
+				</header>
 			    <!-- Terminal -->
 			    <figure>
 		        	<div class='terminal'>
@@ -108,16 +110,17 @@
 			          	<div class="nota">
 				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
 				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
-				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p>
-			            </div>
-			          </div>
+				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p></div>
+		         		</div>
 			        </div>
 		      	</figure>
 		     	<!--/ Terminal -->
 			</article>
 			<article id='ubicarse_en_un_directorio'>
-				<h4><strong>Ubicarse</strong> en un directorio</h4>
-				<p>Puedes entrar en una carpeta con el siguiente comando.</p>
+				<header id="tema">
+					<h4><strong>Ubicarse</strong> en un directorio</h4>
+					<p>Puedes entrar en una carpeta con el siguiente comando.</p>
+				</header>
 			    <!-- Terminal -->
 			    <figure>
 		        	<div class='terminal'>
@@ -136,8 +139,10 @@
 		     	<!--/ Terminal -->
 			</article>
 			<article id='crear_un_directorio'>
-				<h4><strong>Crear</strong> un directorio</h4>
-				<p>Es importante poder crear directorios desde la terminal. Puedes hacerlo con este comando.</p>
+				<header id="tema">
+					<h4><strong>Crear</strong> un directorio</h4>
+					<p>Es importante poder crear directorios desde la terminal. Puedes hacerlo con este comando.</p>
+				</header>
 			    <!-- Terminal -->
 			    <figure>
 		        	<div class='terminal'>
@@ -160,204 +165,6 @@
 		     	</figure>
 			</article>
 		</section>
-	</article>
-	<article id="empezar_con_github">
-		<header id="intra_article">
-			<div class="capitulo"><span class='icon-number2'></span></div>
-			<h3>Empezar con GitHub</h3>
-			<p>&nbsp</p>
-			<p>Los pasos de este apartado solo los tendrás que hacer una vez. Eso si, necesitarás repetirlos en cada ordenador que vayas a usar con tu cuenta de GitHub.</p>
-		</header>
-		<section>
-			<article id='instalar_github'>
-				<h4><strong>Instalar</strong> GitHub</h4>
-				<p>El primer paso para empezar a usar GitHub en tu ordenador es instalarlo. Descarga GitHub para tu SO e instálalo.</p>
-				<div class="descargar">Descargar Github</div>
-				<ul>
-					<li>Comprueba que se ha instalado en el ordenador.</li>
-				</ul>
-			    <!-- Terminal -->
-			    <figure>
-		        	<div class='terminal'>
-		          		<div class="barra"><pre id='barra'>Terminal</pre></div>
-		          		<div id='maquina'>
-		            		<pre>iMac-de-Jordi:~ jordiimac$ <span class='tipear'>git --version</span> <br>git version 1.8.3.4 (Apple Git-47)<br>iMac-de-Jordi:documents jordiimac$</pre>
-		          		</div>
-			          	<div class="nota">
-				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
-				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
-				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p>
-			            </div>
-			          </div>
-			        </div>
-		      	</figure>
-		     	<!--/ Terminal -->
-			</article>
-			<article id='identificarse_como_usuario'>
-				<h4><strong>Identificarse</strong> como usuario</h4>
-				<p>Una vez instalado GitHub en local tienes que identificarte como usuario con tu nombre y email.</p>
-			    <!-- Terminal -->
-			    <figure>
-		        	<div class='terminal'>
-		          		<div class="barra"><pre id='barra'>Terminal</pre></div>
-		          		<div id='maquina'>
-		            		<pre>iMac-de-Jordi:~ jordiimac$ <span class='tipear'>git config user.name “Jordi Pamies”</span> <br>iMac-de-Jordi:documents jordiimac$ <span class='tipear'>git config user.email “jordipamies2@gmail.com”</span></pre>
-		          		</div>
-			          	<div class="nota">
-				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
-				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
-				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p>
-			            </div>
-			          </div>
-			        </div>
-		      	</figure>
-		     	<!--/ Terminal -->
-		     	<ul>
-		     		<li>Comprueba que los datos se han registrado correctamente.</li>
-		     	</ul>
-		     	  <!-- Terminal -->
-			    <figure>
-		        	<div class='terminal'>
-		          		<div class="barra"><pre id='barra'>Terminal</pre></div>
-		          		<div id='maquina'>
-		            		<pre>iMac-de-Jordi:~ jordiimac$ <span class='tipear'>git config user.name “Jordi Pamies”</span> <br>iMac-de-Jordi:documents jordiimac$ <span class='tipear'>git config user.email “jordipamies2@gmail.com”</span><br>iMac-de-Jordi:documents jordiimac$ <span class='tipear'>git config --list</span><br>user.name=Jordi Pàmies <br>user.email=jordipamies2@gmail.com </pre>
-		          		</div>
-			          	<div class="nota">
-				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
-				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
-				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p>
-			            </div>
-			          </div>
-			        </div>
-		      	</figure>
-		     	<!--/ Terminal -->
-			</article>
-			<article id='vincular_el_ordenador_con_GitHub_por_SSH'>
-				<h4><strong>Vincular</strong> el ordenador con GitHub por SSH</h4>
-				<p>La llave SSH permitirá vincular tu directorio local con tu directorio remoto en GitHub de forma segura.</p>
-				<ul>
-					<li>Generar una llave SSH.</li>
-				</ul>
-			    <!-- Terminal -->
-			    <figure>
-		        	<div class='terminal'>
-		          		<div class="barra"><pre id='barra'>Terminal</pre></div>
-		          		<div id='maquina'>
-		            		<pre>iMac-de-Jordi:~ jordiimac$ <span class='tipear'>$ssh-keygen</span> <br> Generating public/private rsa key pair.<br> Enter file in which to save the key (/home/you/.ssh/id_rsa): <br>iMac-de-Jordi:documents jordiimac$</pre>
-		          		</div>
-			          	<div class="nota">
-				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
-				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
-				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p>
-			            </div>
-			          </div>
-			        </div>
-		      	</figure>
-		     	<!--/ Terminal -->
-		     	<ul>
-		     		<li>Agrega una contraseña.</li>
-		     	</ul>
-		     	<!-- Terminal -->
-			    <figure>
-		        	<div class='terminal'>
-		          		<div class="barra"><pre id='barra'>Terminal</pre></div>
-		          		<div id='maquina'>
-		            		<pre>iMac-de-Jordi:~ jordiimac$ <span class='tipear'>$ssh-keygen</span> <br> Generating public/private rsa key pair.<br> Enter file in which to save the key (/home/you/.ssh/id_rsa): <br>iMac-de-Jordi:documents jordiimac$ <br> Enter passphrase (empty for no passphrase): [Contraseña] <br>Enter same passphrase again: [Repetir contraseña] <br>Your identification has been saved in /home/you/.ssh/id_rsa. <br>Your public key has been saved in /home/you/.ssh/id_rsa.pub. <br> The key fingerprint is: <br>01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db tucorreo@tucorreo.com</pre>
-		          		</div>
-			          	<div class="nota">
-				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
-				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
-				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p>
-			            </div>
-			          </div>
-			        </div>
-		      	</figure>
-		     	<!--/ Terminal -->
-		     	<ul>
-		     		<li>Para ver la llave SSH.</li>
-		     	</ul>
-		     	<!-- Terminal -->
-			    <figure>
-		        	<div class='terminal'>
-		          		<div class="barra"><pre id='barra'>Terminal</pre></div>
-		          		<div id='maquina'>
-		            		<pre>iMac-de-Jordi:~ jordiimac$ <span class='tipear'>$cd .ssh</span> <br>iMac-de-Jordi:~ jordiimac$ <br>$cat id_rsa.pub</pre>
-		          		</div>
-			          	<div class="nota">
-				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
-				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
-				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p>
-			            </div>
-			          </div>
-			        </div>
-		      	</figure>
-		     	<!--/ Terminal -->
-		     	<ul>
-		     		<li>Copia toda la llave desde "ssh-rsa" hasta el final.</li>
-		     	</ul>
-		     	<ul>
-		     		<li>Añádela en tu perfil de Github -> Account Settings -> SSH Keys. Dale en "Add SSH Key" para pegarla. Te pedirá un nombre y la contraseña que habías añadido.</li>
-		     	</ul>
-	     		<ul>
-		     		<li>Comprueba que la llave está instalada y tu ordenador está vinculado con tu cuenta de GitHub.</li>
-		     	</ul>
-		     	<!-- Terminal -->
-			    <figure>
-		        	<div class='terminal'>
-		          		<div class="barra"><pre id='barra'>Terminal</pre></div>
-		          		<div id='maquina'>
-		            		<pre>iMac-de-Jordi:~ jordiimac$ <span class='tipear'>ssh -T git@github.com</span> <br>The authenticity of host 'github.com (207.97.227.239)' can't be established. <br>RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48. <br>Are you sure you want to continue connecting (yes/no)?</pre>
-		          		</div>
-			          	<div class="nota">
-				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
-				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
-				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p>
-			            </div>
-			          </div>
-			        </div>
-		      	</figure>
-		     	<!--/ Terminal -->
-		     	<ul>
-		     		<li>Finalizas el proceso dando a “Yes” y verás este mensaje de que todo ha ido sobre ruedas.</li>
-		     	</ul>
-		     	<!-- Terminal -->
-			    <figure>
-		        	<div class='terminal'>
-		          		<div class="barra"><pre id='barra'>Terminal</pre></div>
-		          		<div id='maquina'>
-		            		<pre>iMac-de-Jordi:~ jordiimac$ <span class='tipear'>yes</span> <br>Hi username! You've successfully authenticated, but GitHub does not <br>provide shell access.</pre>
-		          		</div>
-			          	<div class="nota">
-				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
-				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
-				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p>
-			            </div>
-			          </div>
-			        </div>
-		      	</figure>
-		     	<!--/ Terminal -->
-			</article>
-		</section>
-	</article>
-	<article id="trabajar_con_github">
-		<header id="intra_article">
-			<div class="capitulo"><span class='icon-number3'></span></div>
-			<h3>Trabajar con GitHub</h3>
-			<p>&nbsp</p>
-			<p>Los pasos de este apartado solo los tendrás que hacer una vez. Eso si, necesitarás repetirlos en cada ordenador que vayas a usar con tu cuenta de GitHub.</p>
-		</header>
-		<p>
-			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, ipsa, eius error ratione sequi consequuntur commodi. Nesciunt, asperiores deserunt minima error beatae in ea fugit commodi sint voluptatibus laboriosam maxime?</span>
-			<span>Consequatur, repellendus, voluptatum reiciendis autem voluptatibus aut dolores tenetur ducimus at ratione blanditiis reprehenderit totam in deleniti doloremque nulla ullam explicabo rerum necessitatibus repellat nam praesentium architecto accusantium natus ad!</span>
-			<span>Alias, quod, hic, molestias, dolores laboriosam architecto impedit ipsa porro illo perferendis repudiandae veniam mollitia asperiores eius minima debitis nostrum ad officiis quidem doloribus cum nulla pariatur voluptatum distinctio labore!</span>
-			<span>Voluptas, explicabo, placeat, ab, nostrum tenetur commodi quaerat quisquam at beatae porro quo assumenda neque excepturi nemo accusamus architecto saepe ipsam fuga accusantium inventore illo ratione sequi dolorum possimus eum.</span>
-			<span>Provident, iste, sapiente soluta unde obcaecati odio quo molestiae quae consequatur eligendi! Adipisci, iure, voluptas, nihil totam labore voluptates ad sunt ut nisi iusto facilis mollitia quaerat soluta suscipit perferendis.</span>
-			<span>Et, ducimus labore explicabo repellendus voluptas similique esse. Quod, pariatur, voluptatibus atque quae esse laborum possimus aliquid maiores consectetur quis dolor nesciunt tenetur optio odio fuga ipsum ducimus harum enim.</span>
-			<span>Nisi, ipsam, placeat molestiae iure alias ut consectetur sed id et est eum hic corrupti in facilis totam natus vel dolorum. Excepturi, iste, neque ad ab voluptates numquam repellat repellendus!</span>
-			<span>Quaerat, sequi, aspernatur, laudantium, quos dolorum sapiente alias eos at corporis beatae assumenda doloremque natus? Assumenda, esse, excepturi, saepe magni modi iure minima cum delectus fuga necessitatibus repellendus aperiam ut?</span>
-			<span>Minima, voluptate at quidem labore non nihil eligendi culpa tempore sed magni laudantium ab perferendis aspernatur amet maxime voluptas delectus. Cupiditate, doloremque animi optio error nostrum omnis pariatur deserunt voluptatum.</span>
-			<span>Omnis, unde, soluta, natus impedit porro sequi voluptas quia fugiat quod corporis iure commodi consequuntur nesciunt fuga sunt labore laboriosam quis! Iure voluptas obcaecati sequi eveniet harum molestiae id iste.</span>
-		</p>
 	</article>
 </section>
 <!--/ Contenido princial -->

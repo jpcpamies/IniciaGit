@@ -365,26 +365,27 @@ h2 {
     margin-left: 335px;
     display: inline-block;
   }
-  section#contenido article {
+  section#contenido article.main {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     background: white;
     border-radius: 5px;
     margin: 15px;
+    padding-bottom: 10px;
   }
   section#contenido article header#intra_article {
     padding: 20px 0;
   }
   section#contenido article header#intra_article div.capitulo {
     background: #0d65f0;
+    border-radius: 0 50px 50px 0;
     color: #edf1f3;
     display: inline-block;
     float: left;
+    font-size: .9em;
     height: 40px;
     position: relative;
     vertical-align: top;
     width: 80px;
-    border-radius: 0 50px 50px 0;
-    font-size: .9em;
   }
   section#contenido article header#intra_article div.capitulo span {
     position: absolute;
@@ -407,7 +408,113 @@ h2 {
     padding: 0 15px;
   }
   section#contenido article header#intra_article p {
-    margin-top: 5px;
+    margin: 10px 20px 20px 20px;
+  }
+  section#contenido article p {
+    color: #6f8194;
+    font-size: .9em;
+    line-height: 1.6;
+  }
+  section#contenido article section#tema {
+    margin: 0 20px 20px 20px;
+  }
+  section#contenido article section#tema article header#tema h4 {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.5em;
+    font-weight: normal;
+    border-bottom: 1px solid #c6cfd3;
+    padding-bottom: 5px;
+    margin: 0 0 10px 0;
+  }
+  section#contenido article section#tema article header#tema h4 span {
+    font-weight: bold;
+  }
+  section#contenido article section#tema figure div.terminal {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0px 1px 1px rgba(111, 129, 148, 0.5);
+    margin: 30px 25px 70px 25px;
+    position: relative;
+  }
+  section#contenido article section#tema figure div.terminal div#maquina pre {
+    color: #66bb67;
+    line-height: 1.5;
+    padding: 30px 15px 0 20px;
+  }
+  section#contenido article section#tema figure div.terminal div#maquina pre span.tipear {
+    color: #3efc30;
+  }
+  section#contenido article section#tema figure div.terminal div#maquina pre span.copiar {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 2px 5px;
+    color: #66bb67;
+  }
+  section#contenido article section#tema figure div.terminal div.barra {
+    background: lightgrey;
+    border-radius: 6px 6px 0 0;
+    position: absolute;
+    width: 100%;
+    top: -10px;
+  }
+  section#contenido article section#tema figure div.terminal div.barra pre#barra {
+    color: grey;
+    font-size: .8em;
+    line-height: 2;
+    text-align: center;
+  }
+  section#contenido article section#tema figure div.terminal div.nota {
+    position: relative;
+    bottom: -55px;
+    color: grey;
+    left: 20px;
+    font-size: .9em;
+  }
+  section#contenido article section#tema figure div.terminal div.nota .color_tipear {
+    display: inline-block;
+    width: 30%;
+  }
+  section#contenido article section#tema figure div.terminal div.nota .color_tipear span {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: #3efc30;
+    height: 20px;
+    margin-right: 5px;
+    padding: 5px 10px 5px 10px;
+    width: auto;
+  }
+  section#contenido article section#tema figure div.terminal div.nota .color_maquina {
+    display: inline-block;
+    width: 30%;
+  }
+  section#contenido article section#tema figure div.terminal div.nota .color_maquina span {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: #66bb67;
+    height: 20px;
+    margin-right: 5px;
+    padding: 5px 10px 5px 10px;
+    width: auto;
+  }
+  section#contenido article section#tema figure div.terminal div.nota .color_copiar {
+    display: inline-block;
+    width: 30%;
+  }
+  section#contenido article section#tema figure div.terminal div.nota .color_copiar {
+    display: inline-block;
+    width: 30%;
+  }
+  section#contenido article section#tema figure div.terminal div.nota .color_copiar span {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    color: #66bb67;
+    height: 20px;
+    margin-right: 5px;
+    padding: 5px 10px 5px 10px;
+    width: auto;
+  }
+  section#contenido article section#tema p {
+    margin: 0 0 20px 0;
   }
   footer#footer {
     display: inline-block;
