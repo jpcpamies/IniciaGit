@@ -297,6 +297,53 @@ h2 {
     height: auto;
     margin: 20px auto 10px auto;
   }
+  header#header nav#menu {
+    margin: 25px 7px 25px 7px ;
+    overflow-y: scroll;
+    height: 60%;
+  }
+  header#header nav#menu ul {
+    border: 1px solid rgba(111, 129, 148, 0.5);
+    border-radius: 5px;
+  }
+  header#header nav#menu ul li {
+    position: relative;
+    border-bottom: 1px solid rgba(111, 129, 148, 0.5);
+  }
+  header#header nav#menu ul li a {
+    color: #0d65f0;
+    display: block;
+    padding: 4px 40px 4px 10px;
+    text-decoration: none;
+  }
+  header#header nav#menu ul li a span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  header#header nav#menu ul li:last-child {
+    border-bottom: none;
+  }
+  header#header nav#menu ul.capitulo {
+    background: #0d65f0;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    margin: 20px 0 5px 0;
+  }
+  header#header nav#menu ul.capitulo:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  header#header nav#menu ul.capitulo a {
+    color: #edf1f3;
+    padding: 3px 10px 3px 10px;
+    text-decoration: none;
+  }
+  header#header nav#menu ul.capitulo a span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
   section#wrapper {
     overflow: hidden;
   }
