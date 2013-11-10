@@ -8,11 +8,11 @@ header#header {
 	left: 0px;
 	bottom: 0px;
 	margin: 10px;
-}
+	}
 	header#header div#titulo_principal {
 		// border: 2px solid green;
 		text-align: center;
-		margin: 0 auto @margenE auto;
+		margin: 0 auto @inI auto;
 	}
 		header#header div#titulo_principal h1 {
 			font-size: 3.6em;
@@ -47,15 +47,22 @@ header#header {
 				border-bottom: 1px solid rgba(111,129,148, .5);
 			}
 				header#header nav#menu ul li a {
-						color: #0d65f0;
+						color: @azul;
 						display: block;
 						padding: 4px 40px 4px 10px;
 						text-decoration: none;
 				}
+				header#header nav#menu ul li a:hover {
+					color: @colorhover;
+				}
 					header#header nav#menu ul li a span {
 						position: absolute;
 						right: 5px;
-						top: 5px;
+						top: 7px;
+					}
+					header#header nav#menu ul li a span.icon-rocket {
+						top: 8px;
+						right: 6px;
 					}
 			header#header nav#menu ul li:last-child {
 				border-bottom: none;
@@ -75,6 +82,10 @@ header#header {
 				padding: 3px 10px 3px 10px;
 				text-decoration: none;
 			}
+			header#header nav#menu ul.capitulo a:hover {
+				color: @colorfondo;
+
+			}
 				header#header nav#menu ul.capitulo a span {
 					position: absolute;
 					right: 5px;
@@ -89,13 +100,53 @@ section#contenido {
 	max-width: 1000px;
 	margin-left: 335px;
 	display: inline-block;
-}
+	}
 	section#contenido article {
 		box-shadow: 0 0 6px rgba(0,0,0,0.2);		
 		background: white;
 		border-radius: 5px;
-		margin: @margenE;
+		margin: @inI;
 	}
+		section#contenido article header#intra_article {
+			padding: @I 0;
+		}
+			section#contenido article header#intra_article div.capitulo {
+				background: @azul;
+				color: @colorfondo;
+				display: inline-block;
+				float: left;
+				height: 40px;
+				position: relative;
+				vertical-align: top;
+				width: 80px;
+				border-radius: 0 50px 50px 0;
+				font-size: .9em;
+
+			}
+				section#contenido article header#intra_article div.capitulo span {
+					position: absolute;
+					font-size: 2em;
+					top: 5px;
+					right: 5px;
+				}
+				section#contenido article header#intra_article div.capitulo span.icon-rocket {
+					right: 12px;
+					top: 8px;
+				}
+			section#contenido article header#intra_article h3 {
+				display: inline-block;
+				vertical-align: top;
+				color: @tituloarticle;
+				font-family: @tituloarticulo;
+				font-size: 2.5em;
+				letter-spacing: -4px;
+				text-align: left;
+				padding: 0 @inI;
+
+			}
+			section#contenido article header#intra_article p {
+				margin-top: 5px;
+			}
 footer#footer {
 	// border: 2px solid;
 	display: inline-block;
@@ -104,7 +155,7 @@ footer#footer {
 	max-width: 1000px;
 	width: 100%;
 	position: relative;
-}
+	}
 	footer#footer #avatar {
 		// border: 2px solid;
 		width: 33%;

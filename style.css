@@ -111,6 +111,9 @@
 .icon-number9:before {
   content: "\e61e";
 }
+.icon-rocket:before {
+  content: "\e61f";
+}
 html,
 body,
 body div,
@@ -316,10 +319,17 @@ h2 {
     padding: 4px 40px 4px 10px;
     text-decoration: none;
   }
+  header#header nav#menu ul li a:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
   header#header nav#menu ul li a span {
     position: absolute;
     right: 5px;
-    top: 5px;
+    top: 7px;
+  }
+  header#header nav#menu ul li a span.icon-rocket {
+    top: 8px;
+    right: 6px;
   }
   header#header nav#menu ul li:last-child {
     border-bottom: none;
@@ -339,6 +349,9 @@ h2 {
     padding: 3px 10px 3px 10px;
     text-decoration: none;
   }
+  header#header nav#menu ul.capitulo a:hover {
+    color: #edf1f3;
+  }
   header#header nav#menu ul.capitulo a span {
     position: absolute;
     right: 5px;
@@ -357,6 +370,44 @@ h2 {
     background: white;
     border-radius: 5px;
     margin: 15px;
+  }
+  section#contenido article header#intra_article {
+    padding: 20px 0;
+  }
+  section#contenido article header#intra_article div.capitulo {
+    background: #0d65f0;
+    color: #edf1f3;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    position: relative;
+    vertical-align: top;
+    width: 80px;
+    border-radius: 0 50px 50px 0;
+    font-size: .9em;
+  }
+  section#contenido article header#intra_article div.capitulo span {
+    position: absolute;
+    font-size: 2em;
+    top: 5px;
+    right: 5px;
+  }
+  section#contenido article header#intra_article div.capitulo span.icon-rocket {
+    right: 12px;
+    top: 8px;
+  }
+  section#contenido article header#intra_article h3 {
+    display: inline-block;
+    vertical-align: top;
+    color: #6a747e;
+    font-family: 'Quicksand', cursive;
+    font-size: 2.5em;
+    letter-spacing: -4px;
+    text-align: left;
+    padding: 0 15px;
+  }
+  section#contenido article header#intra_article p {
+    margin-top: 5px;
   }
   footer#footer {
     display: inline-block;
