@@ -155,18 +155,17 @@ section#contenido {
 			line-height: 1.6;
 		}
 		section#contenido article section#tema {
-			// margin: 0 @I @I @I;
+			
 		}
 			section#contenido article section#tema article header#tema {
 
 			}
 				section#contenido article section#tema article header#tema h4 {
-					color: @colorprincipal;
 					font-size: 1.5em;
 					font-weight: normal;
 					// border-bottom: 1px solid @colorborde;
 					padding-bottom: 5px;
-					// margin: 0 0 10px 0;
+					margin: 0 @I 0 @I;
 				}
 					section#contenido article section#tema article header#tema h4 span {
 						font-weight: bold;
@@ -271,7 +270,7 @@ section#contenido {
 				margin: 0 auto;
 			} 
 		section#contenido article section#tema p {
-			margin: 0 0 @I 0;
+			margin: 0 @I @I @I;
 		}
 footer#footer {
 	// border: 2px solid;
@@ -367,5 +366,73 @@ footer#footer {
 			-webkit-transition: all .2s ease;
 			transition: all .2s ease;
 		}
+#article_resumen {
+	margin: 0 0 @I 100px;
+	}
+	#article_resumen h4 {
+		font-size: 1.5em;
+		font-weight: normal;
+		padding-bottom: 5px;
+		}
+	#article_resumen pre {
+		color: @textoterminal;
+		margin: 0 0 0 @I;
+		font-size: .95em;
+		}
+		#article_resumen article {
+			margin: @I 0 0 @I;
+		}
+			#article_resumen article #comando {
+				margin: 5px 0 0 0;
+				display: block;
+				color: @colorprincipal;
+				font-size: .9em;
+				line-height: 1.6;
+				border-bottom: 1px solid rgba(198,207,211,.5);
+				}
+					#article_resumen article #comando:first-child {
+						border-top: none;
+						}
+#footer_resumen {
+	padding: 20px 0 70px 0;
+	position: relative;
+	}
+		#linea {
+			width: 70%;
+			border-bottom: 1px solid @colorborde;
+			position: absolute;
+			top: 40px;
+			left: 15%;
+			z-index: 0;
+		}
+		.boton_descarga {
+			background: @azul;
+			border-radius: 4px;
+			width: 250px;
+			padding: 10px;
+			margin: 0 auto;
+			position: relative;
+			z-index: 1
+		}
+			.boton_descarga span {
+				color: white;
+				letter-spacing: -1px;
+			}
+#grupo_comando {
+	border-bottom: 1px solid @colorborde;
+	position: relative;
+	}
+	#grupo_comando span {
+		font-size: 2em;
+		position: absolute;
+		top: -2px;
+		left: -45px;
+		}
+#pruebas {
+	// border: 1px solid;
+	}
+#seccion_comando {
+	margin: 40px 0;
+}
 
 

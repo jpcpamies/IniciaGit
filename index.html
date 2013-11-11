@@ -167,64 +167,67 @@
 		<header id="intra_article">
 			<div class="capitulo"><span class='icon-code'></span></div>
 			<h3>Resumen de comandos</h3>
-			<p>Usa este resumen de los comandos explicados en los capituloes previos. brDescargate el PDF a tenlo a mano.</p>
+			<p>Usa este resumen de los comandos, descarga el PDF a tenlos siempre a mano.</p>
 		</header>
-		<section id=''>
-			<article id=''>
-				<header id=''>
+		<section id='tema'>
+			<article id='article_resumen'>
+				<header id='grupo_comando'>
 					<div class="capitulo"><span class='icon-number'></span></div>
 					<h4>Comandos báscos de terminal</h4>					
 				</header>
-				<section>
+				<section id='seccion_comando'>
 					<article>
-						<p>Ver contenido del directorio.</p>
-						<pre>ls</pre>
+						<span id='comando'>Ver contenido del directorio.</span>
+						<pre id=''>ls</pre>
 					</article>
 					<article>
-						<p>Entrar en un directorio.</p>
+						<span id='comando'>Entrar en un directorio.</span>
 						<pre>cd</pre>
-						<p>Subir un nivel en el directorio</p>
+					</article>
+					<article>
+						<span id='comando'>Subir un nivel en el directorio</span>
 						<pre>cd ..</pre>
 					</article>
 					<article>
-						<p>Crear un directorio.</p>
+						<span id='comando'>Crear un directorio.</span>
 						<pre>mkdir nombreProyecto</pre>
 					</article>
 				</section>
 			</article>
-			<article id=''>
-				<header id=''>
+			<article id='article_resumen'>
+				<header id='grupo_comando'>
 					<div class="capitulo"><span class='icon-number2'></span></div>
 					<h4>Empezando con GitHub</h4>					
 				</header>
-				<section>
+				<section id='seccion_comando'>
 					<article>
-						<p>Comprobar que GitHub está instalado.</p>
+						<span id='comando'>Comprobar que GitHub está instalado.</span>
 						<pre>git --version</pre>
 					</article>
 					<article>
-						<p>Identificarse como usuario.</p>
+						<span id='comando'>Identificarse como usuario.</span>
 						<pre>git config user.name “nombre”</pre>
 						<pre>git config user.email “tu@email.com”</pre>
-						<p>Comprobar que los datos se han registrado correctamente.</p>
+						<span id='comando'>Comprobar que los datos se han registrado correctamente.</span>
 						<pre>git config list</pre>
 					</article>
 					<article>
-						<p>Generar una llave SSH.</p>
+						<span id='comando'>Generar una llave SSH.</span>
 						<pre>$ssh-keygengit</pre>
-						<p>Agrega una contraseña.</p>
+						<span id='comando'>Agrega una contraseña.</span>
 						<pre>Enter passphrase (empty for no passphrase): [Contraseña] <br> Enter same passphrase again: [Repetir contraseña]</pre>
-						<p>Ver la llave SSH.</p>
+						<span id='comando'>Ver la llave SSH.</span>
 						<pre>$cd .ssh <br>$cat id_rsa.pub</pre>
-						<p>Comprueba que tu ordenador está vinculado</p>
+						<span id='comando'>Comprueba que tu ordenador está vinculado</span>
 						<pre>ssh -T git@github.com</pre>
 					</article>
 				</section>
 			</article>
 		</section>
-		<footer>
+		<footer id='footer_resumen'>
 			<div class="boton_descarga">
-				<p><span class='icon-in'></span>PDF RESUMEN COMANDOS</p>
+				<a href="#"><span class='icon-in'>   PDF RESUMEN COMANDOS</span></a>
+				<!-- <div id="linea"></div> -->
 			</div>
 		</footer>
 	</article>
