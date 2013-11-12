@@ -273,7 +273,7 @@ body {
 }
 header#header h1,
 h2 {
-  font-family: 'lobster', cursive;
+  font-family: "lucida grande";
 }
 ::selection {
   background: orange;
@@ -323,7 +323,7 @@ h2 {
     border-bottom: 1px solid rgba(111, 129, 148, 0.5);
   }
   header#header nav#menu ul li a {
-    color: #3d63f5;
+    color: #3b84bf;
     display: block;
     padding: 4px 40px 4px 10px;
     text-decoration: none;
@@ -344,7 +344,7 @@ h2 {
     border-bottom: none;
   }
   header#header nav#menu ul.capitulo {
-    background: #3d63f5;
+    background: #3b84bf;
     border-radius: 5px;
     display: block;
     position: relative;
@@ -436,26 +436,34 @@ h2 {
   section#contenido article section#tema article header#tema h4 span {
     font-weight: bold;
   }
+  section#contenido article section#tema figure#terminal {
+    background: #3b84bf;
+    padding: 20px 0;
+    border-bottom: 1px solid #6f8194;
+    border-top: 1px solid #6f8194;
+    margin-bottom: 20px;
+  }
   section#contenido article section#tema figure div.terminal {
-    background: rgba(0, 0, 0, 0.65);
+    background: #424242;
     border-radius: 0 0 4px 4px;
     -webkit-box-shadow: 0px 1px 1px rgba(111, 129, 148, 0.5);
-    margin: 30px 25px 70px 25px;
+    margin: 30px 25px;
     position: relative;
   }
   section#contenido article section#tema figure div.terminal div#maquina pre {
-    color: #66bb67;
+    color: #edf1f3;
     line-height: 1.5;
-    padding: 30px 15px 0 20px;
+    padding: 30px 15px 20px 20px;
+    font-size: .8em;
   }
   section#contenido article section#tema figure div.terminal div#maquina pre span.tipear {
-    color: #3efc30;
+    color: #36d9fb;
   }
   section#contenido article section#tema figure div.terminal div#maquina pre span.copiar {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 2px 5px;
-    color: #66bb67;
+    color: #ffffff;
   }
   section#contenido article section#tema figure div.terminal div.barra {
     background: lightgrey;
@@ -484,7 +492,7 @@ h2 {
   section#contenido article section#tema figure div.terminal div.nota .color_tipear span {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    color: #3efc30;
+    color: #36d9fb;
     height: 20px;
     margin-right: 5px;
     padding: 5px 10px 5px 10px;
@@ -497,7 +505,7 @@ h2 {
   section#contenido article section#tema figure div.terminal div.nota .color_maquina span {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    color: #66bb67;
+    color: #ffffff;
     height: 20px;
     margin-right: 5px;
     padding: 5px 10px 5px 10px;
@@ -514,7 +522,7 @@ h2 {
   section#contenido article section#tema figure div.terminal div.nota .color_copiar span {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
-    color: #66bb67;
+    color: #ffffff;
     height: 20px;
     margin-right: 5px;
     padding: 5px 10px 5px 10px;
@@ -524,16 +532,33 @@ h2 {
     background: #ebf0f4;
     width: 100%;
     height: auto;
-    padding: 30px 0;
+    padding: 50px 0;
     border-top: 1px solid #c6ced2;
     border-bottom: 1px solid #c6ced2;
   }
   section#contenido article section#tema figure div.imagen img {
     display: block;
     margin: 0 auto;
+    box-shadow: 0 20px 50px;
   }
   section#contenido article section#tema p {
     margin: 0 20px 20px 20px;
+  }
+  section#contenido article section#tema .video {
+    position: relative;
+  }
+  section#contenido article section#tema .video iframe {
+    border: 10px solid #6f8194;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+  }
+  section#contenido article section#tema .video img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: .6;
+    z-index: 1;
   }
   footer#footer {
     display: inline-block;
@@ -582,7 +607,7 @@ h2 {
     left: 70px;
   }
   footer#footer #emial .icon-mail {
-    background: #3d63f5;
+    background: #3b84bf;
     border-radius: 40px;
     height: 70px;
     width: 70px;
@@ -634,7 +659,7 @@ h2 {
     padding-bottom: 5px;
   }
   #article_resumen pre {
-    color: #66bb67;
+    color: #ffffff;
     margin: 0 0 0 20px;
     font-size: .95em;
   }
@@ -665,7 +690,7 @@ h2 {
     z-index: 0;
   }
   .boton_descarga {
-    background: #3d63f5;
+    background: #3b84bf;
     border-radius: 4px;
     width: 250px;
     padding: 10px;

@@ -170,20 +170,25 @@ section#contenido {
 					section#contenido article section#tema article header#tema h4 span {
 						font-weight: bold;
 					}
-		section#contenido article section#tema figure {
-			// border:1px solid;
+		section#contenido article section#tema figure#terminal {
+			background: #3b84bf;
+			padding: 20px 0;
+			border-bottom: 1px solid @colorprincipal;
+			border-top: 1px solid @colorprincipal;
+			margin-bottom: @I;
 		}
 			section#contenido article section#tema figure div.terminal {
 				background: @ventanaterminal;
 				border-radius: 0 0 4px 4px;
 				-webkit-box-shadow: 0px 1px 1px rgba(111,129,148,.5);
-				margin: 30px 25px 70px 25px;
+				margin: 30px 25px;
 				position: relative;
 				}
 				section#contenido article section#tema figure div.terminal div#maquina pre {
-					color: @textoterminal;
+					color: @colorfondo;
 					line-height: 1.5;
-					padding: 30px 15px 0 20px;
+					padding: 30px 15px 20px 20px;
+					font-size: .8em;
 					}
 					section#contenido article section#tema figure div.terminal div#maquina pre span.tipear {
 						color: @textoterminaltipear;
@@ -261,16 +266,37 @@ section#contenido {
 			background: #ebf0f4;			
 			width: 100%;
 			height: auto;
-			padding: 30px 0;
+			padding: 50px 0;
 			border-top: 1px solid #c6ced2;
 			border-bottom: 1px solid #c6ced2;
 			}
 			section#contenido article section#tema figure div.imagen img {
 				display: block;
 				margin: 0 auto;
+				box-shadow: 0 20px 50px;
 			} 
 		section#contenido article section#tema p {
 			margin: 0 @I @I @I;
+		}
+		section#contenido article section#tema .video {
+			position: relative;
+		}
+		section#contenido article section#tema .video iframe {
+			// position: absolute;
+			// top: 50px;
+			// left: 50px;
+			// z-index: 2;
+			border: 10px solid @colorprincipal;
+			border-radius: 5px;
+			margin: 0 auto;
+			display: block;
+		}
+		section#contenido article section#tema .video img{
+			position: relative;
+			width: 100%;
+			height: auto;
+			opacity: .6;
+			z-index: 1;
 		}
 footer#footer {
 	// border: 2px solid;
