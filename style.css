@@ -322,6 +322,9 @@ h2 {
     position: relative;
     border-bottom: 1px solid rgba(111, 129, 148, 0.5);
   }
+  header#header nav#menu ul li:hover {
+    background: rgba(0, 0, 0, 0.03);
+  }
   header#header nav#menu ul li a {
     color: #3b84bf;
     display: block;
@@ -339,6 +342,9 @@ h2 {
   header#header nav#menu ul li a span.icon-rocket {
     top: 8px;
     right: 6px;
+  }
+  header#header nav#menu ul#comandos {
+    margin-top: 20px;
   }
   header#header nav#menu ul li:last-child {
     border-bottom: none;
@@ -446,7 +452,7 @@ h2 {
   section#contenido article section#tema figure div.terminal {
     background: #424242;
     border-radius: 0 0 4px 4px;
-    -webkit-box-shadow: 0px 1px 1px rgba(111, 129, 148, 0.5);
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
     margin: 30px 25px;
     position: relative;
   }
@@ -539,19 +545,12 @@ h2 {
   section#contenido article section#tema figure div.imagen img {
     display: block;
     margin: 0 auto;
+    width: 80%;
+    height: auto;
     box-shadow: 0 20px 50px;
   }
   section#contenido article section#tema p {
     margin: 0 20px 20px 20px;
-  }
-  section#contenido article section#tema .video {
-    position: relative;
-  }
-  section#contenido article section#tema .video iframe {
-    border: 10px solid #6f8194;
-    border-radius: 5px;
-    margin: 0 auto;
-    display: block;
   }
   section#contenido article section#tema .video img {
     position: relative;
@@ -672,6 +671,41 @@ h2 {
     text-decoration: none;
     background: rgba(0, 0, 0, 0.7);
   }
+  #material_video article {
+    position: relative;
+    margin: 0 0 280px 0;
+  }
+  #material_video article header {
+    background: #3b84bf;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    height: 300px;
+  }
+  #material_video article header h5 {
+    color: #edf1f3;
+    font-size: 2em;
+    position: absolute;
+    top: 30px;
+    left: 15%;
+    text-align: center;
+    width: 70%;
+  }
+  #material_video article p {
+    position: absolute;
+    top: 490px;
+    left: 12%;
+    text-align: center;
+    width: 70%;
+  }
+  #material_video article #video {
+    border: 10px solid #ebf0f4;
+    border-radius: 5px;
+    position: absolute;
+    top: 130px;
+    left: 20%;
+  }
+  #material_video section {
+    background: #ebf0f4;
+  }
   #seccion_comando {
     font-family: "lucida grande";
     margin: 0 20px 40px 20px;
@@ -680,13 +714,13 @@ h2 {
     padding: 2px 20px;
   }
   #seccion_comando article:nth-child(odd) {
-    background: #f1f1f1;
+    background: #edf1f3;
     margin: 10px 0;
-    border-top: 1px solid #c6cfd3;
   }
   #seccion_comando article pre {
     font-size: .8em;
     line-height: 1.5;
+    color: grey;
   }
   #seccion_comando span {
     text-transform: uppercase;

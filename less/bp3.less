@@ -41,11 +41,14 @@ header#header {
 		header#header nav#menu ul {
 			border: 1px solid rgba(111,129,148, .5);
 			border-radius: 5px;
-		}
+			}
 			header#header nav#menu ul li {
 				position: relative;
 				border-bottom: 1px solid rgba(111,129,148, .5);
-			}
+				}
+			header#header nav#menu ul li:hover {
+				background: rgba(0,0,0,.03);
+				}
 				header#header nav#menu ul li a {
 						color: @azul;
 						display: block;
@@ -54,7 +57,7 @@ header#header {
 				}
 				header#header nav#menu ul li a:hover {
 					color: @colorhover;
-				}
+					}
 					header#header nav#menu ul li a span {
 						position: absolute;
 						right: 5px;
@@ -64,32 +67,35 @@ header#header {
 						top: 8px;
 						right: 6px;
 					}
+				header#header nav#menu ul#comandos {
+					margin-top: @I;
+				}
 			header#header nav#menu ul li:last-child {
 				border-bottom: none;
-			}
+				}
 		header#header nav#menu ul.capitulo {
 			background: @azul;
 			border-radius: 5px;
 			display: block;
 			position: relative;
 			margin: 20px 0 5px 0;
-		}
+			}
 		header#header nav#menu ul.capitulo:hover {
 			background: @colorhover;
-		}
+			}
 			header#header nav#menu ul.capitulo a {
 				color: @colorfondo;
 				padding: 3px 10px 3px 10px;
 				text-decoration: none;
-			}
+				}
 			header#header nav#menu ul.capitulo a:hover {
 				color: @colorfondo;
-			}
+				}
 				header#header nav#menu ul.capitulo a span {
 					position: absolute;
 					right: 5px;
 					top: 5px;
-				}
+					}
 section#wrapper {
 	// border:2px solid red;
 	overflow: hidden;
@@ -180,7 +186,7 @@ section#contenido {
 			section#contenido article section#tema figure div.terminal {
 				background: @ventanaterminal;
 				border-radius: 0 0 4px 4px;
-				-webkit-box-shadow: 0px 1px 1px rgba(111,129,148,.5);
+				-webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.5);
 				margin: 30px 25px;
 				position: relative;
 				}
@@ -263,7 +269,7 @@ section#contenido {
 								width: auto;
 								}
 		section#contenido article section#tema figure div.imagen {
-			background: #ebf0f4;			
+			background: @colorfigure;			
 			width: 100%;
 			height: auto;
 			padding: 50px 0;
@@ -273,23 +279,12 @@ section#contenido {
 			section#contenido article section#tema figure div.imagen img {
 				display: block;
 				margin: 0 auto;
+				width: 80%;
+				height: auto;
 				box-shadow: 0 20px 50px;
 			} 
 		section#contenido article section#tema p {
 			margin: 0 @I @I @I;
-		}
-		section#contenido article section#tema .video {
-			position: relative;
-		}
-		section#contenido article section#tema .video iframe {
-			// position: absolute;
-			// top: 50px;
-			// left: 50px;
-			// z-index: 2;
-			border: 10px solid @colorprincipal;
-			border-radius: 5px;
-			margin: 0 auto;
-			display: block;
 		}
 		section#contenido article section#tema .video img{
 			position: relative;
@@ -419,7 +414,45 @@ footer#footer {
 						text-decoration: none;
 						background: @colorhover;
 					}
-		
+
+// Estilo video
+#material_video article {
+
+	position: relative;
+	margin: 0 0 280px 0;
+	}
+	#material_video article header {
+		background: @azul;
+		border-top: 1px solid rgba(0,0,0,.4);
+		height: 300px;
+		}
+			#material_video article header h5 {
+				color: @colorfondo;
+				font-size: 2em;
+				position: absolute;
+				top: 30px;
+				left: 15%;
+				text-align: center;
+				width: 70%;
+				}
+		#material_video article p {
+			position: absolute;
+			top: 490px;
+			left: 12%;
+			text-align: center;
+			width: 70%;
+		}
+		#material_video article #video {
+			border: 10px solid @colorfigure;
+			border-radius: 5px;
+			position: absolute;
+			top: 130px;
+			left: 20%;
+			}
+#material_video section {
+	background: @colorfigure;
+}
+
 // Estilo resumen comandos
 #seccion_comando {
 	font-family: @resumen;
@@ -429,16 +462,64 @@ footer#footer {
 		padding: 2px @I;
 		}
 	#seccion_comando article:nth-child(odd) {
-		background: #f1f1f1;
+		background: @colorfondo;
 		margin: 10px 0;
-		border-top: 1px solid @colorborde;
+		// border-top: 1px solid @colorborde;
 		}
 	#seccion_comando article pre {
 		font-size: .8em;
 		line-height: 1.5;
+		color: grey;
 	}
 	#seccion_comando span {
 		text-transform: uppercase;
 		font-size: .75em;
 		color: @azul;
 		}
+
+// Estilo Textos 
+// #mas_material #varios_materiales {
+// }
+// 	#mas_material #varios_materiales div {
+// 		border: 1px solid;
+// 		vertical-align: top;
+// 	} 
+// 	#mas_material #varios_materiales #texto {
+// 		display: inline-block;
+// 		width: 33%;
+// 		position: relative;
+// 		padding: 50px;
+// 	}
+// 		#mas_material #varios_materiales #texto .icon-book {
+// 			font-size: 4em;
+// 			color: @azul;
+// 			position: absolute;
+// 			top: 20px;
+// 			left: 40%;
+// 		}
+// 	#mas_material #varios_materiales #video {
+// 		display: inline-block;
+// 		width: 33%;
+// 		position: relative;
+// 		padding: 50px;
+// 	}
+// 		#mas_material #varios_materiales #video .icon-uniF7C5 {
+// 			font-size: 4em;
+// 			color: @azul;
+// 			position: absolute;
+// 			top: 20px;
+// 			left: 40%;
+// 		}
+// 	#mas_material #varios_materiales #ejercicio {
+// 		display: inline-block;
+// 		width: 33%;
+// 		position: relative;
+// 		padding: 50px;
+// 	}
+// 		#mas_material #varios_materiales #ejercicio .icon-graduation {
+// 			font-size: 4em;
+// 			color: @azul;
+// 			position: absolute;
+// 			top: 20px;
+// 			left: 40%;
+// 		}
