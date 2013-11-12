@@ -273,11 +273,11 @@ body {
 }
 header#header h1,
 h2 {
-  font-family: "lucida grande";
+  font-family: 'lobster', cursive;
 }
 ::selection {
-  background: orange;
-  color: white;
+  background: yellow;
+  color: black;
 }
 @media screen and (min-width: 992px) {
   header#header {
@@ -451,7 +451,7 @@ h2 {
     position: relative;
   }
   section#contenido article section#tema figure div.terminal div#maquina pre {
-    color: #edf1f3;
+    color: #ffffff;
     line-height: 1.5;
     padding: 30px 15px 20px 20px;
     font-size: .8em;
@@ -650,33 +650,6 @@ h2 {
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
   }
-  #article_resumen {
-    margin: 0 0 20px 100px;
-  }
-  #article_resumen h4 {
-    font-size: 1.5em;
-    font-weight: normal;
-    padding-bottom: 5px;
-  }
-  #article_resumen pre {
-    color: #ffffff;
-    margin: 0 0 0 20px;
-    font-size: .95em;
-  }
-  #article_resumen article {
-    margin: 20px 0 0 20px;
-  }
-  #article_resumen article #comando {
-    margin: 5px 0 0 0;
-    display: block;
-    color: #6f8194;
-    font-size: .9em;
-    line-height: 1.6;
-    border-bottom: 1px solid rgba(198, 207, 211, 0.5);
-  }
-  #article_resumen article #comando:first-child {
-    border-top: none;
-  }
   #footer_resumen {
     padding: 20px 0 70px 0;
     position: relative;
@@ -684,36 +657,41 @@ h2 {
   #linea {
     width: 70%;
     border-bottom: 1px solid #c6cfd3;
-    position: absolute;
-    top: 40px;
-    left: 15%;
-    z-index: 0;
   }
-  .boton_descarga {
+  .boton_descarga a {
     background: #3b84bf;
     border-radius: 4px;
-    width: 250px;
-    padding: 10px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-  }
-  .boton_descarga span {
     color: white;
+    display: block;
     letter-spacing: -1px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 250px;
   }
-  #grupo_comando {
-    border-bottom: 1px solid #c6cfd3;
-    position: relative;
-  }
-  #grupo_comando span {
-    font-size: 2em;
-    position: absolute;
-    top: -2px;
-    left: -45px;
+  .boton_descarga a:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.7);
   }
   #seccion_comando {
-    margin: 40px 0;
+    font-family: "lucida grande";
+    margin: 0 20px 40px 20px;
+  }
+  #seccion_comando article {
+    padding: 2px 20px;
+  }
+  #seccion_comando article:nth-child(odd) {
+    background: #f1f1f1;
+    margin: 10px 0;
+    border-top: 1px solid #c6cfd3;
+  }
+  #seccion_comando article pre {
+    font-size: .8em;
+    line-height: 1.5;
+  }
+  #seccion_comando span {
+    text-transform: uppercase;
+    font-size: .75em;
+    color: #3b84bf;
   }
 }
 @media screen and (max-width: 992px) {

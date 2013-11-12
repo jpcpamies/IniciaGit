@@ -185,7 +185,7 @@ section#contenido {
 				position: relative;
 				}
 				section#contenido article section#tema figure div.terminal div#maquina pre {
-					color: @colorfondo;
+					color: @textoterminal;
 					line-height: 1.5;
 					padding: 30px 15px 20px 20px;
 					font-size: .8em;
@@ -392,73 +392,53 @@ footer#footer {
 			-webkit-transition: all .2s ease;
 			transition: all .2s ease;
 		}
-#article_resumen {
-	margin: 0 0 @I 100px;
-	}
-	#article_resumen h4 {
-		font-size: 1.5em;
-		font-weight: normal;
-		padding-bottom: 5px;
-		}
-	#article_resumen pre {
-		color: @textoterminal;
-		margin: 0 0 0 @I;
-		font-size: .95em;
-		}
-		#article_resumen article {
-			margin: @I 0 0 @I;
-		}
-			#article_resumen article #comando {
-				margin: 5px 0 0 0;
-				display: block;
-				color: @colorprincipal;
-				font-size: .9em;
-				line-height: 1.6;
-				border-bottom: 1px solid rgba(198,207,211,.5);
-				}
-					#article_resumen article #comando:first-child {
-						border-top: none;
-						}
+
+// Estilo botón descarga resumen comandos
 #footer_resumen {
 	padding: 20px 0 70px 0;
 	position: relative;
-	}
+		}
 		#linea {
 			width: 70%;
 			border-bottom: 1px solid @colorborde;
-			position: absolute;
-			top: 40px;
-			left: 15%;
-			z-index: 0;
-		}
-		.boton_descarga {
-			background: @azul;
-			border-radius: 4px;
-			width: 250px;
-			padding: 10px;
-			margin: 0 auto;
-			position: relative;
-			z-index: 1
-		}
-			.boton_descarga span {
-				color: white;
-				letter-spacing: -1px;
 			}
-#grupo_comando {
-	border-bottom: 1px solid @colorborde;
-	position: relative;
-	}
-	#grupo_comando span {
-		font-size: 2em;
-		position: absolute;
-		top: -2px;
-		left: -45px;
-		}
-#pruebas {
-	// border: 1px solid;
-	}
+		.boton_descarga {
+
+			}
+			.boton_descarga a {
+				background: @azul;
+				border-radius: 4px;
+				color: white;
+				display: block;
+				letter-spacing: -1px;
+				margin: 0 auto;
+				padding: 10px;
+				width: 250px;
+				}
+					.boton_descarga a:hover {
+						text-decoration: none;
+						background: @colorhover;
+					}
+		
+// Estilo resumen comandos
 #seccion_comando {
-	margin: 40px 0;
-}
-
-
+	font-family: @resumen;
+	margin: 0 @I 40px @I;
+	}
+	#seccion_comando article {
+		padding: 2px @I;
+		}
+	#seccion_comando article:nth-child(odd) {
+		background: #f1f1f1;
+		margin: 10px 0;
+		border-top: 1px solid @colorborde;
+		}
+	#seccion_comando article pre {
+		font-size: .8em;
+		line-height: 1.5;
+	}
+	#seccion_comando span {
+		text-transform: uppercase;
+		font-size: .75em;
+		color: @azul;
+		}
