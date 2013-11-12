@@ -657,20 +657,6 @@ h2 {
     width: 70%;
     border-bottom: 1px solid #c6cfd3;
   }
-  .boton_descarga a {
-    background: #3b84bf;
-    border-radius: 4px;
-    color: white;
-    display: block;
-    letter-spacing: -1px;
-    margin: 0 auto;
-    padding: 10px;
-    width: 250px;
-  }
-  .boton_descarga a:hover {
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0.7);
-  }
   #material_video article {
     position: relative;
     margin: 0 0 280px 0;
@@ -706,6 +692,72 @@ h2 {
   #material_video section {
     background: #ebf0f4;
   }
+  #material_texto article {
+    height: 165px;
+  }
+  #material_texto section {
+    margin: 0 20px;
+    padding: 20px 0 5px 0;
+    border-bottom: 1px solid #c6cfd3;
+  }
+  #material_texto #contenido {
+    display: inline-block;
+    width: 100%;
+  }
+  #material_texto #contenido .izq {
+    display: block;
+    width: 30%;
+    float: left;
+  }
+  #material_texto #contenido .derecha {
+    display: block;
+    margin: 0 0 0 30%;
+  }
+  #material_texto #contenido span#comamdo {
+    font-family: "lucida grande";
+    color: #3b84bf;
+    display: block;
+    padding: 0;
+  }
+  #material_texto #contenido h5 {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    max-width: 60%;
+    float: left;
+    padding: 0 10px 2px 0;
+  }
+  #material_texto #contenido h5 a:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  #material_texto #contenido .bandera {
+    display: block;
+    min-width: 38%;
+    float: left;
+  }
+  #material_texto #contenido .bandera img {
+    height: 15px;
+    width: 15px;
+    border-radius: 30px;
+    -webkit-filter: grayscale(0.15);
+    display: block;
+    margin: 7px 0 0 10px;
+  }
+  #material_texto #contenido span {
+    display: block;
+    width: 100%;
+    float: left;
+    font-size: .8em;
+    line-height: 1.4;
+    padding: 5px 20px 2px 0;
+  }
+  #material_texto #contenido img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
   #seccion_comando {
     font-family: "lucida grande";
     margin: 0 20px 40px 20px;
@@ -727,6 +779,20 @@ h2 {
     font-size: .75em;
     color: #3b84bf;
   }
+  .boton a {
+    background: #3b84bf;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    letter-spacing: -1px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 250px;
+  }
+  .boton a:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.7);
+  }
 }
 @media screen and (max-width: 992px) {
   
@@ -734,3 +800,22 @@ h2 {
 @media screen and (max-width: 480px) {
   
 }
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* End hide from IE-mac */
+/* @end */

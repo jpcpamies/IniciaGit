@@ -397,24 +397,6 @@ footer#footer {
 			width: 70%;
 			border-bottom: 1px solid @colorborde;
 			}
-		.boton_descarga {
-
-			}
-			.boton_descarga a {
-				background: @azul;
-				border-radius: 4px;
-				color: white;
-				display: block;
-				letter-spacing: -1px;
-				margin: 0 auto;
-				padding: 10px;
-				width: 250px;
-				}
-					.boton_descarga a:hover {
-						text-decoration: none;
-						background: @colorhover;
-					}
-
 // Estilo video
 #material_video article {
 
@@ -451,7 +433,81 @@ footer#footer {
 			}
 #material_video section {
 	background: @colorfigure;
+	}
+#material_texto article {
+	// border:1px solid;
+	height: 165px;
 }
+#material_texto section {
+		// border:1px solid;
+		margin: 0 @I;
+		padding: @I 0 5px 0;
+		border-bottom: 1px solid @colorborde;
+		}
+	#material_texto #contenido {
+		display: inline-block;
+		width: 100%;	
+		// border:1px solid;
+			.izq {
+				display: block;
+				// border:1px solid;
+				width: 30%;
+				float: left;
+			}	
+			.derecha {
+				// border:1px solid;
+				display: block;
+				margin: 0 0 0 30%;
+				}
+					span#comamdo {
+					font-family: @resumen;
+					color: @azul;
+					display: block;
+					padding: 0;
+					}
+					h5 {
+					// border:1px solid;
+					font-size: 1.5em;
+					font-weight: bold;
+					display: block;
+					max-width: 60%;
+					float: left;
+					padding: 0 10px 2px 0;
+						a:hover {
+							text-decoration: none;
+							color: @colorhover;
+						}
+					}
+					.bandera {
+					// border:1px solid;
+					display: block;
+					min-width: 38%;
+					float: left;
+						img {
+							height: 15px;
+							width: 15px;
+							border-radius: 30px;
+							-webkit-filter: grayscale(0.15);
+							display: block;
+							margin: 7px 0 0 10px;
+						}
+					}
+					span {
+					// border:1px solid;
+					display: block;
+					width: 100%;
+					float: left;
+					font-size: .8em;
+					line-height: 1.4;
+					padding: 5px @I 2px 0;
+					}
+		}
+		#material_texto #contenido img {
+			width: 120px;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
 
 // Estilo resumen comandos
 #seccion_comando {
@@ -477,49 +533,21 @@ footer#footer {
 		color: @azul;
 		}
 
-// Estilo Textos 
-// #mas_material #varios_materiales {
-// }
-// 	#mas_material #varios_materiales div {
-// 		border: 1px solid;
-// 		vertical-align: top;
-// 	} 
-// 	#mas_material #varios_materiales #texto {
-// 		display: inline-block;
-// 		width: 33%;
-// 		position: relative;
-// 		padding: 50px;
-// 	}
-// 		#mas_material #varios_materiales #texto .icon-book {
-// 			font-size: 4em;
-// 			color: @azul;
-// 			position: absolute;
-// 			top: 20px;
-// 			left: 40%;
-// 		}
-// 	#mas_material #varios_materiales #video {
-// 		display: inline-block;
-// 		width: 33%;
-// 		position: relative;
-// 		padding: 50px;
-// 	}
-// 		#mas_material #varios_materiales #video .icon-uniF7C5 {
-// 			font-size: 4em;
-// 			color: @azul;
-// 			position: absolute;
-// 			top: 20px;
-// 			left: 40%;
-// 		}
-// 	#mas_material #varios_materiales #ejercicio {
-// 		display: inline-block;
-// 		width: 33%;
-// 		position: relative;
-// 		padding: 50px;
-// 	}
-// 		#mas_material #varios_materiales #ejercicio .icon-graduation {
-// 			font-size: 4em;
-// 			color: @azul;
-// 			position: absolute;
-// 			top: 20px;
-// 			left: 40%;
-// 		}
+.boton {
+
+	}
+	.boton a {
+		background: @azul;
+		border-radius: 5px;
+		color: white;
+		display: block;
+		letter-spacing: -1px;
+		margin: 0 auto;
+		padding: 10px;
+		width: 250px;
+		}
+			.boton a:hover {
+				text-decoration: none;
+				background: @colorhover;
+			}
+
