@@ -1,341 +1,79 @@
-<!doctype html>
-<html lang="es_ES">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="es_ES" />
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<title>IniciaGit: Hacer un commit es como pagar un tiro</title>
-	<link rel="stylesheet" href="css/normalize.min.css" />
-	<link href='http://fonts.googleapis.com/css?family=Lobster|Quicksand:300|Raleway:400,700' rel='stylesheet' type='text/css' />
+    <meta charset="utf-8" />
+    <title>IniciaGit: Hacer un commit es como pagar un tiro</title>
+    <meta name="description" content="Incluso si eres principiante te va a resultar facil aprender a usar Github con esta guía." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="style.css">
-	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-<!-- Contenedor principal -->
-<section id="wrapper">
-<!-- Barra lateral con logo + menu -->
-<header id="header">
-	<figure id="logo">
-		<img src="img/IniciaGit_logo.png" width='245' height='200'alt="IniciaGit | Logo">
-	</figure>
-	<div id='titulo_principal'>
-		<h1>IniciaGit</h1>
- 		<h2>Hacer un commit es como pegar un tiro</h2>
-	</div>
-	<!-- Nav movil -->
-<!-- 	<nav id="mobile">
-	 	<ul id='mobileMenu'>
-			<li><a href="#iniciando">Iniciando</a>
-			<li><a href="#comandos_basicos_de_terminal">Comandos básicos de terminal</a>
-				<ul>
-				    <li><a href="#ver_contenido_del_directorio">Ver contenido del directorio</a></li>
-				    <li><a href="#ubicarse_en_un_directorio">Ubicarse en un directorio</a></li>
-				    <li><a href="#crear_un_directorio">Crear un directorio</a></li>
-				</ul>
-			</li>
-			<li><a href="#empezar_con_github">Empezar con GitHub</a>
-				<ul>
-				    <li><a href="#crear_una_cuenta_en_github">Crear una cuenta en GitHub</a></li>
-				    <li><a href="#instalar_github">Instalar GitHub</a></li>
-				    <li><a href="#identificarse_como_usuario">Identificarse como usuario</a></li>
-				    <li><a href="#vincular_el_ordenador_con_GitHub_por_SSH">Vincular el ordenador con GitHub por SSH</a></li>
-				</ul>
-			</li>
-			<li><a href="#resumen_de_comandos">Resumen de comandos</a>
-			<li><a href="#mas_material">Más material</a>
-			<li><a href="#footer">Contáctame</a>
-		</ul>
-	</nav> -->
-	<!--/ Nav movil -->
-	<!-- Nav escritorio -->
-	<nav id="menu">
-		<!-- Primer post  -->
-		<ul>
-			<li><a href="#iniciando">Iniciando<span class="icon-rocket"></span></a></li>
-		</ul>
-		<!-- =============================================================================== -->
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-		<!-- Capñitulo 1-->
-		<ul class='capitulo'>
-			<li><a href="#comandos_basicos_de_terminal">Comandos básicos de terminal<span class="icon-number"></span></a></li>
-		</ul>
-		<!-- Temas -->
-		<ul>
-			<li><a href="#ver_contenido_del_directorio">Ver contenido del directorio<span class="icon-uniE613"></span></a></li>
-			<li><a href="#ubicarse_en_un_directorio">Ubicarse en un directorio<span class="icon-uniE613"></span></a></li>
-			<li><a href="#crear_un_directorio">Crear un directorio<span class="icon-uniE613"></span></a></li>
-		</ul>
-		<!-- =============================================================================== -->
-
-		<!-- Capñitulo 2-->
-		<ul class='capitulo'>
-			<li><a href="#empezar_con_github">Empezar con GitHub<span class="icon-number2"></span></a></li>
-		</ul>
-		<!-- Temas -->
-		<ul>
-			<li><a href="#crear_una_cuenta_en_github">Crear una cuenta en GitHub<span class="icon-uniE613"></span></a></li>
-			<li><a href="#instalar_github">Instalar GitHub<span class="icon-uniE613"></span></a></li>
-			<li><a href="#identificarse_como_usuario">Identificarse como usuario<span class="icon-uniE613"></span></a></li>
-			<li><a href="#vincular_el_ordenador_con_GitHub_por_SSH">Vincular el ordenador con GitHub por SSH<span class="icon-uniE613"></span></a></li>
-		</ul>
-		<!-- =============================================================================== -->
-
-		<ul id='comandos'>
-			<li><a href="#resumen_de_comandos">Resumen de comandos<span class="icon-code"></span></a></li>
-		</ul>
-
-
-		<!-- Más contendos-->
-		<ul class='capitulo'>
-			<li><a href="#mas_material">Más material<span class="icon-books"></span></a></li>
-		</ul>
-		<!-- Temas -->
-		<ul>
-			<li><a href="#material_texto">Libros y guías<span class="icon-book"></span></a></li>
-			<li><a href="#material_video">Clases en vídeo<span class="icon-uniF7C5"></span></a></li>
-			<li><a href="#material_ejercicio">Ejercicios prácticos<span class="icon-graduation"></span></a></li>
-		</ul>
-		<!-- =============================================================================== -->
-
-		<!-- Más contenido y contacto-->
-		<br>
-		<ul>
-			<li><a href="#footer">Contáctame<span class="icon-bubble"></span></a></li>
-		</ul>
-		<br>
-	</nav>
-	<!--/ Nav escritorio -->
+<header>
+    <a href="#"><img src="img/logo.png" alt="Logo"></a>
+    <h1>IniciaGit</h1>
+    <h2>Hacer un commit es como pegar un tiro</h2>
 </header>
-<!--/ Barra lateral con logo + menu -->
-<!-- =============================================================================== -->
-
-<!-- Contenido princial -->
-<section id="contenido">
-	<article class='main' id="iniciando">
-		<header id="intra_article">
-			<div class="capitulo"><span class='icon-rocket'></span></div>
-			<h3>Iniciando</h3>
-		</header>
-		<section id='tema'>
-			<p>Esta guía básica te ayudará a <strong>usar GitHub con la terminal</strong> desde cero. En ella encontrarás un resumen de los pasos y comandos básicos necesarios para empezar a trabajar con GitHub desde tu ordenador con la terminal. Tanto si ya usas GitHub como si empiezas hoy mismo esta guía</p>
-			<p>Con esta guía empezarás un proyecto propio en local y subirás cambios a tu repositorio en GitHub. <strong>Trabajarás en colaboración</strong> con personas de todo el mundo, haciendo Fork, Pull request y Merge. Además podrás alojar tu proyecto en un subdominio de GitHub, igual que lo está esta guía.</p>
-			<p>No encontrarás explicaciones teóricas explicando que es un sistema de control de versiones o funcionan las entrañas de GitHub. Pero sí encontrarás enlaces a varias fuentes en vídeo y texto que bien seguro te ayudarán asimilar mejor los conceptos.</p>
-		</section>
-	</article>
-	<article class='main' id="comandos_basicos_de_terminal">
-		<header id="intra_article">
-			<div class="capitulo"><span class='icon-number'></span></div>
-			<h3>Comandos básicos de terminal</h3>
-			<p>Empezar a usar GitHub desde la terminal se hace sencillo usando solo tres comandos. Si tu ya conoces el funcionamiento de la terminal puedes omitir este punto, esto para tí  está chupado.</p>
-		</header>
-		<section id='tema'>
-			<article id='ver_contenido_del_directorio'>
-				<header id="tema">
-					<h4><span>Ver contenido</span> del directorio</h4>
-					<p>Puedes ver el contenido de una carpeta con el siguiente comando.</p>
-				</header>
-			    <!-- Terminal -->
-			    <figure id='terminal'>
-		        	<div class='terminal'>
-		          		<div class="barra"><pre id='barra'>Terminal</pre></div>
-		          		<div id='maquina'>
-		            		<pre>iMac-de-Jordi:~ jordiimac$ <span class='tipear'>ls</span> <br> Applications  Documents  Dropbox  Movies  Pictures  Desktop  Downloads  Library  Music  Public <br>iMac-de-Jordi:~ jordiimac$</pre>
-		          		</div>
-			        </div>
-		      	</figure>
-		     	<!--/ Terminal -->
-			</article>
-			<article id='ubicarse_en_un_directorio'>
-				<header id="tema">
-					<h4><strong>Ubicarse</strong> en un directorio</h4>
-					<p>Puedes entrar en una carpeta con el siguiente comando.</p>
-				</header>
-			    <!-- Terminal -->
-			    <figure id='terminal'>
-		        	<div class='terminal'>
-		          		<div class="barra"><pre id='barra'>Terminal</pre></div>
-		          		<div id='maquina'>
-		            		<pre>iMac-de-Jordi:~ jordiimac$ <span class='tipear'>cd documents</span> <br>iMac-de-Jordi:documents jordiimac$</pre>
-		          		</div>
-			          </div>
-			        </div>
-		      	</figure>
-		     	<!--/ Terminal -->
-			</article>
-			<article id='crear_un_directorio'>
-				<header id="tema">
-					<h4><strong>Crear</strong> un directorio</h4>
-					<p>Es importante poder crear directorios desde la terminal. Puedes hacerlo con este comando.</p>
-				</header>
-			    <!-- Terminal -->
-			    <figure id='terminal'>
-		        	<div class='terminal'>
-		          		<div class="barra"><pre id='barra'>Terminal</pre></div>
-		          		<div id='maquina'>
-		            		<pre>iMac-de-Jordi:~ jordiimac$ <span class='tipear'>mkdir miProyecto</span> <br>iMac-de-Jordi:documents jordiimac$</pre>
-		          		</div>
-			    <!--       	<div class="nota">
-				            <div class="color_maquina"><p><span>Texto</span> máquina.</p></div>
-				            <div class="color_tipear"><p><span>Texto</span> a tipear.</p></div>
-				            <div class="color_copiar"><p><span>Texto</span> a copiar.</p>
-			            </div> -->
-			          </div>
-			        </div>
-		      	</figure>
-		     	<!--/ Terminal -->
-		     	<p>Esto creará un directorio llamado “Mi nuevo directorio” justo en la hubicación en la que te encuentres. </p>
-		     	<figure class='imagen'>
-		     		<div class="imagen">
-		     			<img src="img/imagen.jpeg" width='770' height='420' alt="Documento creado">
-		     		</div>
-		     	</figure>
-			</article>
-		</section>
-	</article>
-	<article class='main' id="resumen_de_comandos">
-		<header id="intra_article">
-			<div class="capitulo"><span class='icon-code'></span></div>
-			<h3>Resumen de comandos</h3>
-			<p>Usa este resumen de los comandos, descarga el PDF a tenlos siempre a mano.</p>
-		</header>
-		<section id='tema'>
-			<article id='article_resumen'>
-				<header id='tema'>
-					<h4>Comandos báscos de terminal</h4>			
-				</header>
-				<section id='seccion_comando'>
-					<article>
-						<span id='comando'>Ver contenido del directorio.</span>
-						<pre id=''>ls</pre>
-					</article>
-					<article>
-						<span id='comando'>Entrar en un directorio.</span>
-						<pre>cd</pre>
-					</article>
-					<article>
-						<span id='comando'>Subir un nivel en el directorio</span>
-						<pre>cd ..</pre>
-					</article>
-					<article>
-						<span id='comando'>Crear un directorio.</span>
-						<pre>mkdir nombreProyecto</pre>
-					</article>
-				</section>
-			</article>
-			<article id='article_resumen'>
-				<header id='tema'>
-					<!-- <div class="capitulo"><span class='icon-number2'></span></div> -->
-					<h4>Empezando con GitHub</h4>					
-				</header>
-				<section id='seccion_comando'>
-					<article>
-						<span id='comando'>Comprobar que GitHub está instalado.</span>
-						<pre>git --version</pre>
-					</article>
-					<article>
-						<span id='comando'>Identificarse como usuario.</span>
-						<pre>git config user.name “nombre”</pre>
-						<pre>git config user.email “tu@email.com”</pre>
-					</article>
-					<article>
-						<span id='comando'>Comprobar que los datos se han registrado correctamente.</span>
-						<pre>git config list</pre>
-					</article>
-					<article>
-						<span id='comando'>Generar una llave SSH.</span>
-						<pre>$ssh-keygengit</pre>
-					</article>
-					<article>
-						<span id='comando'>Agrega una contraseña.</span>
-						<pre>Enter passphrase (empty for no passphrase): [Contraseña] <br>Enter same passphrase again: [Repetir contraseña]</pre>
-					</article>
-					<article>
-						<span id='comando'>Ver la llave SSH.</span>
-						<pre>$cd .ssh <br>$cat id_rsa.pub</pre>
-					</article>
-					<article>
-						<span id='comando'>Comprueba que tu ordenador está vinculado</span>
-						<pre>ssh -T git@github.com</pre>
-					</article>
-				</section>
-			</article>
-		</section>
-		<footer id='footer_resumen'>
-			<div class="boton">
-				<a href="#"><span class='icon-in'>   PDF RESUMEN COMANDOS</span></a>
-			</div>
-		</footer>
-	</article>
-
-	<article class='main' id="mas_material">
-		<header id="intra_article">
-			<div class="capitulo"><span class='icon-books'></span></div>
-			<h3>Más material</h3>
-			<p>Hay mucho material en varios formatos que te ayudará a comprender mejor GitHub.</p>
-		</header>
-		<section id='tema'>
-			<article id="material_texto">
-				<header id="tema">
-					<div class="capitulo"></div>
-					<h4>Libros y guías</h4>
-					<p>Los libros y guías esenciales para  comprender GitHub y dar el extra.</p>
-				</header>
-				<section>
-					<article>
-						<div id="contenido">
-							<div class="izq">
-								<div class="portada">
-									<img src="http://git-scm.com/images/books/pro-git@2x.jpg" alt="Pro Git">
-								</div>
-							</div>
-							<div class="derecha">
-								<span id='comamdo'>LIBRO</span>
-								<h5><a href="http://git-scm.com/book/es" target='blanck'>Pro git</a></h5>
-								<div class="bandera">
-									<img src="img/esp.jpg" width='59' height='39' alt="idioma español">
-								</div>
-								<span>El libro Git Pro entero, escrito por Scott Chacon y publicado por Apress, está disponible aquí. Todo el contenido está licenciado bajo la licencia Creative Commons Reconocimiento No comercial Compartir bajo la misma licencia 3.0.</span>
-							</div>
-						</div>
-					</article>
-
-
-				</section>
-			</article>
-		</section>
-	</article>
-	
+<nav>
+    <ul>
+        <Li><a href="#">Iniciando</a></Li>
+        <Li><a class='capitulo' href="#">Empezando con Github</a></Li>
+        <li><a href="#">Crear una cuenta de Github</a></li>
+        <li><a href="#">Instalar GitHub</a></li>
+        <li><a href="#">Identificarse como usuario</a></li>
+        <li><a href="#">Vincular el ordenador con GitHub por SSH</a></li>
+        <li><a href="#">Resumen de comandos</a></li>
+        <Li><a class='capitulo' href="#">Más material</a></Li>
+        <li><a href="#">Libros y guías</a></li>
+        <li><a href="#">Clases en vídeo</a></li>
+        <li><a href="#">Ejercicios prácticos</a></li>
+        <li><a href="#">Contáctame</a></li>
+    </ul>
+</nav>
+<section>
+    <article>
+        <div class="encabezado">
+            <span class=''></span>
+            <h3>Iniciando</h3>
+        </div>
+        <div class="contenido">
+            <p>Esta guía básica te ayudará a <strong>usar GitHub con la terminal</strong> desde cero. En ella encontrarás un resumen de los pasos y comandos básicos necesarios para empezar a trabajar con GitHub desde tu ordenador con la terminal. Tanto si ya usas GitHub como si empiezas hoy mismo esta guía</p>
+            <p>Con esta guía empezarás un proyecto propio en local y subirás cambios a tu repositorio en GitHub. <strong>Trabajarás en colaboración</strong> con personas de todo el mundo, haciendo Fork, Pull request y Merge. Además podrás alojar tu proyecto en un subdominio de GitHub, igual que lo está esta guía.</p>
+            <p>No encontrarás explicaciones teóricas explicando que es un sistema de control de versiones o funcionan las entrañas de GitHub. Pero sí encontrarás enlaces a varias fuentes en vídeo y texto que bien seguro te ayudarán asimilar mejor los conceptos.</p>
+        </div>
+    </article>
 </section>
-<!--/ Contenido princial -->
-<!-- Footer principal -->
-<footer id="footer">
-	<div id="avatar">
-		<a  id='nombre' href="https://twitter.com/jpcpamies" target="_blank">Jordi Pàmies</a>
-		<a  id='twitter' href="https://twitter.com/jpcpamies" target="_blank">@jpcpamies</a>
-	</div>
-	<div id='logo_giratorio'>
-		<div class="fContainer">
-			<div class="fPanel">
-				<div class="front avatar">
-					<img class="avatar" src="img/avatar.jpg" /></div>
-					<a href="https://twitter.com/jpcpamies" target="_blank"><div class="back avatar"><div class="icon-twitter"></div></div></a>
-			</div>
-		</div>
-	</div>
-	<a href="mailto:jordipamies2@gmail.com" target="_blank"><div id='emial'><div class="icon-mail"></div></div></a>
-	<a href="https://github.com/jpcpamies" target="_blank"><div id='github'><div class="icon-github"></div></div></a>
+<footer>
+    <div class="avatar">
+        <img src="img/avatar.jpg" width='160' height='160' alt="Jordi Pàmies">
+        <p>Jordi Pàmies</p>
+        <a href="https://twitter.com/jpcpamies">@jpcpamies</a>
+    </div>
+    <a href="mailto:jordipamies2@gmail.com"><div class="contacto">Contacto</div></a>
+    <a href="https://github.com/jpcpamies" target='blanck'><div class="github">Github</div></a>
 </footer>
-<!--/ Footer principal -->
-</section>
-<!--/ Contenedor principal -->
-<!-- Scripts -->
-<!-- Llamada api jquery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<!--/ Llamada api jquery -->
-<!-- Llamada a mi js -->
-<script src='js/main-ck.js'></script>
-<!--/ Llamada a mi js -->
-<!-- Analityscs -->
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -344,7 +82,5 @@
   ga('create', 'UA-45274381-1', 'site88.net');
   ga('send', 'pageview');
 </script>
-<!--/ Analityscs -->
-<!--/ Scripts -->
 </body>
 </html>
