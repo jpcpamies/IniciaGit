@@ -5,23 +5,137 @@ texto = raleway, sans-serif
 mayuscula = lucida grande
 
 // Colores =========================================
-claro = rgb(237,241,243)
+fondo = rgb(237,241,243)
 borde = rgb(198,207,211)
 hover = rgba(0,0,0,.7)
 azul = #3b84bf
 gris = #343434
 
+@font-face {
+	font-family: 'icono';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// .icon-facetime-video:before {
+// 	content: "\e601";
+// }
+// .icon-angle-right:before {
+// 	content: "\e607";
+// }
+// .icon-angle-up:before {
+// 	content: "\e608";
+// }
+// .icon-envelope:before {
+// 	content: "\e602";
+// }
+// .icon-graduation:before {
+// 	content: "\e603";
+// }
+// .icon-user:before {
+// 	content: "\e604";
+// }
+// .icon-book:before {
+// 	content: "\e600";
+// }
+// .icon-twitter:before {
+// 	content: "\e606";
+// }
+// .icon-github:before {
+// 	content: "\e609";
+// }
+
+
 body 
-	background claro
+	background fondo
 	color gris
 	font-family texto
 article
 	background white
+
 header
 	img
-		width 80px
 		display block
 		margin 1em auto 0 auto
+		width 80px
+
+footer
+	background azul
+	height 10em
+	.avatar
+		background white
+		display inline-block
+		float left
+		height 10em
+		position relative
+		width 8em
+		&:after
+			border-top solid 0 green
+			border-left solid 5em white
+			border-bottom solid 10em transparent
+			border-right solid 10px transparent
+			content ""
+			left 8em
+			position absolute
+			top 0px
+		img
+			border-radius 50%
+			height auto
+			left 5.5em
+			width 4em
+			position absolute
+			top 1em
+			z-index 5
+		p
+			left .7em
+			line-height 1.2em;
+			position absolute
+			text-align right
+			top 1.4em
+
+	.social
+		position relative
+		text-shadow 1px 1px 1px rgba(black,.5)
+		z-index 3
+		a
+			color white
+			font-family texto
+			font-weight bold
+		.twitter
+		.github
+		.email
+			position absolute
+			&:before
+				font-family icono
+				margin 0 .5em 0 0
+				vertical-align bottom
+
+		.twitter
+			right 1em
+			top 1.5em
+			&:before
+				content "\e606"
+				
+		.github
+			right 3em
+			top 4em
+			&:before
+				content "\e609"
+
+		.email
+			right 1em
+			top 6.5em
+			&:before
+				content "\e602"
+				
+
+
+
 
 h1
 	font-size 4em;
@@ -31,26 +145,34 @@ h1
 
 h2 
 	border-top 1px solid borde 
-	font-size 1.3em;
 	font-family titulo
-	margin 0 .5em 1em .5em
+	font-size 1.3em;
+	margin .1em .5em 1em .5em
 	text-align center
 h3
-	font-size 3em;
 	font-family cabecera
+	font-size 3em;
 	letter-spacing -3px
 	margin 0
+	padding .5em 0
 	text-align center
 
+nav
+	overflow-x hidden
+
+p
+	margin .5em
+	&:first-child 
+		margin 0 .5em
 
 #mm0
 	background azul
-	border 1px solid claro
+	border 1px solid fondo
 	color white
 	font-size 1.5em
 	height 2em
-	position relative
 	left -5px
+	position relative
 	width 107%
 
 
