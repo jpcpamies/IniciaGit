@@ -41,24 +41,29 @@ footer .avatar:after {
   top: 0px;
 }
 footer .avatar img {
+  border: 2px solid #fff;
   border-radius: 50%;
+  box-shadow: 0 0 2px #000;
   height: auto;
-  left: 5.5em;
+  left: 1.3em;
   width: 4em;
   position: absolute;
   top: 1em;
   z-index: 5;
 }
 footer .avatar p {
-  left: 0.7em;
-  line-height: 1.2em;
+  color: #343434;
+  font-size: 1em;
+  left: 5.5em;
+  line-height: 1.1em;
   position: absolute;
-  text-align: right;
+  text-align: left;
   top: 1.4em;
+  z-index: 4;
 }
 footer .social {
   position: relative;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 1px #000;
   z-index: 3;
 }
 footer .social a {
@@ -79,25 +84,37 @@ footer .social .email:before {
   vertical-align: bottom;
 }
 footer .social .twitter {
-  right: 1em;
+  right: 1.8em;
+  text-decoration: none;
   top: 1.5em;
 }
 footer .social .twitter:before {
   content: "\e606";
 }
+footer .social .twitter:hover {
+  color: #21b2e9;
+}
 footer .social .github {
-  right: 3em;
+  right: 3.5em;
+  text-decoration: none;
   top: 4em;
 }
 footer .social .github:before {
   content: "\e609";
 }
+footer .social .github:hover {
+  color: #808080;
+}
 footer .social .email {
   right: 1em;
+  text-decoration: none;
   top: 6.5em;
 }
 footer .social .email:before {
   content: "\e602";
+}
+footer .social .email:hover {
+  color: #dec164;
 }
 h1 {
   font-size: 4em;
