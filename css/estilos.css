@@ -9,9 +9,13 @@ body {
   background: #edf1f3;
   color: #343434;
   font-family: raleway, sans-serif;
+  font-size: 16px;
 }
 article {
   background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  margin: 0.6em 0.9em;
 }
 header img {
   display: block;
@@ -117,27 +121,26 @@ footer .social .email:hover {
   color: #dec164;
 }
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-family: lobster, sans-serif;
-  margin: 0;
+  margin: 0 0 0.5em 0;
   text-align: center;
+}
+h1 small {
+  border-top: 1px solid #c6cfd3;
+  color: #343434;
+  display: block;
+  font-size: 0.39em;
+  line-height: -5em;
+  margin: 0.1em auto 0 auto;
+  max-width: 17em;
 }
 h2 {
-  border-top: 1px solid #c6cfd3;
-  display: block;
-  font-family: lobster, sans-serif;
-  font-size: 1.3em;
-  margin: 0.1em auto 1em auto;
-  max-width: 300px;
-  text-align: center;
-}
-h3 {
-  font-family: lato, sans-serif;
-  font-size: 3em;
+  display: inline-block;
+  font-family: lucida grande;
+  font-size: 2em;
   letter-spacing: -3px;
   margin: 0;
-  padding: 0.5em 0;
-  text-align: center;
 }
 nav {
   overflow-x: hidden;
@@ -148,6 +151,11 @@ p {
 }
 p:first-child {
   margin: 0 0.5em;
+}
+section {
+  background: #dcdcdc;
+  margin: -0.6em 0;
+  padding: 0.6em 0;
 }
 #mm0 {
   background: #3b84bf;
@@ -185,6 +193,38 @@ p:first-child {
   position: absolute;
   top: 0em;
   left: 0.45em;
+}
+.encabezado {
+  margin: 0 0 1em 0;
+}
+.encabezado .numero {
+  background: #a9a9a9;
+  color: #edf1f3;
+  float: left;
+  font-family: lucida grande;
+  font-size: 0.5em;
+  height: 1.4em;
+  margin: 1.2em 1.5em 0 0;
+  padding: 0.15em 0 0 0;
+  position: relative;
+  text-align: center;
+  width: 2em;
+}
+.encabezado .numero:after {
+  border-top: solid 0 transparent;
+  border-left: solid 0.7em #a9a9a9;
+  border-bottom: solid 1.4em transparent;
+  border-right: solid 0 transparent;
+  content: "";
+  left: 2em;
+  position: absolute;
+  top: 0px;
+}
+.encabezado .nombre {
+  display: block;
+  line-height: 1em;
+  margin: 0.4em 0.5em 0 2em;
+  text-align: left;
 }
 .lista {
   color: #fff;

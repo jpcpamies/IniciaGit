@@ -1,6 +1,5 @@
 // Fuentes =========================================
 titulo = lobster, sans-serif
-cabecera = lato, sans-serif
 texto = raleway, sans-serif
 mayuscula = lucida grande
 
@@ -59,8 +58,12 @@ body
 	background fondo
 	color gris
 	font-family texto
+	font-size 16px
 article
 	background white
+	border-radius 5px
+	box-shadow 0 1px 0 rgba(black,.2)
+	margin .6em .9em
 
 header
 	img
@@ -154,26 +157,25 @@ footer
 				color #dec164
 
 h1
-	font-size 4em;
-	font-family titulo
-	margin 0
-	text-align center
-
-h2 
-	border-top 1px solid borde 
-	display block
-	font-family titulo
-	font-size 1.3em;
-	margin .1em auto 1em auto
-	max-width 300px
-	text-align center
-h3
-	font-family cabecera
 	font-size 3em;
+	font-family titulo
+	margin 0 0 .5em 0
+	text-align center
+	small
+		border-top 1px solid borde
+		color gris
+		display block
+		font-size .39em;
+		line-height -5em
+		margin .1em auto 0 auto 
+		max-width 17em
+
+h2
+	display inline-block
+	font-family mayuscula
+	font-size 2em;
 	letter-spacing -3px
 	margin 0
-	padding .5em 0
-	text-align center
 
 nav
 	overflow-x hidden
@@ -183,6 +185,11 @@ p
 	margin .5em
 	&:first-child 
 		margin 0 .5em
+
+section
+	background #dcdcdc
+	margin -.6em .0
+	padding .6em 0
 
 #mm0
 	background azul
@@ -219,6 +226,36 @@ p
 			top 0em
 			left .45em
 		
+.encabezado
+	margin 0 0 1em 0
+	.numero
+		background #a9a9a9
+		color fondo
+		float left
+		font-family mayuscula
+		font-size .5em
+		height 1.4em 
+		margin 1.2em 1.5em 0 0
+		padding .15em 0 0 0 
+		position relative
+		text-align center
+		width 2em 
+		&:after
+			border-top solid 0 transparent
+			border-left solid .7em #a9a9a9
+			border-bottom solid 1.4em transparent
+			border-right solid 0 transparent
+			content ""
+			left 2em
+			position absolute
+			top 0px
+
+
+	.nombre
+		display block
+		line-height 1em
+		margin .4em .5em 0 2em
+		text-align left
 
 .lista
 	color white
