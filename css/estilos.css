@@ -5,18 +5,49 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
-  background: #edf1f3;
-  color: #343434;
-  font-family: raleway, sans-serif;
-  font-size: 16px;
-}
 article {
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
   margin: 0.6em 0.9em;
   padding: 0 0 1em 0;
+}
+body {
+  background: #edf1f3;
+  color: #343434;
+  font-family: raleway, sans-serif;
+  font-size: 16px;
+}
+h1 {
+  font-size: 3em;
+  font-family: lobster, sans-serif;
+  margin: 0 0 0.5em 0;
+  text-align: center;
+}
+h1 small {
+  border-top: 1px solid #c6cfd3;
+  color: #343434;
+  display: block;
+  font-size: 0.39em;
+  line-height: -5em;
+  margin: 0.1em auto 0 auto;
+  max-width: 17em;
+}
+h2 {
+  display: inline-block;
+  font-family: lucida grande;
+  font-weight: normal;
+  font-size: 2em;
+  letter-spacing: -3px;
+  margin: 0;
+}
+h3 {
+  color: #3b84bf;
+  font-family: lucida grande;
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: -2px;
+  margin: 0.5em;
 }
 header img {
   display: block;
@@ -36,10 +67,10 @@ footer .avatar {
   width: 8em;
 }
 footer .avatar:after {
-  border-top: solid 0 #008000;
-  border-left: solid 5em #fff;
   border-bottom: solid 10em transparent;
+  border-left: solid 5em #fff;
   border-right: solid 10px transparent;
+  border-top: solid 0 #008000;
   content: "";
   left: 8em;
   position: absolute;
@@ -51,9 +82,9 @@ footer .avatar img {
   box-shadow: 0 0 2px #000;
   height: auto;
   left: 1.3em;
-  width: 3em;
   position: absolute;
   top: 1em;
+  width: 3em;
   z-index: 5;
 }
 footer .avatar p {
@@ -122,35 +153,6 @@ footer .social .email:before {
 footer .social .email:hover {
   color: #dec164;
 }
-h1 {
-  font-size: 3em;
-  font-family: lobster, sans-serif;
-  margin: 0 0 0.5em 0;
-  text-align: center;
-}
-h1 small {
-  border-top: 1px solid #c6cfd3;
-  color: #343434;
-  display: block;
-  font-size: 0.39em;
-  line-height: -5em;
-  margin: 0.1em auto 0 auto;
-  max-width: 17em;
-}
-h2 {
-  display: inline-block;
-  font-family: lucida grande;
-  font-size: 2em;
-  letter-spacing: -3px;
-  margin: 0;
-}
-h3 {
-  color: #3b84bf;
-  font-family: lucida grande;
-  font-size: 1.5em;
-  letter-spacing: -2px;
-  margin: 0.5em;
-}
 nav {
   overflow-x: hidden;
   position: relative;
@@ -201,7 +203,7 @@ section {
   font-size: 2em;
   text-align: center;
   position: absolute;
-  top: 0em;
+  top: 0.2em;
   left: 0.45em;
 }
 .autor {
@@ -216,20 +218,6 @@ section {
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   margin: 1em;
-}
-.video {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  position: relative;
-}
-.video iframe {
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
 }
 .encabezado {
   margin: 0 0 1em 0;

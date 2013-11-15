@@ -1,5 +1,6 @@
+// Script mobileMenu ============================================================
+// ==============================================================================
 
-// Script mobileMenu
 $(function(){
 $('#mobileMenu').mobileMenu({
   combine: false,         
@@ -11,7 +12,10 @@ $('#mobileMenu').mobileMenu({
 });
 })
 
-// Script Ir inicio
+
+// Script Ir inicio =============================================================
+// ==============================================================================
+
 var num = 600; //number of pixels before modifying styles
 
 		$(window).bind('scroll', function () {
@@ -22,7 +26,10 @@ var num = 600; //number of pixels before modifying styles
 		    }
 		});
 
-// Script nav fixed
+
+// Script nav fixed =============================================================
+// ==============================================================================
+
   var num2 = 180; //number of pixels before modifying styles
 
   $(window).bind('scroll', function () {

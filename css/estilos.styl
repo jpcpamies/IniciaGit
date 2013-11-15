@@ -53,19 +53,48 @@ claro = #ebf0f4
 // 	content: "\e609";
 // }
 
-
-
-body 
-	background fondo
-	color gris
-	font-family texto
-	font-size 16px
 article
 	background white
 	border-radius 5px
 	box-shadow 0 1px 0 rgba(black,.2)
 	margin .6em .9em
 	padding 0 0 1em 0
+
+body 
+	background fondo
+	color gris
+	font-family texto
+	font-size 16px
+
+h1
+	font-size 3em;
+	font-family titulo
+	margin 0 0 .5em 0
+	text-align center
+	small
+		border-top 1px solid borde
+		color gris
+		display block
+		font-size .39em;
+		line-height -5em
+		margin .1em auto 0 auto 
+		max-width 17em
+
+h2
+	display inline-block
+	font-family mayuscula
+	font-weight normal
+	font-size 2em;
+	letter-spacing -3px
+	margin 0 
+
+h3
+	color azul
+	font-family mayuscula
+	font-weight normal
+	font-size 1.5em
+	letter-spacing -2px
+	margin .5em
 
 header
 	img
@@ -84,10 +113,10 @@ footer
 		position relative
 		width 8em
 		&:after
-			border-top solid 0 green
-			border-left solid 5em white
 			border-bottom solid 10em transparent
+			border-left solid 5em white
 			border-right solid 10px transparent
+			border-top solid 0 green
 			content ""
 			left 8em
 			position absolute
@@ -98,9 +127,9 @@ footer
 			box-shadow 0 0 2px black
 			height auto
 			left 1.3em
-			width 3em
 			position absolute
 			top 1em
+			width 3em
 			z-index 5
 
 		p
@@ -159,40 +188,10 @@ footer
 			&:hover
 				color #dec164
 
-h1
-	font-size 3em;
-	font-family titulo
-	margin 0 0 .5em 0
-	text-align center
-	small
-		border-top 1px solid borde
-		color gris
-		display block
-		font-size .39em;
-		line-height -5em
-		margin .1em auto 0 auto 
-		max-width 17em
-
-h2
-	display inline-block
-	font-family mayuscula
-	font-size 2em;
-	letter-spacing -3px
-	margin 0 
-
-h3
-	color azul
-	font-family mayuscula
-	font-size 1.5em
-	letter-spacing -2px
-	margin .5em
-
 nav
 	overflow-x hidden
 	position relative
 	z-index 5
-
-
 
 p
 	margin .5em
@@ -236,9 +235,9 @@ section
 			font-size 2em
 			text-align center
 			position absolute
-			top 0em
+			top .2em
 			left .45em
-	
+
 .autor
 	color grey
 	font-family mayuscula
@@ -252,18 +251,18 @@ section
 	box-shadow 0 2px 5px rgba(black,.3)
 	margin 1em
 
-.video
-	height 0
-	overflow hidden
-	padding-bottom 56.25%
-	padding-top 30px
-	position relative
-	iframe
-		height 100%
-		left 0px
-		position absolute
-		top 0px
-		width 100%
+// .video
+// 	height 0
+// 	overflow hidden
+// 	padding-bottom 56.25%
+// 	padding-top 30px
+// 	position relative
+// 	iframe
+// 		height 100%
+// 		left 0px
+// 		position absolute
+// 		top 0px
+// 		width 100%
 
 .encabezado
 	margin 0 0 1em 0
@@ -290,7 +289,6 @@ section
 			position absolute
 			top 0px
 
-
 	.nombre
 		display block
 		line-height 1em
@@ -316,8 +314,3 @@ section
 	left 0px
 	top -1px
 	right 0px
-	
-
-
-
-

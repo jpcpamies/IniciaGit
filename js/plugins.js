@@ -1,27 +1,3 @@
-// Avoid `console` errors in browsers that lack a console.
-(function() {
-    var method;
-    var noop = function () {};
-    var methods = [
-        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-        'timeStamp', 'trace', 'warn'
-    ];
-    var length = methods.length;
-    var console = (window.console = window.console || {});
-
-    while (length--) {
-        method = methods[length];
-
-        // Only stub undefined methods.
-        if (!console[method]) {
-            console[method] = noop;
-        }
-    }
-}());
-
-// Place any jQuery/helper plugins in here.
 
 // Plugin mobileMenu
 (function($){
@@ -67,13 +43,11 @@
         return pass;
     }//isList()
 
-
     //function to decide if mobile or not
     function isMobile(){
         return ($(window).width() < settings.switchWidth);
     }
-    
-    
+        
     //function to get text value of element, but not it's children
     function getText($item){
         return $.trim($item.clone().children('ul, ol').remove().end().text());
@@ -83,8 +57,7 @@
     function isUrlUnique(url){
         return ($.inArray(url, uniqueLinks) === -1) ? true : false;
     }
-    
-    
+     
     //function to do duplicate checking for combined list
     function checkForDuplicates($menu){
         
@@ -129,8 +102,7 @@
         
         });
     }
-    
-    
+   
     //function to combine lists into one
     function combineLists(){
         
@@ -151,8 +123,6 @@
         
     }//combineLists()
     
-    
-    
     //function to create options in the select menu
     function createOption($item, $container, text){
         
@@ -164,8 +134,6 @@
         }
     
     }//createOption()
-    
-    
     
     //function to create option groups
     function createOptionGroup($group, $container){
@@ -190,8 +158,6 @@
         
     }//createOptionGroup()
 
-    
-    
     //function to create <select> menu
     function createSelect($menu){
     
@@ -228,7 +194,6 @@
     
     }//createSelect()
 
-    
     //function to run plugin functionality
     function runPlugin(){
     
@@ -263,8 +228,6 @@
         
     }//runPlugin()
 
-    
-    
     //plugin definition
     $.fn.mobileMenu = function(options){
 
@@ -287,7 +250,10 @@
 
 
 
-// Plugin scrollTop
+
+// Plugin scrollTop ==============================================================
+// ==============================================================================
+
 $(function(){
     //clic en un enlace de la lista
     $('ul li a').on('click',function(e){
