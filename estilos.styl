@@ -97,20 +97,6 @@ footer
 			position absolute
 			top 1em
 			z-index 5
-		
-		// div
-		// 	-moz-transform skew(-27deg)
-		// 	-o-transform skew(-27deg)
-		// 	-webkit-transform skew(-27deg)
-		// 	background white
-		// 	box-shadow 0 0 1px rgba(black,1)
-		// 	height 45px
-		// 	left 6.5em
-		// 	margin 10px 0 0 -40px
-		// 	position absolute
-		// 	top .7em
-		// 	width 95px
-		// 	z-index 4
 
 		p
 			color gris
@@ -119,10 +105,8 @@ footer
 			line-height 1.1em;
 			position absolute
 			text-align left
-			// text-shadow 1px 1px 1px black
 			top 1.4em
 			z-index 4
-				
 
 	.social
 		position relative
@@ -136,6 +120,7 @@ footer
 		.github
 		.email
 			position absolute
+			transition all .2s ease
 			&:before
 				font-family icono
 				margin 0 .5em 0 0
@@ -167,11 +152,6 @@ footer
 				content "\e602"
 			&:hover
 				color #dec164
-				
-				
-
-
-
 
 h1
 	font-size 4em;
@@ -181,9 +161,11 @@ h1
 
 h2 
 	border-top 1px solid borde 
+	display block
 	font-family titulo
 	font-size 1.3em;
-	margin .1em .5em 1em .5em
+	margin .1em auto 1em auto
+	max-width 300px
 	text-align center
 h3
 	font-family cabecera
@@ -195,6 +177,7 @@ h3
 
 nav
 	overflow-x hidden
+	position relative
 
 p
 	margin .5em
@@ -209,7 +192,24 @@ p
 	height 2em
 	left -5px
 	position relative
-	width 107%
+	width 108.5%
+
+.lista
+	color white
+	font-size 1.7em
+	position absolute
+	right .5em
+	top .25em
+	width 30px
+	&:after
+		content "\e605"
+		font-family icono
+
+.fixed 
+	position fixed
+	left 0px
+	top -1px
+	right 0px
 
 
 

@@ -75,6 +75,7 @@ footer .social .twitter,
 footer .social .github,
 footer .social .email {
   position: absolute;
+  transition: all 0.2s ease;
 }
 footer .social .twitter:before,
 footer .social .github:before,
@@ -124,9 +125,11 @@ h1 {
 }
 h2 {
   border-top: 1px solid #c6cfd3;
+  display: block;
   font-family: lobster, sans-serif;
   font-size: 1.3em;
-  margin: 0.1em 0.5em 1em 0.5em;
+  margin: 0.1em auto 1em auto;
+  max-width: 300px;
   text-align: center;
 }
 h3 {
@@ -139,6 +142,7 @@ h3 {
 }
 nav {
   overflow-x: hidden;
+  position: relative;
 }
 p {
   margin: 0.5em;
@@ -154,5 +158,23 @@ p:first-child {
   height: 2em;
   left: -5px;
   position: relative;
-  width: 107%;
+  width: 108.5%;
+}
+.lista {
+  color: #fff;
+  font-size: 1.7em;
+  position: absolute;
+  right: 0.5em;
+  top: 0.25em;
+  width: 30px;
+}
+.lista:after {
+  content: "\e605";
+  font-family: icono;
+}
+.fixed {
+  position: fixed;
+  left: 0px;
+  top: -1px;
+  right: 0px;
 }
