@@ -11,6 +11,17 @@ $('#mobileMenu').mobileMenu({
 });
 })
 
+// Script Ir inicio
+var num = 1200; //number of pixels before modifying styles
+
+		$(window).bind('scroll', function () {
+		    if ($(window).scrollTop() > num) {
+		        $('.boton').addClass('arriba');
+		    } else {
+		        $('.boton').removeClass('arriba');
+		    }
+		});
+
 // Script nav fixed
   var num = 180; //number of pixels before modifying styles
 
