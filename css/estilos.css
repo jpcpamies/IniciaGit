@@ -50,7 +50,7 @@ footer .avatar img {
   box-shadow: 0 0 2px #000;
   height: auto;
   left: 1.3em;
-  width: 4em;
+  width: 3em;
   position: absolute;
   top: 1em;
   z-index: 5;
@@ -58,11 +58,11 @@ footer .avatar img {
 footer .avatar p {
   color: #343434;
   font-size: 1em;
-  left: 5.5em;
+  left: 4.7em;
   line-height: 1.1em;
   position: absolute;
   text-align: left;
-  top: 1.4em;
+  top: 0.9em;
   z-index: 4;
 }
 footer .social {
@@ -72,6 +72,7 @@ footer .social {
 footer .social a {
   color: #fff;
   font-family: raleway, sans-serif;
+  font-size: 0.8em;
   font-weight: bold;
 }
 footer .social .twitter,
@@ -90,7 +91,7 @@ footer .social .email:before {
 footer .social .twitter {
   right: 1.8em;
   text-decoration: none;
-  top: 1.5em;
+  top: 2.7em;
 }
 footer .social .twitter:before {
   content: "\e606";
@@ -101,7 +102,7 @@ footer .social .twitter:hover {
 footer .social .github {
   right: 3.5em;
   text-decoration: none;
-  top: 4em;
+  top: 5.8em;
 }
 footer .social .github:before {
   content: "\e609";
@@ -112,7 +113,7 @@ footer .social .github:hover {
 footer .social .email {
   right: 1em;
   text-decoration: none;
-  top: 6.5em;
+  top: 9em;
 }
 footer .social .email:before {
   content: "\e602";
@@ -145,6 +146,7 @@ h2 {
 nav {
   overflow-x: hidden;
   position: relative;
+  z-index: 5;
 }
 p {
   margin: 0.5em;
@@ -177,8 +179,8 @@ section {
   position: fixed;
   left: 1em;
   width: 3em;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .arriba a {
   color: #fff;
@@ -209,6 +211,7 @@ section {
   position: relative;
   text-align: center;
   width: 2em;
+  z-index: 0;
 }
 .encabezado .numero:after {
   border-top: solid 0 transparent;

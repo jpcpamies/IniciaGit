@@ -96,7 +96,7 @@ footer
 			box-shadow 0 0 2px black
 			height auto
 			left 1.3em
-			width 4em
+			width 3em
 			position absolute
 			top 1em
 			z-index 5
@@ -104,20 +104,21 @@ footer
 		p
 			color gris
 			font-size 1em
-			left 5.5em
+			left 4.7em
 			line-height 1.1em;
 			position absolute
 			text-align left
-			top 1.4em
+			top .9em
 			z-index 4
 
 	.social
 		position relative
-		// text-shadow 1px 1px 1px black
+		// text-shadow 1px 1px 0px rgba(black,.5)
 		z-index 3
 		a
 			color white
 			font-family texto
+			font-size .8em
 			font-weight bold
 		.twitter
 		.github
@@ -132,7 +133,7 @@ footer
 		.twitter
 			right 1.8em
 			text-decoration none
-			top 1.5em
+			top 2.7em
 			&:before
 				content "\e606"
 			&:hover
@@ -141,7 +142,7 @@ footer
 		.github
 			right 3.5em
 			text-decoration none
-			top 4em
+			top 5.8em
 			&:before
 				content "\e609"
 			&:hover
@@ -150,7 +151,7 @@ footer
 		.email
 			right 1em
 			text-decoration none
-			top 6.5em
+			top 9em
 			&:before
 				content "\e602"
 			&:hover
@@ -180,6 +181,7 @@ h2
 nav
 	overflow-x hidden
 	position relative
+	z-index 5
 
 p
 	margin .5em
@@ -211,8 +213,8 @@ section
 	position fixed
 	left 1em
 	width 3em
-	-webkit-transition all .5s ease
-	transition all .5s ease
+	-webkit-transition all .2s ease
+	transition all .2s ease
 	a 
 		color: white;
 		text-decoration none
@@ -240,6 +242,7 @@ section
 		position relative
 		text-align center
 		width 2em 
+		z-index 0
 		&:after
 			border-top solid 0 transparent
 			border-left solid .7em #a9a9a9
