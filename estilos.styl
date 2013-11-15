@@ -9,6 +9,7 @@ borde = rgb(198,207,211)
 hover = rgba(0,0,0,.7)
 azul = #3b84bf
 gris = #343434
+claro = #ebf0f4
 
 @font-face {
 	font-family: 'icono';
@@ -64,6 +65,7 @@ article
 	border-radius 5px
 	box-shadow 0 1px 0 rgba(black,.2)
 	margin .6em .9em
+	padding 0 0 1em 0
 
 header
 	img
@@ -176,12 +178,21 @@ h2
 	font-family mayuscula
 	font-size 2em;
 	letter-spacing -3px
-	margin 0
+	margin 0 
+
+h3
+	color azul
+	font-family mayuscula
+	font-size 1.5em
+	letter-spacing -2px
+	margin .5em
 
 nav
 	overflow-x hidden
 	position relative
 	z-index 5
+
+
 
 p
 	margin .5em
@@ -227,7 +238,33 @@ section
 			position absolute
 			top 0em
 			left .45em
-		
+	
+.autor
+	color grey
+	font-family mayuscula
+	font-weight none
+	margin 0 .5em 1em .5em
+
+.caja
+	background claro
+	border 1px solid borde
+	border-radius 4px
+	box-shadow 0 2px 5px rgba(black,.3)
+	margin 1em
+
+.video
+	height 0
+	overflow hidden
+	padding-bottom 56.25%
+	padding-top 30px
+	position relative
+	iframe
+		height 100%
+		left 0px
+		position absolute
+		top 0px
+		width 100%
+
 .encabezado
 	margin 0 0 1em 0
 	.numero
@@ -271,11 +308,15 @@ section
 		content "\e605"
 		font-family icono
 
+.fecha
+	color grey
+
 .fixed 
 	position fixed
 	left 0px
 	top -1px
 	right 0px
+	
 
 
 

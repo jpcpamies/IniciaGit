@@ -12,7 +12,7 @@ $('#mobileMenu').mobileMenu({
 })
 
 // Script Ir inicio
-var num = 1200; //number of pixels before modifying styles
+var num = 600; //number of pixels before modifying styles
 
 		$(window).bind('scroll', function () {
 		    if ($(window).scrollTop() > num) {
@@ -23,10 +23,10 @@ var num = 1200; //number of pixels before modifying styles
 		});
 
 // Script nav fixed
-  var num = 180; //number of pixels before modifying styles
+  var num2 = 180; //number of pixels before modifying styles
 
   $(window).bind('scroll', function () {
-      if ($(window).scrollTop() > num) {
+      if ($(window).scrollTop() > num2) {
           $('.menu').addClass('fixed');
       } else {
           $('.menu').removeClass('fixed');
