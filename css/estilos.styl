@@ -43,7 +43,7 @@ claro = #ebf0f4
 // .icon-book:before {
 // 	content: "\e600";
 // }
-// .icon-list:before {
+// .icon-directions:before {
 // 	content: "\e605";
 // }
 // .icon-twitter:before {
@@ -52,6 +52,10 @@ claro = #ebf0f4
 // .icon-github:before {
 // 	content: "\e609";
 // }
+// .icon-lines:before {
+// 	content: "\e60a";
+// }
+
 
 article
 	background white
@@ -224,6 +228,7 @@ section
 	position fixed
 	-webkit-transition all .2s ease
 	transition all .2s ease
+	z-index 10
 	a 
 		background gris
 		border-radius 50%
@@ -266,7 +271,32 @@ section
 		margin 1em
 		white-space normal
 
-.contenedor
+.contenedor_imagen
+	background white
+	border-bottom 1px solid borde 
+	border-top 1px solid borde 
+	height 15em
+	img 
+		display block
+		height auto
+		margin 1em auto 1em auto
+		width 10em
+	span
+		display block
+		margin -.5em 0 0 7.5em
+	.guia
+		display block
+		font-size 10em
+		margin .15em 0 0 .45em
+		text-decoration none
+		&:after
+			color gris
+			content "\e605"
+			font-family icono
+	&:hover
+		background claro
+
+.contenedor_video
 	height 0
 	overflow hidden
 	padding-bottom 56.25%
@@ -282,7 +312,7 @@ section
 .encabezado
 	margin 0 0 1em 0
 	.numero
-		background #a9a9a9
+		background azul
 		color fondo
 		float left
 		font-family mayuscula
@@ -296,8 +326,8 @@ section
 		z-index 0
 		&:after
 			border-top solid 0 transparent
-			border-left solid .7em #a9a9a9
-			border-bottom solid 1.5em transparent
+			border-left solid .7em azul
+			border-bottom solid 1.6em transparent
 			border-right solid 0 transparent
 			content ""
 			left 2em
@@ -324,7 +354,7 @@ section
 	top .4em
 	width 30px
 	&:after
-		content "\e605"
+		content "\e60a"
 		font-family icono
 
 .fecha

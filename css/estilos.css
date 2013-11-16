@@ -190,6 +190,7 @@ section {
   position: fixed;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  z-index: 10;
 }
 .arriba a {
   background: #343434;
@@ -236,14 +237,44 @@ section {
   margin: 1em;
   white-space: normal;
 }
-.contenedor {
+.contenedor_imagen {
+  background: #fff;
+  border-bottom: 1px solid #c6cfd3;
+  border-top: 1px solid #c6cfd3;
+  height: 15em;
+}
+.contenedor_imagen img {
+  display: block;
+  height: auto;
+  margin: 1em auto 1em auto;
+  width: 10em;
+}
+.contenedor_imagen span {
+  display: block;
+  margin: -0.5em 0 0 7.5em;
+}
+.contenedor_imagen .guia {
+  display: block;
+  font-size: 10em;
+  margin: 0.15em 0 0 0.45em;
+  text-decoration: none;
+}
+.contenedor_imagen .guia:after {
+  color: #343434;
+  content: "\e605";
+  font-family: icono;
+}
+.contenedor_imagen:hover {
+  background: #ebf0f4;
+}
+.contenedor_video {
   height: 0;
   overflow: hidden;
   padding-bottom: 56.25%;
   padding-top: 30px;
   position: relative;
 }
-.contenedor iframe {
+.contenedor_video iframe {
   height: 100%;
   left: 0px;
   position: absolute;
@@ -254,7 +285,7 @@ section {
   margin: 0 0 1em 0;
 }
 .encabezado .numero {
-  background: #a9a9a9;
+  background: #3b84bf;
   color: #edf1f3;
   float: left;
   font-family: lucida grande;
@@ -269,8 +300,8 @@ section {
 }
 .encabezado .numero:after {
   border-top: solid 0 transparent;
-  border-left: solid 0.7em #a9a9a9;
-  border-bottom: solid 1.5em transparent;
+  border-left: solid 0.7em #3b84bf;
+  border-bottom: solid 1.6em transparent;
   border-right: solid 0 transparent;
   content: "";
   left: 2em;
@@ -299,7 +330,7 @@ section {
   width: 30px;
 }
 .lista:after {
-  content: "\e605";
+  content: "\e60a";
   font-family: icono;
 }
 .fecha {
