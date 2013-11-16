@@ -84,7 +84,7 @@ footer .avatar img {
   border-radius: 50%;
   box-shadow: 0 0 2px #000;
   height: auto;
-  left: 1.3em;
+  left: 1em;
   position: absolute;
   top: 1em;
   width: 3em;
@@ -93,11 +93,12 @@ footer .avatar img {
 footer .avatar p {
   color: #343434;
   font-size: 1em;
-  left: 4.7em;
+  left: 4em;
   line-height: 1.1em;
   position: absolute;
   text-align: left;
-  top: 0.9em;
+  top: 1.5em;
+  white-space: nowrap;
   z-index: 4;
 }
 footer .social {
@@ -126,7 +127,7 @@ footer .social .email:before {
 footer .social .twitter {
   right: 0.5em;
   text-decoration: none;
-  top: 0.8em;
+  top: 0.7em;
 }
 footer .social .twitter:before {
   content: "\e606";
@@ -137,19 +138,19 @@ footer .social .twitter:hover {
 footer .social .github {
   right: 0.5em;
   text-decoration: none;
-  top: 2.8em;
+  top: 2.7em;
 }
 footer .social .github:before {
   content: "\e609";
 }
 footer .social .github:hover {
-  color: #808080;
+  color: #343434;
   text-decoration: none;
 }
 footer .social .email {
   right: 0.5em;
   text-decoration: none;
-  top: 4.8em;
+  top: 4.7em;
 }
 footer .social .email:before {
   content: "\e602";
@@ -292,8 +293,9 @@ section {
   float: left;
   font-family: lucida grande;
   font-size: 0.5em;
-  height: 1.4em;
-  margin: 1.2em 1.5em 0 0;
+  height: 1.7em;
+  line-height: 1.6;
+  margin: 1em 1.5em 0 0;
   padding: 0.15em 0 0 0;
   position: relative;
   text-align: center;
@@ -303,7 +305,7 @@ section {
 .encabezado .numero:after {
   border-top: solid 0 transparent;
   border-left: solid 0.7em #3b84bf;
-  border-bottom: solid 1.6em transparent;
+  border-bottom: solid 1.8em transparent;
   border-right: solid 0 transparent;
   content: "";
   left: 2em;
