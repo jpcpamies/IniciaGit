@@ -16,7 +16,7 @@ body {
   background: #edf1f3;
   color: #343434;
   font-family: raleway, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
 }
 h1 {
   font-size: 3em;
@@ -40,7 +40,7 @@ h2 {
   font-weight: normal;
   font-size: 2em;
   letter-spacing: -3px;
-  margin: 0;
+  margin: 0.5em 0 0.5em 0;
 }
 h3 {
   color: #3b84bf;
@@ -49,6 +49,8 @@ h3 {
   font-size: 1.5em;
   letter-spacing: -2px;
   margin: 0.5em;
+  text-align: center;
+  white-space: normal;
 }
 header img {
   display: block;
@@ -160,10 +162,10 @@ nav {
   z-index: 5;
 }
 p {
-  margin: 0.5em;
+  margin: 0.5em 1em;
 }
 p:first-child {
-  margin: 0 0.5em;
+  margin: 0 1em 0 1em;
 }
 section {
   background: #dcdcdc;
@@ -172,31 +174,32 @@ section {
 }
 #mm0 {
   background: #3b84bf;
-  border: 1px solid #edf1f3;
+  border: 0.5px solid rgba(59,132,191,0.05);
   color: #fff;
   font-size: 1.5em;
   height: 2em;
   left: -5px;
   position: relative;
-  width: 108.5%;
+  width: 109%;
 }
 .arriba {
-  background: #343434;
-  border-radius: 50%;
   bottom: 1em;
   color: #fff;
-  height: 3em;
+  left: 1em;
   opacity: 0.6;
   position: fixed;
-  left: 1em;
-  width: 3em;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 .arriba a {
+  background: #343434;
+  border-radius: 50%;
   color: #fff;
-  text-decoration: none;
+  display: block;
+  height: 3em;
   position: relative;
+  text-decoration: none;
+  width: 3em;
 }
 .arriba a:after {
   content: "\e608";
@@ -212,13 +215,26 @@ section {
   font-family: lucida grande;
   font-weight: none;
   margin: 0 0.5em 1em 0.5em;
+  text-align: center;
 }
 .caja {
   background: #ebf0f4;
   border: 1px solid #c6cfd3;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  display: inline-block;
+  margin: 1em 0.2em;
+  vertical-align: top;
+  width: 90%;
+}
+.caja:first-child {
+  margin: 1em 0.2em 1em 0.5em;
+}
+.caja .autor,
+.caja .fecha,
+.caja .resumen {
   margin: 1em;
+  white-space: normal;
 }
 .contenedor {
   height: 0;
@@ -267,6 +283,13 @@ section {
   margin: 0.4em 0.5em 0 2em;
   text-align: left;
 }
+.horizontal {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.horizontal::-webkit-scrollbar {
+  display: none;
+}
 .lista {
   color: #fff;
   font-size: 1.7em;
@@ -283,8 +306,9 @@ section {
   color: #808080;
 }
 .fixed {
-  position: fixed;
+  box-shadow: 0 2px 2px rgba(59,132,191,0.5);
   left: 0px;
-  top: -1px;
+  position: fixed;
   right: 0px;
+  top: -1px;
 }
