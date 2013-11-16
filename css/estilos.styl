@@ -46,6 +46,9 @@ claro = #ebf0f4
 // .icon-directions:before {
 // 	content: "\e605";
 // }
+// .icon-ellipsis:before {
+// 	content: "\e60b";
+// }
 // .icon-twitter:before {
 // 	content: "\e606";
 // }
@@ -55,6 +58,7 @@ claro = #ebf0f4
 // .icon-lines:before {
 // 	content: "\e60a";
 // }
+
 
 
 article
@@ -118,14 +122,14 @@ footer
 		float left
 		height 10em
 		position relative
-		width 8em
+		width 9.5em
 		&:after
 			border-bottom solid 10em transparent
 			border-left solid 5em white
 			border-right solid 10px transparent
 			border-top solid 0 green
 			content ""
-			left 8em
+			left 9.5em
 			position absolute
 			top 0px
 		img
@@ -156,7 +160,7 @@ footer
 		a
 			color white
 			font-family texto
-			font-size .8em
+			font-size 1.5em
 			font-weight bold
 		.twitter
 		.github
@@ -169,31 +173,32 @@ footer
 				vertical-align bottom
 
 		.twitter
-			right 1.8em
+			right .5em
 			text-decoration none
-			top 2.7em
+			top .8em
 			&:before
 				content "\e606"
 			&:hover
 				color #21b2e9
 				
 		.github
-			right 3.5em
+			right .5em
 			text-decoration none
-			top 5.8em
+			top 2.8em
 			&:before
 				content "\e609"
 			&:hover
 				color grey
+				text-decoration none
 
 		.email
-			right 1em
+			right .5em
 			text-decoration none
-			top 9em
+			top 4.8em
 			&:before
 				content "\e602"
 			&:hover
-				color #dec164
+				color #f6ca2d
 
 nav
 	overflow-x hidden
@@ -264,7 +269,7 @@ section
 	vertical-align top
 	width 90%
 	&:first-child
-		margin 1em .2em 1em .5em
+		margin 0 .2em 1em 1em
 	.autor
 	.fecha
 	.resumen
@@ -366,3 +371,28 @@ section
 	position fixed
 	right 0px
 	top -1px
+
+.puntos
+	color grey
+	display block
+	font-size 1.2em
+	text-align center
+	&:after
+		content "\e60b"
+		font-family icono
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

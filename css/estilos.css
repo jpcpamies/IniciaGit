@@ -67,7 +67,7 @@ footer .avatar {
   float: left;
   height: 10em;
   position: relative;
-  width: 8em;
+  width: 9.5em;
 }
 footer .avatar:after {
   border-bottom: solid 10em transparent;
@@ -75,7 +75,7 @@ footer .avatar:after {
   border-right: solid 10px transparent;
   border-top: solid 0 #008000;
   content: "";
-  left: 8em;
+  left: 9.5em;
   position: absolute;
   top: 0px;
 }
@@ -107,7 +107,7 @@ footer .social {
 footer .social a {
   color: #fff;
   font-family: raleway, sans-serif;
-  font-size: 0.8em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 footer .social .twitter,
@@ -124,9 +124,9 @@ footer .social .email:before {
   vertical-align: bottom;
 }
 footer .social .twitter {
-  right: 1.8em;
+  right: 0.5em;
   text-decoration: none;
-  top: 2.7em;
+  top: 0.8em;
 }
 footer .social .twitter:before {
   content: "\e606";
@@ -135,26 +135,27 @@ footer .social .twitter:hover {
   color: #21b2e9;
 }
 footer .social .github {
-  right: 3.5em;
+  right: 0.5em;
   text-decoration: none;
-  top: 5.8em;
+  top: 2.8em;
 }
 footer .social .github:before {
   content: "\e609";
 }
 footer .social .github:hover {
   color: #808080;
+  text-decoration: none;
 }
 footer .social .email {
-  right: 1em;
+  right: 0.5em;
   text-decoration: none;
-  top: 9em;
+  top: 4.8em;
 }
 footer .social .email:before {
   content: "\e602";
 }
 footer .social .email:hover {
-  color: #dec164;
+  color: #f6ca2d;
 }
 nav {
   overflow-x: hidden;
@@ -229,7 +230,7 @@ section {
   width: 90%;
 }
 .caja:first-child {
-  margin: 1em 0.2em 1em 0.5em;
+  margin: 0 0.2em 1em 1em;
 }
 .caja .autor,
 .caja .fecha,
@@ -342,4 +343,14 @@ section {
   position: fixed;
   right: 0px;
   top: -1px;
+}
+.puntos {
+  color: #808080;
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+}
+.puntos:after {
+  content: "\e60b";
+  font-family: icono;
 }
