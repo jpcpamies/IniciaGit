@@ -164,6 +164,7 @@ nav {
   z-index: 5;
 }
 p {
+  line-height: 1.4;
   margin: 0.5em 1em;
 }
 p:first-child {
@@ -233,6 +234,9 @@ section {
 .caja:first-child {
   margin: 0 0.2em 1em 1em;
 }
+.caja:last-child {
+  margin: 0 1em 1em 0.2em;
+}
 .caja .autor,
 .caja .fecha,
 .caja .resumen {
@@ -293,8 +297,9 @@ section {
   float: left;
   font-family: lucida grande;
   font-size: 0.5em;
+  font-weight: bold;
   height: 1.7em;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 1em 1.5em 0 0;
   padding: 0.15em 0 0 0;
   position: relative;
