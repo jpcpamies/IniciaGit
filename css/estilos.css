@@ -9,7 +9,7 @@ article {
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
-  margin: 0.6em 0.9em;
+  margin: 0.6em 0.5em;
   padding: 0 0 1em 0;
 }
 body {
@@ -21,6 +21,7 @@ body {
 h1 {
   font-size: 3em;
   font-family: lobster, sans-serif;
+  font-weight: normal;
   margin: 0 0 0.5em 0;
   text-align: center;
 }
@@ -219,6 +220,20 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   margin: 1em;
 }
+.contenedor {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+.contenedor iframe {
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
 .encabezado {
   margin: 0 0 1em 0;
 }
@@ -239,7 +254,7 @@ section {
 .encabezado .numero:after {
   border-top: solid 0 transparent;
   border-left: solid 0.7em #a9a9a9;
-  border-bottom: solid 1.4em transparent;
+  border-bottom: solid 1.5em transparent;
   border-right: solid 0 transparent;
   content: "";
   left: 2em;
@@ -257,7 +272,7 @@ section {
   font-size: 1.7em;
   position: absolute;
   right: 0.5em;
-  top: 0.25em;
+  top: 0.4em;
   width: 30px;
 }
 .lista:after {
