@@ -189,10 +189,10 @@ section {
   bottom: 1em;
   color: #fff;
   left: 1em;
-  opacity: 0.6;
+  opacity: 0.95;
   position: fixed;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
   z-index: 10;
 }
 .arriba a {
