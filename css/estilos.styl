@@ -166,6 +166,7 @@ footer
 		.email
 			position absolute
 			transition all .2s ease
+			-webkit-transition all .2s ease
 			&:before
 				font-family icono
 				margin 0 .5em 0 0
@@ -235,13 +236,15 @@ section
 	transition all .1s ease
 	z-index 10
 	a 
-		background gris
+		background #d9d9d9
 		border-radius 50%
 		color: white;
 		display block
 		height 3em
 		position relative
 		text-decoration none
+		transition all .2s ease
+		-webkit-transition all .2s ease
 		width 3em
 		&:after
 			content "\e608"
@@ -251,6 +254,8 @@ section
 			position absolute
 			top .2em
 			left .45em
+		&:hover
+			background gris
 
 .autor
 	color grey

@@ -116,6 +116,7 @@ footer .social .github,
 footer .social .email {
   position: absolute;
   transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
 }
 footer .social .twitter:before,
 footer .social .github:before,
@@ -196,13 +197,15 @@ section {
   z-index: 10;
 }
 .arriba a {
-  background: #343434;
+  background: #d9d9d9;
   border-radius: 50%;
   color: #fff;
   display: block;
   height: 3em;
   position: relative;
   text-decoration: none;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
   width: 3em;
 }
 .arriba a:after {
@@ -213,6 +216,9 @@ section {
   position: absolute;
   top: 0.2em;
   left: 0.45em;
+}
+.arriba a:hover {
+  background: #343434;
 }
 .autor {
   color: #808080;
