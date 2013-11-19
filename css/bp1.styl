@@ -1,4 +1,13 @@
 
+article
+	margin .6em .5em
+
+p
+	line-height 1.4
+	margin .5em 1em
+	&:first-child 
+		margin 0 1em 0 1em
+
 .caja
 	background claro
 	border 1px solid borde
@@ -20,7 +29,19 @@
 		white-space normal
 
 .horizontal
+	margin 0
 	overflow-x auto
+	padding 0
+	width 100%
 	white-space nowrap
 	&::-webkit-scrollbar
 		display none
+
+.puntos
+	color grey
+	display block
+	font-size 1.2em
+	text-align center
+	&:after
+		content "\e60b"
+		font-family icono
