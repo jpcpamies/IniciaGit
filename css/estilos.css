@@ -60,23 +60,23 @@
   }
   footer {
     background: #3b84bf;
-    height: 10em;
+    height: 4.5em;
   }
   footer .avatar {
     background: #fff;
     display: inline-block;
     float: left;
-    height: 10em;
+    height: 4.5em;
     position: relative;
-    width: 9.5em;
+    width: 17.5em;
   }
   footer .avatar:after {
-    border-bottom: solid 10em transparent;
-    border-left: solid 5em #fff;
-    border-right: solid 10px transparent;
+    border-bottom: solid 4.5em transparent;
+    border-left: solid 2.2em #fff;
+    border-right: solid 4px transparent;
     border-top: solid 0 #008000;
     content: "";
-    left: 9.5em;
+    left: 17.5em;
     position: absolute;
     top: 0px;
   }
@@ -85,20 +85,20 @@
     border-radius: 50%;
     box-shadow: 0 0 2px #000;
     height: auto;
-    left: 1em;
+    left: 5em;
     position: absolute;
-    top: 1em;
+    top: 0.7em;
     width: 3em;
     z-index: 5;
   }
   footer .avatar p {
     color: #343434;
     font-size: 1em;
-    left: 4em;
+    left: 7.5em;
     line-height: 1.1em;
     position: absolute;
     text-align: left;
-    top: 1.5em;
+    top: 1.3em;
     white-space: nowrap;
     z-index: 4;
   }
@@ -129,7 +129,7 @@
   footer .social .twitter {
     right: 0.5em;
     text-decoration: none;
-    top: 0.7em;
+    top: 0.8em;
   }
   footer .social .twitter:before {
     content: "\e606";
@@ -138,9 +138,9 @@
     color: #21b2e9;
   }
   footer .social .github {
-    right: 0.5em;
+    right: 3em;
     text-decoration: none;
-    top: 2.7em;
+    top: 0.8em;
   }
   footer .social .github:before {
     content: "\e609";
@@ -150,9 +150,9 @@
     text-decoration: none;
   }
   footer .social .email {
-    right: 0.5em;
+    right: 5.7em;
     text-decoration: none;
-    top: 4.7em;
+    top: 0.8em;
   }
   footer .social .email:before {
     content: "\e602";
@@ -176,7 +176,7 @@
   section {
     background: #dcdcdc;
     margin: -0.6em 0;
-    padding: 0.6em 0;
+    padding: 0.6em 0 4em 0;
   }
   #mm0 {
     background: #3b84bf;
@@ -367,6 +367,113 @@
   }
   p:first-child {
     margin: 0 1em 0 1em;
+  }
+  footer {
+    background: #3b84bf;
+    height: 10em;
+  }
+  footer .avatar {
+    background: #fff;
+    display: inline-block;
+    float: left;
+    height: 10em;
+    position: relative;
+    width: 9.5em;
+  }
+  footer .avatar:after {
+    border-bottom: solid 10em transparent;
+    border-left: solid 5em #fff;
+    border-right: solid 10px transparent;
+    border-top: solid 0 #008000;
+    content: "";
+    left: 9.5em;
+    position: absolute;
+    top: 0px;
+  }
+  footer .avatar img {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #000;
+    height: auto;
+    left: 1em;
+    position: absolute;
+    top: 1em;
+    width: 3em;
+    z-index: 5;
+  }
+  footer .avatar p {
+    color: #343434;
+    font-size: 1em;
+    left: 4em;
+    line-height: 1.1em;
+    position: absolute;
+    text-align: left;
+    top: 1.5em;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  footer .social {
+    position: relative;
+    z-index: 3;
+  }
+  footer .social a {
+    color: #fff;
+    font-family: raleway, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  footer .social .twitter,
+  footer .social .github,
+  footer .social .email {
+    position: absolute;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
+  footer .social .twitter:before,
+  footer .social .github:before,
+  footer .social .email:before {
+    font-family: icono;
+    margin: 0 0.5em 0 0;
+    vertical-align: bottom;
+  }
+  footer .social .twitter {
+    right: 0.5em;
+    text-decoration: none;
+    top: 0.7em;
+  }
+  footer .social .twitter:before {
+    content: "\e606";
+  }
+  footer .social .twitter:hover {
+    color: #21b2e9;
+  }
+  footer .social .github {
+    right: 0.5em;
+    text-decoration: none;
+    top: 2.7em;
+  }
+  footer .social .github:before {
+    content: "\e609";
+  }
+  footer .social .github:hover {
+    color: #343434;
+    text-decoration: none;
+  }
+  footer .social .email {
+    right: 0.5em;
+    text-decoration: none;
+    top: 4.7em;
+  }
+  footer .social .email:before {
+    content: "\e602";
+  }
+  footer .social .email:hover {
+    color: #f6ca2d;
+  }
+  section {
+    background: #dcdcdc;
+    margin: -0.6em 0;
+    padding: 0.6em 0;
   }
   .caja {
     background: #ebf0f4;
