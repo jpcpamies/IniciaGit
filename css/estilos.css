@@ -58,23 +58,23 @@
   }
   footer {
     background: #3b84bf;
-    height: 4.5em;
+    height: 10em;
   }
   footer .avatar {
     background: #fff;
     display: inline-block;
     float: left;
-    height: 4.5em;
+    height: 10em;
     position: relative;
-    width: 17.5em;
+    width: 9.5em;
   }
   footer .avatar:after {
-    border-bottom: solid 4.5em transparent;
-    border-left: solid 2.2em #fff;
-    border-right: solid 4px transparent;
+    border-bottom: solid 10em transparent;
+    border-left: solid 5em #fff;
+    border-right: solid 10px transparent;
     border-top: solid 0 #008000;
     content: "";
-    left: 17.5em;
+    left: 9.5em;
     position: absolute;
     top: 0px;
   }
@@ -83,20 +83,20 @@
     border-radius: 50%;
     box-shadow: 0 0 2px #000;
     height: auto;
-    left: 5em;
+    left: 1em;
     position: absolute;
-    top: 0.7em;
+    top: 1em;
     width: 3em;
     z-index: 5;
   }
   footer .avatar p {
     color: #343434;
     font-size: 1em;
-    left: 7.5em;
+    left: 4em;
     line-height: 1.1em;
     position: absolute;
     text-align: left;
-    top: 1.3em;
+    top: 1.5em;
     white-space: nowrap;
     z-index: 4;
   }
@@ -127,7 +127,7 @@
   footer .social .twitter {
     right: 0.5em;
     text-decoration: none;
-    top: 0.8em;
+    top: 0.7em;
   }
   footer .social .twitter:before {
     content: "\e606";
@@ -136,9 +136,9 @@
     color: #21b2e9;
   }
   footer .social .github {
-    right: 3em;
+    right: 0.5em;
     text-decoration: none;
-    top: 0.8em;
+    top: 2.7em;
   }
   footer .social .github:before {
     content: "\e609";
@@ -148,9 +148,9 @@
     text-decoration: none;
   }
   footer .social .email {
-    right: 5.7em;
+    right: 0.5em;
     text-decoration: none;
-    top: 0.8em;
+    top: 4.7em;
   }
   footer .social .email:before {
     content: "\e602";
@@ -174,7 +174,7 @@
   section {
     background: #dcdcdc;
     margin: -0.6em 0;
-    padding: 0.6em 0 4em 0;
+    padding: 0.6em 0 2em 0;
   }
   #mm0 {
     background: #3b84bf;
