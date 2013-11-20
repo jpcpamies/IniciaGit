@@ -141,6 +141,16 @@ nav
 	position relative
 	cursor pointer
 	z-index 5
+	.lista
+		color white
+		font-size 1.7em
+		position absolute
+		right .5em
+		top .4em
+		width 30px
+		&:after
+			content "\e60a"
+			font-family icono
 
 p
 	line-height 1.4
@@ -195,38 +205,6 @@ section
 		&:hover
 			background gris
 
-.contenedor_imagen
-	background white
-	border-bottom 1px solid borde 
-	border-top 1px solid borde 
-	height 15em
-	text-align center
-	img 
-		display block
-		height auto
-		margin 1em auto 1em auto
-		width 10em
-	span
-		background orange
-		border-radius 3px
-		color claro
-		font-family mayuscula
-		font-size 1em
-		padding .1em .5em
-	.guia
-		display block
-		font-size 10em
-		margin .07em 0 0 0 
-		text-decoration none
-		width 100%
-		&:after
-			color gris
-			content "\e605"
-			font-family icono
-
-	&:hover
-		background claro
-
 .encabezado
 	margin 0 0 1em 0
 	.numero
@@ -260,17 +238,6 @@ section
 		margin .4em .5em 0 2em
 		text-align left
 
-.lista
-	color white
-	font-size 1.7em
-	position absolute
-	right .5em
-	top .4em
-	width 30px
-	&:after
-		content "\e60a"
-		font-family icono
-
 .fixed 
 	box-shadow 0 2px 2px rgba(azul,.5)
 	left 0px
@@ -279,37 +246,37 @@ section
 	top -1px
 
 @css {
-	.sombra {
+	.contenidos {
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.15) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.15))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.15) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.15) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.15) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.15) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#26000000',GradientType=0 ); /* IE6-8 */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4xIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#1a000000',GradientType=0 ); /* IE6-8 */
 	}
 }
 
-.sombra
+.contenidos
 	border-bottom 1px solid borde
 	height 9em
-	margin 5em 0 5em 0
+	margin 6em 0 9em 0
 	position relative
 	width 100%
 	&:last-child
-		margin 8em 0 3em 0 
+		margin 7em 0 4em 0 
 	
 	.contenedor_video
-		box-shadow 0 10px 15px rgba(black,.3)
+		box-shadow 0 10px 15px rgba(black,.2)
 		height 0
 		left 2em
 		overflow hidden
 		padding-bottom 56.25%
 		padding-top 30px
 		position relative
-		top -2.6em
+		top -3.05em
 		iframe
 			height 100%
 			left 0px
@@ -318,18 +285,31 @@ section
 			width 100%
 	.video
 		display inline-block
-		margin 0 0 0 4em
-		width 35%
+		margin 0 0 0 3.5em
+		width 18em
 		h3
 			background white
 			color gris
-			margin -2.2em 0 0 1em
+			left .8em
 			padding 1em
 			position relative
+			top -3.55em
 			width 15em
-
-
-
+		.libro
+			// border 1px solid
+			left 3.8em
+			top -3.6em
+			padding 1em 3em
+			width 5.8em
+			white-space nowrap
+	.contenedor_imagen
+		img
+			box-shadow 0 10px 30px rgba(black,.3)
+			left 7.5em
+			position relative
+			top -2.9em
+			width 9em
+		
 
 
 
