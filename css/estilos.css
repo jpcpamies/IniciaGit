@@ -11,6 +11,8 @@
     border-radius: 5px;
     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
     margin: 1em;
+    overflow-x: hidden;
+    overflow-y: hidden;
     padding: 0 0 1em 0;
   }
   body {
@@ -255,20 +257,6 @@
   .contenedor_imagen:hover {
     background: #ebf0f4;
   }
-  .contenedor_video {
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    position: relative;
-  }
-  .contenedor_video iframe {
-    height: 100%;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-  }
   .encabezado {
     margin: 0 0 1em 0;
   }
@@ -322,6 +310,52 @@
     position: fixed;
     right: 0px;
     top: -1px;
+  }
+  .sombra {
+    background: transparent;
+    border-top: 1px solid #c6cfd3;
+    box-shadow: 0 -60px 150px rgba(0,0,0,0.15);
+    display: block;
+    height: 150px;
+    margin: 16em 0 -6em -3.5em;
+    position: relative;
+    width: 130%;
+  }
+  .sombra .contenedor_video {
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+  }
+  .sombra .contenedor_video iframe {
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+  .sombra .video {
+    left: 7em;
+    display: inline-block;
+    position: absolute;
+    top: -12.8em;
+    width: 30%;
+  }
+  .sombra .video:nth-child(even) {
+    top: -12.8em;
+    left: 30em;
+  }
+  .sombra .video h3 {
+    background: #fff;
+    color: #343434;
+    left: -1.6em;
+    padding: 1em 6em 0 2em;
+    position: absolute;
+    top: 10em;
+    width: 65%;
+    white-space: nowrap;
   }
 }
 @media screen and (max-width: 480px) {
@@ -453,10 +487,12 @@
     padding: 1em;
   }
   .caja .autor {
+    color: #808080;
     margin-bottom: 0;
     padding: 0 0 0 1em;
   }
   .caja .fecha {
+    color: #808080;
     margin: 0 1em;
     padding: 0 0 0 1em;
   }

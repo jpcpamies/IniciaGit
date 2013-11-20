@@ -5,6 +5,8 @@ article
 	border-radius 5px
 	box-shadow 0 1px 0 rgba(black,.2)
 	margin 1em
+	overflow-x hidden
+	overflow-y hidden
 	padding 0 0 1em 0
 	
 body 
@@ -228,19 +230,6 @@ section
 	&:hover
 		background claro
 
-.contenedor_video
-	height 0
-	overflow hidden
-	padding-bottom 56.25%
-	padding-top 30px
-	position relative
-	iframe
-		height 100%
-		left 0px
-		position absolute
-		top 0px
-		width 100%
-
 .encabezado
 	margin 0 0 1em 0
 	.numero
@@ -292,6 +281,47 @@ section
 	right 0px
 	top -1px
 
+.sombra
+	background transparent
+	border-top 1px solid borde
+	box-shadow 0 -60px 150px rgba(black,.15)
+	display block
+	height 150px
+	margin 16em 0 -6em -3.5em
+	position relative
+	width 130%
+	.contenedor_video
+		box-shadow 0 10px 15px rgba(black,.2)
+		height 0
+		overflow hidden
+		padding-bottom 56.25%
+		padding-top 30px
+		position relative
+		iframe
+			height 100%
+			left 0px
+			position absolute
+			top 0px
+			width 100%
+	.video
+		left 7em
+		display inline-block
+		position absolute
+		top -12.8em
+		width 30%
+		&:nth-child(even)
+			top -12.8em
+			left 30em
+		h3
+			// border 1px solid
+			background white
+			color gris
+			left -1.6em
+			padding 1em 6em 0 2em
+			position absolute
+			top 10em
+			width 65%
+			white-space nowrap
 
 
 
