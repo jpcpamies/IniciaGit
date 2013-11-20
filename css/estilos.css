@@ -47,11 +47,7 @@
     color: #3b84bf;
     font-family: lucida grande;
     font-weight: normal;
-    font-size: 1.5em;
     letter-spacing: -2px;
-    margin: 0.5em;
-    text-align: center;
-    white-space: normal;
   }
   header img {
     display: block;
@@ -223,23 +219,6 @@
   .arriba a:hover {
     background: #343434;
   }
-  .autor {
-    color: #808080;
-    font-family: lucida grande;
-    font-weight: none;
-    margin: 0 0.5em 1em 0.5em;
-    text-align: center;
-  }
-  .caja {
-    background: #ebf0f4;
-    border: 1px solid #c6cfd3;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    display: inline-block;
-    margin: 0 0.8em 1em 0.8em;
-    vertical-align: top;
-    width: 45%;
-  }
   .contenedor_imagen {
     background: #fff;
     border-bottom: 1px solid #c6cfd3;
@@ -325,12 +304,6 @@
     margin: 0.4em 0.5em 0 2em;
     text-align: left;
   }
-  .horizontal {
-    margin: 0 auto;
-    padding: 0 0 0 1em;
-    width: 90%;
-    white-space: normal;
-  }
   .lista {
     color: #fff;
     font-size: 1.7em;
@@ -343,18 +316,12 @@
     content: "\e60a";
     font-family: icono;
   }
-  .fecha {
-    color: #808080;
-  }
   .fixed {
     box-shadow: 0 2px 2px rgba(59,132,191,0.5);
     left: 0px;
     position: fixed;
     right: 0px;
     top: -1px;
-  }
-  .puntos {
-    display: none;
   }
 }
 @media screen and (max-width: 480px) {
@@ -477,45 +444,25 @@
   }
   .caja {
     background: #ebf0f4;
-    border: 1px solid #c6cfd3;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    display: inline-block;
-    margin: 0 0.2em;
-    vertical-align: top;
-    width: 90%;
+    border-top: 1px solid #c6cfd3;
+    border-bottom: 1px solid #c6cfd3;
+    margin: 0 0 1em 0;
+    padding: 0 0 0.7em 0;
   }
-  .caja:first-child {
-    margin: 0 0.2em 1em 1em;
-  }
-  .caja:last-child {
-    margin: 0 1em 1em 0.2em;
-  }
-  .caja .autor,
-  .caja .fecha,
   .caja .resumen {
-    margin: 1em;
-    font-size: 0.8em;
-    white-space: normal;
+    padding: 1em;
   }
-  .horizontal {
-    margin: 0;
-    overflow-x: auto;
-    padding: 0;
-    width: 100%;
-    white-space: nowrap;
+  .caja .autor {
+    margin-bottom: 0;
+    padding: 0 0 0 1em;
   }
-  .horizontal::-webkit-scrollbar {
-    display: none;
+  .caja .fecha {
+    margin: 0 1em;
+    padding: 0 0 0 1em;
   }
-  .puntos {
-    color: #808080;
-    display: block;
-    font-size: 1.2em;
+  .caja h3 {
+    font-size: 1.5em;
+    margin: 1em 0.5em;
     text-align: center;
-  }
-  .puntos:after {
-    content: "\e60b";
-    font-family: icono;
   }
 }

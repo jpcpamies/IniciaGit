@@ -104,38 +104,19 @@ section
 
 .caja
 	background claro
-	border 1px solid borde
-	border-radius 4px
-	box-shadow 0 2px 5px rgba(black,.3)
-	display inline-block
-	margin 0 .2em
-	vertical-align top
-	width 90%
-	&:first-child
-		margin 0 .2em 1em 1em
-	&:last-child
-		margin 0 1em 1em .2em
-	.autor
-	.fecha
+	border-top 1px solid borde
+	border-bottom 1px solid borde
+	margin 0 0 1em 0
+	padding 0 0 .7em 0
 	.resumen
-		margin 1em
-		font-size .8em
-		white-space normal
-
-.horizontal
-	margin 0
-	overflow-x auto
-	padding 0
-	width 100%
-	white-space nowrap
-	&::-webkit-scrollbar
-		display none
-
-.puntos
-	color grey
-	display block
-	font-size 1.2em
-	text-align center
-	&:after
-		content "\e60b"
-		font-family icono
+		padding 1em
+	.autor
+		margin-bottom 0
+		padding 0 0 0 1em
+	.fecha
+		margin 0 1em
+		padding 0 0 0 1em
+	h3
+		font-size 1.5em
+		margin 1em .5em
+		text-align center
