@@ -319,7 +319,7 @@
   .contenidos .video h3 {
     background: #fff;
     color: #343434;
-    left: 0.8em;
+    left: 2.2em;
     padding: 1em;
     position: relative;
     top: -3.55em;
@@ -334,10 +334,14 @@
   }
   .contenidos .contenedor_imagen img {
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    left: 7.5em;
+    left: 6em;
     position: relative;
     top: -2.9em;
     width: 9em;
+  }
+  .contenidos h3 {
+    display: block;
+    margin-left: -1.5em;
   }
 }
 @media screen and (max-width: 480px) {
