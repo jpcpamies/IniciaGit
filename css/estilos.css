@@ -48,13 +48,6 @@
     margin: 0.4em 0.5em 0 2em;
     text-align: left;
   }
-  article .materiales {
-    background: #ebf0f4;
-    border-bottom: 1px solid #c6cfd3;
-    border-top: 1px solid #c6cfd3;
-    margin: 2em 0;
-    padding: 1em;
-  }
   body {
     background: #edf1f3;
     color: #343434;
@@ -283,14 +276,67 @@
 }
 @media screen and (max-width: 480px) {
   article {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
     margin: 0.6em 0.5em;
+    padding: 0 0 1em 0;
   }
-  article .contenido {
+  article .encabezado {
+    margin: 0 0 1em 0;
+  }
+  article .encabezado .numero {
+    background: #3b84bf;
+    color: #edf1f3;
+    float: left;
+    font-family: lucida grande;
+    font-size: 0.5em;
+    font-weight: bold;
+    height: 1.7em;
+    line-height: 1.5;
+    margin: 1em 1.5em 0 0;
+    padding: 0.15em 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 2em;
+    z-index: 0;
+  }
+  article .encabezado .numero:after {
+    border-top: solid 0 transparent;
+    border-left: solid 0.7em #3b84bf;
+    border-bottom: solid 1.8em transparent;
+    border-right: solid 0 transparent;
+    content: "";
+    left: 2em;
+    position: absolute;
+    top: 0px;
+  }
+  article .encabezado .nombre {
+    display: block;
+    line-height: 1em;
+    margin: 0.4em 0.5em 0 2em;
+    text-align: left;
+  }
+  article .materiales {
     background: #ebf0f4;
     border-bottom: 1px solid #c6cfd3;
     border-top: 1px solid #c6cfd3;
     margin: 2em 0;
     padding: 1em;
+  }
+  article .materiales .video .contenedor {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+  }
+  article .materiales .video .contenedor iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
   p {
     line-height: 1.4;

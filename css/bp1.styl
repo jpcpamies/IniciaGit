@@ -1,12 +1,62 @@
 
 article
+	background white
+	border-radius 5px
+	box-shadow 0 1px 0 rgba(black,.2)
 	margin .6em .5em
-	.contenido
+	padding 0 0 1em 0
+	.encabezado
+		margin 0 0 1em 0
+		.numero
+			background azul
+			color fondo
+			float left
+			font-family mayuscula
+			font-size .5em
+			font-weight bold
+			height 1.7em 
+			line-height 1.5
+			margin 1em 1.5em 0 0
+			padding .15em 0 0 0 
+			position relative
+			text-align center
+			width 2em 
+			z-index 0
+			&:after
+				border-top solid 0 transparent
+				border-left solid .7em azul
+				border-bottom solid 1.8em transparent
+				border-right solid 0 transparent
+				content ""
+				left 2em
+				position absolute
+				top 0px
+
+		.nombre
+			display block
+			line-height 1em
+			margin .4em .5em 0 2em
+			text-align left
+	.materiales
 		background claro
 		border-bottom 1px solid borde
 		border-top 1px solid borde
 		margin 2em 0 
 		padding 1em
+		.video
+			.contenedor
+				height 0
+				overflow hidden
+				padding-bottom 56.25%
+				padding-top 30px
+				position relative
+				iframe
+					height  100%
+					left 0
+					position absolute
+					top 0
+					width 100%
+
 
 p
 	line-height 1.4
