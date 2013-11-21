@@ -54,9 +54,13 @@ article
 				margin 1em 0 0 0 
 				padding .2em 0 0 0 
 		.video
-			margin 2em 0 2em 0
+			display inline-block
+			margin 1em 0
+			width 100%
 			&:last-child
-				margin 2em 0 1em 0
+				margin 1em 0 
+			&:nth-child(even)
+				margin 1em 0 
 			.contenedor
 				box-shadow 0 0 5px rgba(black,.5)
 				height 0
@@ -71,14 +75,17 @@ article
 					top 0
 					width 100%
 		.libro
-			margin 2em 0 2em 0
+			display inline-block
+			margin 1em 0
+			width 100%
 			img
 				box-shadow 0 0 5px rgba(black,.5)
 				display block
 				height auto
 				margin auto
 				width 10em
-			
+			p
+				text-align center
 
 
 p

@@ -91,7 +91,15 @@
     width: 100%;
   }
   article .materiales .libro {
-    margin: 2em 0 2em 0;
+    display: inline-block;
+    margin: 0 3em 0 0;
+    width: 45%;
+  }
+  article .materiales .libro:last-child {
+    margin: 0;
+  }
+  article .materiales .libro:nth-child(even) {
+    margin: 0;
   }
   article .materiales .libro img {
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -99,6 +107,9 @@
     height: auto;
     margin: auto;
     width: 10em;
+  }
+  article .materiales .libro p {
+    text-align: center;
   }
   body {
     background: #edf1f3;
@@ -387,10 +398,15 @@
     padding: 0.2em 0 0 0;
   }
   article .materiales .video {
-    margin: 2em 0 2em 0;
+    display: inline-block;
+    margin: 1em 0;
+    width: 100%;
   }
   article .materiales .video:last-child {
-    margin: 2em 0 1em 0;
+    margin: 1em 0;
+  }
+  article .materiales .video:nth-child(even) {
+    margin: 1em 0;
   }
   article .materiales .video .contenedor {
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -408,7 +424,9 @@
     width: 100%;
   }
   article .materiales .libro {
-    margin: 2em 0 2em 0;
+    display: inline-block;
+    margin: 1em 0;
+    width: 100%;
   }
   article .materiales .libro img {
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -416,6 +434,9 @@
     height: auto;
     margin: auto;
     width: 10em;
+  }
+  article .materiales .libro p {
+    text-align: center;
   }
   p {
     line-height: 1.4;
