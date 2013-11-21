@@ -321,10 +321,17 @@
     background: #ebf0f4;
     border-bottom: 1px solid #c6cfd3;
     border-top: 1px solid #c6cfd3;
-    margin: 2em 0;
+    margin: 1em 0;
     padding: 1em;
   }
+  article .materiales .video {
+    margin: 2em 0 2em 0;
+  }
+  article .materiales .video:last-child {
+    margin: 2em 0 1em 0;
+  }
   article .materiales .video .contenedor {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
     height: 0;
     overflow: hidden;
     padding-bottom: 56.25%;
@@ -337,6 +344,15 @@
     position: absolute;
     top: 0;
     width: 100%;
+  }
+  article .materiales .video p {
+    border-top: 1px solid #fff;
+    box-shadow: 0 -1px 0 #c6cfd3;
+    font-family: lucida grande;
+    font-size: 1.3em;
+    letter-spacing: -2px;
+    margin: 1em 0 0 0;
+    padding: 0.2em 0 0 0;
   }
   p {
     line-height: 1.4;
