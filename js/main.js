@@ -7,7 +7,7 @@ $('#mobileMenu').mobileMenu({
   groupPageText: '',     
   nested: true,        
   prependTo: 'nav',      
-  switchWidth: 1000,     
+  switchWidth: 992,     
   topOptionText: ''
 });
 })

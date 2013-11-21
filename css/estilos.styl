@@ -21,12 +21,57 @@ claro = #ebf0f4
 	font-weight: normal;
 	font-style: normal;
 }
+			
+body 
+	background fondo
+	color gris
+	font-family texto
+	font-size 15px
+
+h1
+	font-size 3em;
+	font-family titulo
+	font-weight normal
+	margin 0 0 .5em 0
+	text-align center
+	small
+		border-top 1px solid borde
+		color gris
+		display block
+		font-size .39em;
+		line-height -5em
+		margin .1em auto 0 auto 
+		max-width 17em
+
+h2
+	display inline-block
+	font-family mayuscula
+	font-weight normal
+	font-size 2em;
+	letter-spacing -3px
+	margin .5em 0 .5em 0
+
+h3
+	color azul
+	font-family mayuscula
+	font-weight normal
+	letter-spacing -2px
+
+p
+	line-height 1.4
+	margin .5em 2em
+	&:first-child 
+		margin 0 2em 0 2em
 
 // Break points
 
-@media screen and (max-width: 1000px) 
+@media screen and (min-width: 992px) 
+	@import "bp3.styl"
+
+
+@media screen and (max-width: 992px) 
 	@import "bp2.styl"
 
 
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 630px) 
 	@import "bp1.styl"
