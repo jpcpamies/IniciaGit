@@ -179,8 +179,10 @@ p:first-child {
   }
   footer .avatar {
     left: 325px;
-    padding: 0 50px 0 0;
+    padding: 0 35px 0 0;
     position: absolute;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
   }
   footer .avatar:hover {
     background: rgba(0,0,0,0.03);
@@ -206,12 +208,14 @@ p:first-child {
   }
   footer .social .email {
     color: #b3b3b3;
-    left: 601px;
+    left: 586px;
     line-height: 3em;
     padding: 0 25px;
     position: absolute;
     text-decoration: none;
     top: 0px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
   }
   footer .social .email:before {
     content: "\e602";
@@ -244,12 +248,14 @@ p:first-child {
   }
   footer .social .twitter {
     color: #b3b3b3;
-    left: 528px;
+    left: 513px;
     line-height: 3em;
     padding: 0 25px;
     position: absolute;
     text-decoration: none;
     top: 0px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
   }
   footer .social .twitter:before {
     content: "\e606";
