@@ -110,37 +110,50 @@ nav
 		margin 0
 		padding 0
 		li
-			// border 1px solid
-			margin 0 0 0 1em
-			a 
-				color azul
-				font-size 1.1em
+			a
 				text-decoration none
 				display block
-				padding .5em 1.5em .5em 1em
 			.capitulo
-				a
-					background azul
-					color claro
+				background azul
+				border-radius 5px
+				color claro
+				margin 0 0 1em 1em
+				padding .4em 1.5em .4em 1em
+				transition all .2s ease
+				-webkit-transition all .2s ease
+				&:hover
+					background gris
+		ul 
+			border 1px solid boton
+			border-radius 5px
+			margin -.7em 0 1em 1em
+			li 
+				border-bottom 1px solid boton
+				&:last-child
+					border-bottom none
+			a
+				color gris
+				padding .4em 1.5em .4em 1em
+				position relative
+				transition all .2s ease
+				-webkit-transition all .2s ease
+				&:after
+					color rgba(black,.5)
+					content "\e613"
+					font-family icono2
+					font-size 1.2em
+					font-weight none
+					position absolute
+					right .3em
+					top .4em
+				&:hover
+					background rgba(black,.05)
 
-			// .contacto
 
-			// .oro
-
-			// .tema
 
 section
 	bottom 0px
 	left 325px
 	max-width 1000px
-	// overflow-y auto
 	position absolute
 	top 0px
-
-
-
-
-
-
-
-

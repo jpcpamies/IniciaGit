@@ -5,6 +5,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'icono2';
+  src: url("../fonts/fonts/icomoon.eot");
+  src: url("../fonts/fonts/icomoon.eot?#iefix") format('embedded-opentype'), url("../fonts/fonts/icomoon.ttf") format('truetype'), url("../fonts/fonts/icomoon.woff") format('woff'), url("../fonts/fonts/icomoon.svg#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 article {
   background: #fff;
   border-radius: 5px;
@@ -320,19 +327,52 @@ p:first-child {
     margin: 0;
     padding: 0;
   }
-  nav ul li {
-    margin: 0 0 0 1em;
-  }
   nav ul li a {
-    color: #3b84bf;
-    font-size: 1.1em;
     text-decoration: none;
     display: block;
-    padding: 0.5em 1.5em 0.5em 1em;
   }
-  nav ul li .capitulo a {
+  nav ul li .capitulo {
     background: #3b84bf;
+    border-radius: 5px;
     color: #ebf0f4;
+    margin: 0 0 1em 1em;
+    padding: 0.4em 1.5em 0.4em 1em;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
+  nav ul li .capitulo:hover {
+    background: #343434;
+  }
+  nav ul ul {
+    border: 1px solid rgba(111,129,148,0.5);
+    border-radius: 5px;
+    margin: -0.7em 0 1em 1em;
+  }
+  nav ul ul li {
+    border-bottom: 1px solid rgba(111,129,148,0.5);
+  }
+  nav ul ul li:last-child {
+    border-bottom: none;
+  }
+  nav ul ul a {
+    color: #343434;
+    padding: 0.4em 1.5em 0.4em 1em;
+    position: relative;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
+  nav ul ul a:after {
+    color: rgba(0,0,0,0.5);
+    content: "\e613";
+    font-family: icono2;
+    font-size: 1.2em;
+    font-weight: none;
+    position: absolute;
+    right: 0.3em;
+    top: 0.4em;
+  }
+  nav ul ul a:hover {
+    background: rgba(0,0,0,0.05);
   }
   section {
     bottom: 0px;
