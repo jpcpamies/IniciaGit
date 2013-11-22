@@ -92,134 +92,134 @@ article
 				text-align center
 
 header
-	height 250px
+	height 220px
 	left 0px
-	margin 1em 0 0 0 
+	padding 1em 0 0 0 
 	position fixed
 	top 0px
 	width 325px
 	img
 		display block
 		margin .5em auto
-		width 120px
+		width 100px
 
 footer
+	border-top 1px solid white
 	bottom 0px
-	display inline-block
-	height 200px
-	margin-left 325px
-	max-width 1000px
-	position relative
-	width 100%
-	background azul
-	height 10em
-	.avatar
-		background white
-		display inline-block
-		float left
-		height 10em
-		position relative
-		width 9.5em
-		&:after
-			border-bottom solid 10em transparent
-			border-left solid 5em white
-			border-right solid 10px transparent
-			border-top solid 0 green
-			content ""
-			left 9.5em
-			position absolute
-			top 0px
-		img
-			border 2px solid white
-			border-radius 50%
-			box-shadow 0 0 2px black
-			height auto
-			left 1em
-			position absolute
-			top 1em
-			width 3em
-			z-index 5
-
-		p
-			color gris
-			font-size 1em
-			left 4em
-			line-height 1.1em;
-			position absolute
-			text-align left
-			top 1.5em
-			white-space nowrap
-			z-index 4
-	.social
-		position relative
-		// text-shadow 1px 1px 0px rgba(black,.5)
-		z-index 3
-		a
-			color white
-			font-family texto
-			font-size 1.5em
-			font-weight bold
-		.twitter
-		.github
-		.email
-			position absolute
-			transition all .2s ease
-			-webkit-transition all .2s ease
-			&:before
-				font-family icono
-				margin 0 .5em 0 0
-				vertical-align bottom
-
-		.twitter
-			right .5em
-			text-decoration none
-			top .7em
-			&:before
-				content "\e606"
-			&:hover
-				color #21b2e9
-				
-		.github
-			right .5em
-			text-decoration none
-			top 2.7em
-			&:before
-				content "\e609"
-			&:hover
-				color gris
-				text-decoration none
-
-		.email
-			right .5em
-			text-decoration none
-			top 4.7em
-			&:before
-				content "\e602"
-			&:hover
-				color #f6ca2d
-
-nav
-	bottom 0px
+	box-shadow 0 -1px 0 borde
+	height 50px
 	left 0px
 	position fixed
-	top 250px
+	width 100%
+	.avatar
+		// background green
+		left 325px
+		padding 0 50px 0 0 
+		position absolute
+		&:hover
+			background: rgba(0,0,0,.03);
+			p
+				color gris
+		img
+			border 3px solid white
+			border-radius 50%
+			box-shadow 0 0 1px rgba(black,.5)
+			height auto
+			margin .2em 0 0 1em
+			width 37px
+		p
+			color #b3b3b3 
+			left 40px
+			position relative 
+			top -42px
+			transition all .2s ease
+			-webkit-transition all .2s ease
+	.social
+		.email
+			color #b3b3b3 
+			left 601px
+			line-height 3em
+			padding 0 25px 
+			position absolute
+			text-decoration none
+			top 0px
+			&:before
+				content "\e602"
+				font-family icono
+				font-size 1.5em
+			&:hover
+				background #f6ca2d
+				color white
+		.github
+			border-right 1px solid
+			color #b3b3b3 
+			left 0px
+			line-height 3em
+			padding 0 150.5px  
+			position absolute
+			text-decoration none
+			top 0px
+			&:before
+				content "\e609"
+				font-family icono
+				font-size 1.5em
+			&:hover
+				background rgba(0,0,0,.03);
+				border-color borde
+				color gris
+		.twitter
+			color #b3b3b3 
+			left 528px
+			line-height 3em
+			padding 0 25px 
+			position absolute
+			text-decoration none
+			top 0px
+			&:before
+				content "\e606"
+				font-family icono
+				font-size 1.5em
+			&:hover
+				background #21b2e9
+				color white
+
+nav
+	bottom 50px
+	left 0px
+	overflow-y auto
+	position fixed
+	top 235px
 	width 325px
 	ul
-		border 1px solid rgba(111,129,148, .5)
-		border-radius 5px
+		margin 0
+		padding 0
 		li
-			position: relative
-			border-bottom 1px solid rgba(111,129,148, .5)
-			a
+			border 1px solid
+			margin 0 0 0 1em
+			a 
 				color azul
-				display block
-				padding 4px 40px 4px 10px
+				font-size 1.1em
 				text-decoration none
+				display block
+				padding .5em 1.5em .5em 1em
+			.capitulo
+				a
+					background azul
+					color claro
+
+			// .contacto
+
+			// .oro
+
+			// .tema
 
 section
-	display: inline-block;
-	margin-left: 325px;
-	max-width: 1000px;
+	bottom 50px
+	left 325px
+	max-width 1000px
+	overflow-y auto
+	position absolute
+	top 0px
 
 
 
