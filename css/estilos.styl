@@ -22,6 +22,83 @@ claro = #ebf0f4
 	font-weight: normal;
 	font-style: normal;
 }
+	
+article
+	background white
+	border-radius 5px
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	margin 1em
+	padding 0 0 1em 0
+	.encabezado
+		margin 0 0 1em 0
+		.numero
+			background azul
+			color fondo
+			float left
+			font-family mayuscula
+			font-size .5em
+			font-weight bold
+			height 1.7em 
+			line-height 1.5
+			margin 1em 1.5em 0 0
+			padding .15em 0 0 0 
+			position relative
+			text-align center
+			width 2em 
+			z-index 0
+			&:after
+				border-top solid 0 transparent
+				border-left solid .7em azul
+				border-bottom solid 1.8em transparent
+				border-right solid 0 transparent
+				content ""
+				left 2em
+				position absolute
+				top 0px
+
+		.nombre
+			display block
+			line-height 1em
+			margin .4em .5em 0 2em
+			text-align left
+	.materiales
+		background claro
+		border-bottom 1px solid borde
+		border-top 1px solid borde
+		margin 1em 0 3em 0 
+		padding 3.5em 3.5em 2em 3.5em
+		.video
+		.libro
+			p
+				font-family mayuscula
+				font-size 1.3em
+				letter-spacing -2px
+		.video
+			.contenedor
+				box-shadow 0 0 5px rgba(black,.5)
+				height 0
+				overflow hidden
+				padding-bottom 56.25%
+				padding-top 30px
+				position relative
+				iframe
+					height  100%
+					left 0
+					position absolute
+					top 0
+					width 100%
+		.libro
+			display inline-block
+			margin 0
+			width 45%
+			&:last-child
+				margin 0
+			&:nth-child(even)
+				margin 0
+			img
+				display block
+				height auto
+				width 10em
 			
 body 
 	background fondo
