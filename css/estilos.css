@@ -32,6 +32,16 @@ article .encabezado .iniciando:before {
   right: 0.6em;
   top: 0.3em;
 }
+article .encabezado .libro:before {
+  color: #ebf0f4;
+  content: "\e600";
+  font-family: icono;
+  font-size: 0.9em;
+  font-weight: none;
+  position: absolute;
+  right: 0.6em;
+  top: 0.3em;
+}
 article .encabezado .numero {
   background: #3b84bf;
   color: #edf1f3;
@@ -63,6 +73,16 @@ article .encabezado .nombre {
   line-height: 1em;
   margin: 0.4em 0.5em 0 2em;
   text-align: left;
+}
+article .encabezado .video:before {
+  color: #ebf0f4;
+  content: "\e601";
+  font-family: icono;
+  font-size: 0.9em;
+  font-weight: none;
+  position: absolute;
+  right: 0.6em;
+  top: 0.3em;
 }
 article .materiales {
   background: #ebf0f4;
@@ -356,15 +376,17 @@ p:first-child {
   nav ul li .capitulo:hover {
     background: #343434;
   }
-  nav ul li .iniciando {
-    border: 1px solid rgba(111,129,148,0.5);
-    border-radius: 5px;
-    color: #3b84bf;
-    margin: 0 0 0.2em 1em;
-    padding: 0.4em 1.5em 0.4em 1em;
-    position: relative;
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
+  nav ul li .ejercicio:after {
+    content: "\e603";
+    font-family: icono;
+    font-size: 1.2em;
+    font-weight: none;
+    position: absolute;
+    right: 0.4em;
+    top: 0.4em;
+  }
+  nav ul li .ejercicio:hover {
+    background: rgba(0,0,0,0.05);
   }
   nav ul li .iniciando:after {
     color: rgba(59,132,191,0.7);
@@ -379,16 +401,6 @@ p:first-child {
   nav ul li .iniciando:hover {
     background: rgba(0,0,0,0.05);
   }
-  nav ul li .libro {
-    border: 1px solid rgba(111,129,148,0.5);
-    border-radius: 5px;
-    color: #3b84bf;
-    margin: 0 0 0.2em 1em;
-    padding: 0.4em 1.5em 0.4em 1em;
-    position: relative;
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-  }
   nav ul li .libro:after {
     color: rgba(59,132,191,0.7);
     content: "\e600";
@@ -402,16 +414,6 @@ p:first-child {
   nav ul li .libro:hover {
     background: rgba(0,0,0,0.05);
   }
-  nav ul li .oro {
-    background: rgba(229,194,0,0.5);
-    border: 1px solid #e5c200;
-    border-radius: 5px;
-    color: #7f6c00;
-    margin: 1.2em 0 1.3em 1em;
-    padding: 0.4em 1.5em 0.4em 1em;
-    transition: all 0.1s ease;
-    -webkit-transition: all 0.1s ease;
-  }
   nav ul li .oro:after {
     content: "\e604";
     font-family: icono;
@@ -422,9 +424,7 @@ p:first-child {
     top: 0.4em;
   }
   nav ul li .oro:hover {
-    background: #343434;
-    border: 1px solid #343434;
-    color: #ebf0f4;
+    background: rgba(0,0,0,0.05);
   }
   nav ul li .solo {
     border: 1px solid rgba(111,129,148,0.5);
@@ -456,16 +456,6 @@ p:first-child {
   }
   nav ul li .uno:hover:after {
     color: #343434;
-  }
-  nav ul li .video {
-    border: 1px solid rgba(111,129,148,0.5);
-    border-radius: 5px;
-    color: #3b84bf;
-    margin: 0 0 0.2em 1em;
-    padding: 0.4em 1.5em 0.4em 1em;
-    position: relative;
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
   }
   nav ul li .video:after {
     color: rgba(59,132,191,0.7);
