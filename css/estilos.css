@@ -15,12 +15,22 @@
 article {
   background: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
   margin: 1em;
   padding: 0 0 1em 0;
 }
 article .encabezado {
   margin: 0 0 1em 0;
+}
+article .encabezado .iniciando:before {
+  color: #ebf0f4;
+  content: "\e605";
+  font-family: icono;
+  font-size: 0.9em;
+  font-weight: none;
+  position: absolute;
+  right: 0.6em;
+  top: 0.3em;
 }
 article .encabezado .numero {
   background: #3b84bf;
@@ -154,7 +164,7 @@ p:first-child {
 .arriba a {
   background: #d9d9d9;
   border-radius: 50%;
-  color: #fff;
+  color: #ebf0f4;
   display: block;
   height: 3em;
   position: relative;
@@ -164,12 +174,12 @@ p:first-child {
   width: 3em;
 }
 .arriba a:after {
-  content: "\e608";
-  font-family: icono;
-  font-size: 2em;
+  content: "\e610";
+  font-family: icono2;
+  font-size: 1.6em;
   text-align: center;
   position: absolute;
-  top: 0.2em;
+  top: 0.35em;
   left: 0.45em;
 }
 .arriba a:hover {
@@ -355,6 +365,16 @@ p:first-child {
     position: relative;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
+  }
+  nav ul li .iniciando:after {
+    color: rgba(59,132,191,0.7);
+    content: "\e605";
+    font-family: icono;
+    font-size: 1.2em;
+    font-weight: none;
+    position: absolute;
+    right: 0.5em;
+    top: 0.4em;
   }
   nav ul li .iniciando:hover {
     background: rgba(0,0,0,0.05);
@@ -611,25 +631,23 @@ p:first-child {
     color: #f6ca2d;
   }
   nav {
+    cursor: pointer;
     overflow-x: hidden;
     position: relative;
-    cursor: pointer;
     z-index: 5;
   }
-  nav .lista {
+  nav:after {
     color: #fff;
+    content: "\e60a";
+    font-family: icono;
     font-size: 1.7em;
     position: absolute;
     right: 0.5em;
     top: 0.4em;
     width: 30px;
   }
-  nav .lista:after {
-    content: "\e60a";
-    font-family: icono;
-  }
   section {
-    background: #dcdcdc;
+    background: #e4e1df;
     margin: -0.6em 0;
     padding: 0.6em 0 2em 0;
   }
@@ -756,7 +774,7 @@ p:first-child {
     color: #f6ca2d;
   }
   section {
-    background: #dcdcdc;
+    background: #e4e1df;
     margin: -0.6em 0;
     padding: 0.6em 0;
   }

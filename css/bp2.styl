@@ -95,23 +95,22 @@ footer
 				color #f6ca2d
 
 nav
+	cursor pointer
 	overflow-x hidden
 	position relative
-	cursor pointer
 	z-index 5
-	.lista
+	&:after
 		color white
+		content "\e60a"
+		font-family icono
 		font-size 1.7em
 		position absolute
 		right .5em
 		top .4em
 		width 30px
-		&:after
-			content "\e60a"
-			font-family icono
 
 section
-	background #dcdcdc
+	background #e4e1df
 	margin -.6em 0
 	padding .6em 0 2em 0
 
