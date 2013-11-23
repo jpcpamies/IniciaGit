@@ -21,7 +21,8 @@ footer
 	position fixed
 	width 100%
 	.avatar
-		left 320px
+		// background red
+		left 341px
 		padding 0 35px 0 5px 
 		position absolute
 		transition all .2s ease
@@ -46,8 +47,9 @@ footer
 			-webkit-transition all .2s ease
 	.social
 		.email
+			// background green
 			color #b3b3b3 
-			left 586px
+			left 602px
 			line-height 3.2em
 			padding 0 25px 
 			position absolute
@@ -63,11 +65,12 @@ footer
 				background #f6ca2d
 				color white
 		.github
-			border-right 1px solid
+			// background blue
+			border-right 1px solid borde
 			color #b3b3b3 
 			left 0px
 			line-height 3.2em
-			padding 0 150.5px  
+			padding 0 160.5px  
 			position absolute
 			text-decoration none
 			top 0px
@@ -82,8 +85,9 @@ footer
 				border-color borde
 				color gris
 		.twitter
+			// background blue
 			color #b3b3b3 
-			left 513px
+			left 534px
 			line-height 3.2em
 			padding 0 25px 
 			position absolute
@@ -104,12 +108,13 @@ nav
 	left 0px
 	overflow-y auto
 	position fixed
-	top 235px
+	top 225px
 	width 325px
 	ul
 		margin 0
 		padding 0
 		li
+			position relative
 			a
 				text-decoration none
 				display block
@@ -117,39 +122,138 @@ nav
 				background azul
 				border-radius 5px
 				color claro
-				margin 0 0 1em 1em
+				margin 1.2em 0 1.3em 1em
 				padding .4em 1.5em .4em 1em
 				transition all .2s ease
 				-webkit-transition all .2s ease
 				&:hover
 					background gris
-		ul 
-			border 1px solid boton
-			border-radius 5px
-			margin -.7em 0 1em 1em
-			li 
-				border-bottom 1px solid boton
-				&:last-child
-					border-bottom none
-			a
-				color gris
+			.iniciando
+				border 1px solid boton
+				border-radius 5px
+				color azul
+				margin 0 0 .2em 1em
+				padding .4em 1.5em .4em 1em
+				position relative
+				transition all .2s ease
+				-webkit-transition all .2s ease
+				&:hover
+					background rgba(black,.05)
+			.libro
+				border 1px solid boton
+				border-radius 5px
+				color azul
+				margin 0 0 .2em 1em
 				padding .4em 1.5em .4em 1em
 				position relative
 				transition all .2s ease
 				-webkit-transition all .2s ease
 				&:after
-					color rgba(black,.5)
+					color rgba(azul,.7)
+					content "\e600"
+					font-family icono
+					font-size 1.1em
+					font-weight none
+					position absolute
+					right .5em
+					top .4em
+				&:hover
+					background rgba(black,.05)
+			.oro
+				background rgba(#e5c200,.5)
+				border 1px solid #e5c200
+				border-radius 5px
+				color #7f6c00
+				margin 1.2em 0 1.3em 1em
+				padding .4em 1.5em .4em 1em
+				transition all .1s ease
+				-webkit-transition all .1s ease
+				&:after
+					content "\e604"
+					font-family icono
+					font-size 1.2em
+					font-weight none
+					position absolute
+					right .4em
+					top .4em
+				&:hover
+					background gris
+					border 1px solid gris
+					color claro
+			.solo
+				border 1px solid boton
+				border-radius 5px
+				color azul
+				margin 0 0 .2em 1em
+				padding .4em 1.5em .4em 1em
+				position relative
+				transition all .2s ease
+				-webkit-transition all .2s ease
+				&:hover
+					background rgba(black,.05)
+			.uno
+				&:after
+					background claro
+					border-radius 50%
+					color azul
+					content "1"
+					font-family arial
+					font-size .9em
+					font-weight none
+					height 1.2em
+					position absolute
+					right .5em
+					text-align center
+					top .55em
+					width 1.2em
+				&:hover
+					&:after
+						color gris
+			.video
+				border 1px solid boton
+				border-radius 5px
+				color azul
+				margin 0 0 .2em 1em
+				padding .4em 1.5em .4em 1em
+				position relative
+				transition all .2s ease
+				-webkit-transition all .2s ease
+				&:after
+					color rgba(azul,.7)
+					content "\e601"
+					font-family icono
+					font-size 1.1em
+					font-weight none
+					position absolute
+					right .5em
+					top .4em
+				&:hover
+					background rgba(black,.05)
+		ul 
+			border 1px solid boton
+			border-radius 5px
+			margin -1.1em 0 1em 1em
+			li 
+				border-bottom 1px solid boton
+				&:last-child
+					border-bottom none
+			a
+				color azul
+				padding .4em 1.5em .4em 1em
+				position relative
+				transition all .2s ease
+				-webkit-transition all .2s ease
+				&:after
+					color rgba(azul,.7)
 					content "\e613"
 					font-family icono2
 					font-size 1.2em
 					font-weight none
 					position absolute
-					right .3em
+					right .2em
 					top .4em
 				&:hover
 					background rgba(black,.05)
-
-
 
 section
 	bottom 0px

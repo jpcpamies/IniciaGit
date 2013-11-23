@@ -225,7 +225,7 @@ p:first-child {
     width: 100%;
   }
   footer .avatar {
-    left: 320px;
+    left: 341px;
     padding: 0 35px 0 5px;
     position: absolute;
     transition: all 0.2s ease;
@@ -255,7 +255,7 @@ p:first-child {
   }
   footer .social .email {
     color: #b3b3b3;
-    left: 586px;
+    left: 602px;
     line-height: 3.2em;
     padding: 0 25px;
     position: absolute;
@@ -274,11 +274,11 @@ p:first-child {
     color: #fff;
   }
   footer .social .github {
-    border-right: 1px solid;
+    border-right: 1px solid #c6cfd3;
     color: #b3b3b3;
     left: 0px;
     line-height: 3.2em;
-    padding: 0 150.5px;
+    padding: 0 160.5px;
     position: absolute;
     text-decoration: none;
     top: 0px;
@@ -297,7 +297,7 @@ p:first-child {
   }
   footer .social .twitter {
     color: #b3b3b3;
-    left: 513px;
+    left: 534px;
     line-height: 3.2em;
     padding: 0 25px;
     position: absolute;
@@ -320,12 +320,15 @@ p:first-child {
     left: 0px;
     overflow-y: auto;
     position: fixed;
-    top: 235px;
+    top: 225px;
     width: 325px;
   }
   nav ul {
     margin: 0;
     padding: 0;
+  }
+  nav ul li {
+    position: relative;
   }
   nav ul li a {
     text-decoration: none;
@@ -335,7 +338,7 @@ p:first-child {
     background: #3b84bf;
     border-radius: 5px;
     color: #ebf0f4;
-    margin: 0 0 1em 1em;
+    margin: 1.2em 0 1.3em 1em;
     padding: 0.4em 1.5em 0.4em 1em;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
@@ -343,10 +346,124 @@ p:first-child {
   nav ul li .capitulo:hover {
     background: #343434;
   }
+  nav ul li .iniciando {
+    border: 1px solid rgba(111,129,148,0.5);
+    border-radius: 5px;
+    color: #3b84bf;
+    margin: 0 0 0.2em 1em;
+    padding: 0.4em 1.5em 0.4em 1em;
+    position: relative;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
+  nav ul li .iniciando:hover {
+    background: rgba(0,0,0,0.05);
+  }
+  nav ul li .libro {
+    border: 1px solid rgba(111,129,148,0.5);
+    border-radius: 5px;
+    color: #3b84bf;
+    margin: 0 0 0.2em 1em;
+    padding: 0.4em 1.5em 0.4em 1em;
+    position: relative;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
+  nav ul li .libro:after {
+    color: rgba(59,132,191,0.7);
+    content: "\e600";
+    font-family: icono;
+    font-size: 1.1em;
+    font-weight: none;
+    position: absolute;
+    right: 0.5em;
+    top: 0.4em;
+  }
+  nav ul li .libro:hover {
+    background: rgba(0,0,0,0.05);
+  }
+  nav ul li .oro {
+    background: rgba(229,194,0,0.5);
+    border: 1px solid #e5c200;
+    border-radius: 5px;
+    color: #7f6c00;
+    margin: 1.2em 0 1.3em 1em;
+    padding: 0.4em 1.5em 0.4em 1em;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+  }
+  nav ul li .oro:after {
+    content: "\e604";
+    font-family: icono;
+    font-size: 1.2em;
+    font-weight: none;
+    position: absolute;
+    right: 0.4em;
+    top: 0.4em;
+  }
+  nav ul li .oro:hover {
+    background: #343434;
+    border: 1px solid #343434;
+    color: #ebf0f4;
+  }
+  nav ul li .solo {
+    border: 1px solid rgba(111,129,148,0.5);
+    border-radius: 5px;
+    color: #3b84bf;
+    margin: 0 0 0.2em 1em;
+    padding: 0.4em 1.5em 0.4em 1em;
+    position: relative;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
+  nav ul li .solo:hover {
+    background: rgba(0,0,0,0.05);
+  }
+  nav ul li .uno:after {
+    background: #ebf0f4;
+    border-radius: 50%;
+    color: #3b84bf;
+    content: "1";
+    font-family: arial;
+    font-size: 0.9em;
+    font-weight: none;
+    height: 1.2em;
+    position: absolute;
+    right: 0.5em;
+    text-align: center;
+    top: 0.55em;
+    width: 1.2em;
+  }
+  nav ul li .uno:hover:after {
+    color: #343434;
+  }
+  nav ul li .video {
+    border: 1px solid rgba(111,129,148,0.5);
+    border-radius: 5px;
+    color: #3b84bf;
+    margin: 0 0 0.2em 1em;
+    padding: 0.4em 1.5em 0.4em 1em;
+    position: relative;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
+  nav ul li .video:after {
+    color: rgba(59,132,191,0.7);
+    content: "\e601";
+    font-family: icono;
+    font-size: 1.1em;
+    font-weight: none;
+    position: absolute;
+    right: 0.5em;
+    top: 0.4em;
+  }
+  nav ul li .video:hover {
+    background: rgba(0,0,0,0.05);
+  }
   nav ul ul {
     border: 1px solid rgba(111,129,148,0.5);
     border-radius: 5px;
-    margin: -0.7em 0 1em 1em;
+    margin: -1.1em 0 1em 1em;
   }
   nav ul ul li {
     border-bottom: 1px solid rgba(111,129,148,0.5);
@@ -355,20 +472,20 @@ p:first-child {
     border-bottom: none;
   }
   nav ul ul a {
-    color: #343434;
+    color: #3b84bf;
     padding: 0.4em 1.5em 0.4em 1em;
     position: relative;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
   }
   nav ul ul a:after {
-    color: rgba(0,0,0,0.5);
+    color: rgba(59,132,191,0.7);
     content: "\e613";
     font-family: icono2;
     font-size: 1.2em;
     font-weight: none;
     position: absolute;
-    right: 0.3em;
+    right: 0.2em;
     top: 0.4em;
   }
   nav ul ul a:hover {
