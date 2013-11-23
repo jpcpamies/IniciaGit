@@ -84,21 +84,14 @@ article .encabezado .video:before {
   right: 0.6em;
   top: 0.3em;
 }
-article .materiales {
-  background: #ebf0f4;
-  border-bottom: 1px solid #c6cfd3;
-  border-top: 1px solid #c6cfd3;
-  margin: 1em 0 3em 0;
-  padding: 3.5em 3.5em 2em 3.5em;
-}
 article .materiales .video p,
 article .materiales .libro p {
+  color: #3b84bf;
   font-family: lucida grande;
-  font-size: 1.3em;
+  font-size: 1.1em;
   letter-spacing: -2px;
 }
 article .materiales .video .contenedor {
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
   height: 0;
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -114,19 +107,18 @@ article .materiales .video .contenedor iframe {
 }
 article .materiales .libro {
   display: inline-block;
-  margin: 0;
-  width: 45%;
-}
-article .materiales .libro:last-child {
-  margin: 0;
-}
-article .materiales .libro:nth-child(even) {
-  margin: 0;
 }
 article .materiales .libro img {
   display: block;
   height: auto;
-  width: 10em;
+  width: 7em;
+}
+article#video {
+  background: #dbe6ea;
+  background-image: url("../img/paisaje1.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% auto;
 }
 body {
   background: #edf1f3;
@@ -508,6 +500,22 @@ p:first-child {
     position: absolute;
     top: 0px;
   }
+  .materiales .video {
+    background: rgba(255,255,255,0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+    display: inline-block;
+    margin: 0;
+    padding: 2em 0 0.5em 0;
+    vertical-align: top;
+    width: 45%;
+  }
+  .materiales .video:nth-child(odd) {
+    margin: 0 1em 1em 3.5%;
+  }
+  .materiales .video p {
+    font-size: 3em;
+  }
 }
 @media screen and (max-width: 992px) {
   header {
@@ -652,6 +660,19 @@ p:first-child {
     position: relative;
     width: 109%;
   }
+  .materiales .video {
+    background: rgba(255,255,255,0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+    display: inline-block;
+    margin: 0 1em 1em 3%;
+    padding: 2em 0 0.5em 0;
+    vertical-align: top;
+    width: 45%;
+  }
+  .materiales .video:nth-child(odd) {
+    margin: 0 0 1em 3%;
+  }
   .fixed {
     box-shadow: 0 2px 2px rgba(59,132,191,0.5);
     left: 0px;
@@ -767,5 +788,18 @@ p:first-child {
     background: #e4e1df;
     margin: -0.6em 0;
     padding: 0.6em 0;
+  }
+  .materiales .video {
+    background: rgba(255,255,255,0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+    display: inline-block;
+    margin: 0 0 1em 5%;
+    padding: 2em 0 0.5em 0;
+    vertical-align: top;
+    width: 90%;
+  }
+  .materiales .video:nth-child(odd) {
+    margin: 0 0 1em 5%;
   }
 }
