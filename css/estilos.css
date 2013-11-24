@@ -17,7 +17,10 @@ article {
   border-radius: 5px;
   box-shadow: 0 2px 2px rgba(0,0,0,0.3);
   margin: 1em;
-  padding: 0 0 1em 0;
+  padding: 0 0 2em 0;
+}
+article:last-child {
+  margin-bottom: 4.5em;
 }
 article .encabezado {
   margin: 0 0 1em 0;
@@ -43,7 +46,7 @@ article .encabezado .libro:before {
   top: 0.3em;
 }
 article .encabezado .numero {
-  background: #3b84bf;
+  background: #1880fc;
   color: #edf1f3;
   float: left;
   font-family: lucida grande;
@@ -60,7 +63,7 @@ article .encabezado .numero {
 }
 article .encabezado .numero:after {
   border-top: solid 0 transparent;
-  border-left: solid 0.7em #3b84bf;
+  border-left: solid 0.7em #1880fc;
   border-bottom: solid 1.8em transparent;
   border-right: solid 0 transparent;
   content: "";
@@ -86,7 +89,7 @@ article .encabezado .video:before {
 }
 article .materiales .video p,
 article .materiales .libro p {
-  color: #3b84bf;
+  color: #1880fc;
   font-family: lucida grande;
   font-size: 1.1em;
   letter-spacing: -2px;
@@ -113,16 +116,9 @@ article .materiales .libro img {
   height: auto;
   width: 7em;
 }
-article#video {
-  background: #dbe6ea;
-  background-image: url("../img/paisaje1.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 100% auto;
-}
 body {
   background: #edf1f3;
-  color: #343434;
+  color: #515151;
   font-family: raleway, sans-serif;
   font-size: 15px;
 }
@@ -135,7 +131,7 @@ h1 {
 }
 h1 small {
   border-top: 1px solid #c6cfd3;
-  color: #343434;
+  color: #515151;
   display: block;
   font-size: 0.39em;
   line-height: -5em;
@@ -151,7 +147,7 @@ h2 {
   margin: 0.5em 0 0.5em 0;
 }
 h3 {
-  color: #3b84bf;
+  color: #1880fc;
   font-family: lucida grande;
   font-weight: normal;
   letter-spacing: -2px;
@@ -195,7 +191,7 @@ p:first-child {
   left: 0.45em;
 }
 .arriba a:hover {
-  background: #343434;
+  background: #515151;
 }
 .caja {
   background: #ebf0f4;
@@ -223,6 +219,9 @@ p:first-child {
   text-align: center;
 }
 @media screen and (min-width: 992px) {
+  body {
+    position: relative;
+  }
   header {
     height: 220px;
     left: 0px;
@@ -257,7 +256,7 @@ p:first-child {
     background: rgba(0,0,0,0.05);
   }
   footer .avatar:hover p {
-    color: #343434;
+    color: #515151;
   }
   footer .avatar img {
     border: 3px solid #fff;
@@ -315,7 +314,7 @@ p:first-child {
   footer .social .github:hover {
     background: rgba(0,0,0,0.05);
     border-color: #c6cfd3;
-    color: #343434;
+    color: #515151;
   }
   footer .social .twitter {
     color: #b3b3b3;
@@ -357,7 +356,7 @@ p:first-child {
     display: block;
   }
   nav ul li .capitulo {
-    background: #3b84bf;
+    background: #1880fc;
     border-radius: 5px;
     color: #ebf0f4;
     margin: 1.2em 0 1.3em 1em;
@@ -366,7 +365,7 @@ p:first-child {
     -webkit-transition: all 0.2s ease;
   }
   nav ul li .capitulo:hover {
-    background: #343434;
+    background: #515151;
   }
   nav ul li .ejercicio:after {
     content: "\e603";
@@ -381,7 +380,7 @@ p:first-child {
     background: rgba(0,0,0,0.05);
   }
   nav ul li .iniciando:after {
-    color: rgba(59,132,191,0.7);
+    color: rgba(24,128,252,0.7);
     content: "\e605";
     font-family: icono;
     font-size: 1.2em;
@@ -394,7 +393,7 @@ p:first-child {
     background: rgba(0,0,0,0.05);
   }
   nav ul li .libro:after {
-    color: rgba(59,132,191,0.7);
+    color: rgba(24,128,252,0.7);
     content: "\e600";
     font-family: icono;
     font-size: 1.1em;
@@ -421,7 +420,7 @@ p:first-child {
   nav ul li .solo {
     border: 1px solid rgba(111,129,148,0.5);
     border-radius: 5px;
-    color: #3b84bf;
+    color: #1880fc;
     margin: 0 0 0.2em 1em;
     padding: 0.4em 1.5em 0.4em 1em;
     position: relative;
@@ -434,7 +433,7 @@ p:first-child {
   nav ul li .uno:after {
     background: #ebf0f4;
     border-radius: 50%;
-    color: #3b84bf;
+    color: #1880fc;
     content: "1";
     font-family: arial;
     font-size: 0.9em;
@@ -447,10 +446,10 @@ p:first-child {
     width: 1.2em;
   }
   nav ul li .uno:hover:after {
-    color: #343434;
+    color: #515151;
   }
   nav ul li .video:after {
-    color: rgba(59,132,191,0.7);
+    color: rgba(24,128,252,0.7);
     content: "\e601";
     font-family: icono;
     font-size: 1.1em;
@@ -474,14 +473,14 @@ p:first-child {
     border-bottom: none;
   }
   nav ul ul a {
-    color: #3b84bf;
+    color: #1880fc;
     padding: 0.4em 1.5em 0.4em 1em;
     position: relative;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
   }
   nav ul ul a:after {
-    color: rgba(59,132,191,0.7);
+    color: rgba(24,128,252,0.7);
     content: "\e613";
     font-family: icono2;
     font-size: 1.2em;
@@ -494,11 +493,34 @@ p:first-child {
     background: rgba(0,0,0,0.05);
   }
   section {
-    bottom: 0px;
     left: 325px;
     max-width: 1000px;
     position: absolute;
     top: 0px;
+  }
+  .materiales .libro {
+    background: rgba(255,255,255,0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+    display: inline-block;
+    margin: 0;
+    padding: 2em 1em 0.5em 1em;
+    vertical-align: top;
+    width: 20%;
+  }
+  .materiales .libro:nth-child(odd) {
+    margin: 0 1em 1em 3.5%;
+  }
+  .materiales .libro img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 7em;
+  }
+  .materiales .libro p {
+    font-size: 3em;
+    margin: 0.5em 0 0 0;
+    white-space: nowrap;
   }
   .materiales .video {
     background: rgba(255,255,255,0.8);
@@ -515,6 +537,7 @@ p:first-child {
   }
   .materiales .video p {
     font-size: 3em;
+    margin: 0.5em 0 0 1em;
   }
 }
 @media screen and (max-width: 992px) {
@@ -527,7 +550,7 @@ p:first-child {
     width: 80px;
   }
   footer {
-    background: #3b84bf;
+    background: #1880fc;
     height: 10em;
   }
   footer .avatar {
@@ -560,7 +583,7 @@ p:first-child {
     z-index: 5;
   }
   footer .avatar p {
-    color: #343434;
+    color: #515151;
     font-size: 1em;
     left: 4em;
     line-height: 1.1em;
@@ -614,7 +637,7 @@ p:first-child {
     content: "\e609";
   }
   footer .social .github:hover {
-    color: #343434;
+    color: #515151;
     text-decoration: none;
   }
   footer .social .email {
@@ -650,8 +673,8 @@ p:first-child {
     padding: 0.6em 0 2em 0;
   }
   #mm0 {
-    background: #3b84bf;
-    border: 0.5px solid rgba(59,132,191,0.05);
+    background: #1880fc;
+    border: 0.5px solid rgba(24,128,252,0.05);
     color: #fff;
     cursor: pointer;
     font-size: 1.5em;
@@ -674,7 +697,7 @@ p:first-child {
     margin: 0 0 1em 3%;
   }
   .fixed {
-    box-shadow: 0 2px 2px rgba(59,132,191,0.5);
+    box-shadow: 0 2px 2px rgba(24,128,252,0.5);
     left: 0px;
     position: fixed;
     right: 0px;
@@ -683,7 +706,7 @@ p:first-child {
 }
 @media screen and (max-width: 630px) {
   footer {
-    background: #3b84bf;
+    background: #1880fc;
     height: 10em;
   }
   footer .avatar {
@@ -716,7 +739,7 @@ p:first-child {
     z-index: 5;
   }
   footer .avatar p {
-    color: #343434;
+    color: #515151;
     font-size: 1em;
     left: 4em;
     line-height: 1.1em;
@@ -770,7 +793,7 @@ p:first-child {
     content: "\e609";
   }
   footer .social .github:hover {
-    color: #343434;
+    color: #515151;
     text-decoration: none;
   }
   footer .social .email {
