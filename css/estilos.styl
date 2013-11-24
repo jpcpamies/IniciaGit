@@ -9,8 +9,8 @@ fondo = #edf1f3
 borde = rgb(198,207,211)
 boton = rgba(111,129,148, .5)
 hover = rgba(0,0,0,.7)
-// azul = #1880fc
-azul = #1880fc
+azul = #2480e2
+// azul = #3b84bf
 // gris = #343434
 gris = #515151
 claro = #ebf0f4
@@ -145,19 +145,27 @@ article
 				right .6em
 				top .3em
 	.materiales
-		// background claro
-		// border-bottom 1px solid borde
-		// border-top 1px solid borde
-		// margin 1em 0 3em 0 
-		// padding 3.5em 3.5em 2em 3.5em
+		background claro
+		border-bottom 1px solid borde
+		border-top 1px solid borde
+		margin 1em 0 3em 0 
+		padding 1em 0 0 0 
 		.video
 		.libro
 			p
-				color azul
+				color rgba(gris,.8)
 				font-family mayuscula
 				font-size 1.1em
-				letter-spacing -2px
+				letter-spacing -1px
 		.video
+			background white
+			border 1px solid rgba(gris,.3)
+			border-radius 5px
+			box-shadow 0 2px 0 rgba(black,.3)
+			display inline-block
+			padding 2em 0 .5em 0 
+			vertical-align top
+			width 45%
 			.contenedor
 				height 0
 				overflow hidden
@@ -170,6 +178,38 @@ article
 					position absolute
 					top 0
 					width 100%
+		.detalles
+			padding .5em .5em
+			.autor
+				color rgba(gris,1)
+				display inline-block
+				float left
+				font-size .7em
+				font-weight bold
+				margin 0 0 .5em 18px
+				vertical-align top
+				width 45%
+			.fecha
+				color rgba(gris,.4)
+				display inline-block
+				font-size .7em
+				margin 0 0 .5em .5em
+				vertical-align top
+				width 45%
+			.resumen
+				display inline-block
+				font-size .8em
+				margin -.2em 1.5em .5em 1.5em
+				vertical-align top
+			.titulo
+				border-bottom 1px solid borde
+				color azul
+				font-family mayuscula
+				font-size 1.2em
+				letter-spacing -1px
+				margin 0 0 1em 0
+				padding .2em  
+
 		.libro
 			display inline-block
 			// margin 0
@@ -216,7 +256,7 @@ h2
 	font-family mayuscula
 	font-weight normal
 	font-size 2em;
-	letter-spacing -3px
+	letter-spacing -2px
 	margin .5em 0 .5em 0
 
 h3
