@@ -2,17 +2,48 @@
 body
 	position relative
 
+h1
+	color white
+	display inline-block
+	font-family titulo
+	font-size 2.5em;
+	font-weight normal
+	left 35px
+	margin 0 0 0 2.2em
+	position absolute
+	text-shadow 2px 2px 0 gris
+	top 15px
+	small
+		border-top none
+		color white
+		display inline-block
+		font-size .5em;
+		left 5px
+		line-height -5em
+		position absolute
+		top 40px
+		white-space nowrap
+
 header
-	height 220px
+	background-attachment: fixed;
+	background-image url(../img/hero.jpg)
+	background-position center 50px
+	background-repeat no-repeat
+	background-size  100% auto 
+	height 100px
 	left 0px
-	padding 1em 0 0 0 
-	position fixed
 	top 0px
-	width 325px
-	img
-		display block
-		margin .5em auto
-		width 100px
+	width 100%
+	z-index 15
+	-webkit-filter brightness(.95)
+	img 
+		left 1.2em
+		height auto
+		position relative
+		top 1.2em
+		width 80px
+	.hero
+		display none
 
 footer
 	background claro
@@ -110,8 +141,9 @@ nav
 	bottom 50px
 	left 0px
 	overflow-y auto
-	position fixed
-	top 225px
+	// position fixed
+	position relative
+	top 20px
 	width 325px
 	ul
 		margin 0
@@ -250,7 +282,7 @@ section
 	left 325px
 	max-width 1000px
 	position absolute
-	top 0px
+	top 105px
 
 .materiales_video
 	.video
@@ -260,6 +292,12 @@ section
 			width 45%
 		&:last-child
 			margin -1em 1em 0 3.5%
+
+.fijo
+	left 0px
+	position fixed
+	right 0px
+	top 20px
 
 
 
