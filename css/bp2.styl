@@ -1,3 +1,21 @@
+article
+	&:last-child
+		margin-bottom 0
+	.materiales_libro
+		.libros
+			.ejemplar
+				.portada
+					display block
+					float left
+					margin 0 1em 0 0 
+					width 12%
+		.guias
+			.ejemplar
+				.portada
+					display block
+					float left
+					margin 0 1em 0 0 
+					width 12%
 
 header
 	margin 0 0 1em 0
@@ -125,12 +143,14 @@ section
 	position relative
 	width 109%
 
-.materiales
+.materiales_video
 	.video
 		width 45%
 		&:nth-child(odd)
-			margin 0 3% 1em 3%
+			margin 0 1em 0 3.5%
 			width 45%
+		&:last-child
+			margin 1em 1em 0 3.5%
 
 .fixed 
 	box-shadow 0 2px 2px rgba(azul,.5)

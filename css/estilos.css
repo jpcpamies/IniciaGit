@@ -17,7 +17,7 @@ article {
   border-radius: 5px;
   box-shadow: 0 2px 2px rgba(0,0,0,0.3);
   margin: 1em;
-  padding: 0 0 2em 0;
+  padding: 0 0 1em 0;
 }
 article:last-child {
   margin-bottom: 4.5em;
@@ -87,21 +87,14 @@ article .encabezado .video:before {
   right: 0.6em;
   top: 0.3em;
 }
-article .materiales {
+article .materiales_video {
   background: #ebf0f4;
   border-bottom: 1px solid #c6cfd3;
   border-top: 1px solid #c6cfd3;
   margin: 1em 0 3em 0;
-  padding: 1em 0 0 0;
+  padding: 1em;
 }
-article .materiales .video p,
-article .materiales .libro p {
-  color: rgba(81,81,81,0.8);
-  font-family: lucida grande;
-  font-size: 1.1em;
-  letter-spacing: -1px;
-}
-article .materiales .video {
+article .materiales_video .video {
   background: #fff;
   border: 1px solid rgba(81,81,81,0.3);
   border-radius: 5px;
@@ -111,24 +104,24 @@ article .materiales .video {
   vertical-align: top;
   width: 45%;
 }
-article .materiales .video .contenedor {
+article .materiales_video .video .contenedor {
   height: 0;
   overflow: hidden;
   padding-bottom: 56.25%;
   padding-top: 30px;
   position: relative;
 }
-article .materiales .video .contenedor iframe {
+article .materiales_video .video .contenedor iframe {
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
 }
-article .materiales .detalles {
+article .materiales_video .video .detalles {
   padding: 0.5em 0.5em;
 }
-article .materiales .detalles .autor {
+article .materiales_video .video .detalles .autor {
   color: #515151;
   display: inline-block;
   float: left;
@@ -136,23 +129,21 @@ article .materiales .detalles .autor {
   font-weight: bold;
   margin: 0 0 0.5em 18px;
   vertical-align: top;
-  width: 45%;
 }
-article .materiales .detalles .fecha {
+article .materiales_video .video .detalles .fecha {
   color: rgba(81,81,81,0.4);
   display: inline-block;
   font-size: 0.7em;
-  margin: 0 0 0.5em 0.5em;
+  margin: 0 0 0.5em 18px;
   vertical-align: top;
-  width: 45%;
 }
-article .materiales .detalles .resumen {
+article .materiales_video .video .detalles .resumen {
   display: inline-block;
   font-size: 0.8em;
   margin: -0.2em 1.5em 0.5em 1.5em;
   vertical-align: top;
 }
-article .materiales .detalles .titulo {
+article .materiales_video .video .detalles .titulo {
   border-bottom: 1px solid #c6cfd3;
   color: #2480e2;
   font-family: lucida grande;
@@ -161,13 +152,120 @@ article .materiales .detalles .titulo {
   margin: 0 0 1em 0;
   padding: 0.2em;
 }
-article .materiales .libro {
-  display: inline-block;
+article .materiales_libro {
+  background: #fff;
+  border-bottom: 1px solid #c6cfd3;
+  border-top: 1px solid #c6cfd3;
+  margin: 1em 0 3em 0;
+  padding: 1em;
 }
-article .materiales .libro img {
+article .materiales_libro .libros {
+  border-bottom: 1px solid #c6cfd3;
+  display: inline-block;
+  margin: 0 0 1em 0;
+  padding: 0 0 0.5em 0;
+  width: 100%;
+}
+article .materiales_libro .libros .ejemplar {
+  padding: 0 0 0 1.5em;
+  position: relative;
+}
+article .materiales_libro .libros .ejemplar .detalles {
+  left: 8.5em;
+  position: absolute;
+  top: 0em;
+}
+article .materiales_libro .libros .ejemplar .detalles .autor {
+  color: #515151;
+  font-size: 0.7em;
+  font-weight: bold;
+  margin: 0;
+}
+article .materiales_libro .libros .ejemplar .detalles .idioma {
+  margin: 0.5em 0 0 0;
+}
+article .materiales_libro .libros .ejemplar .detalles .idioma img {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+article .materiales_libro .libros .ejemplar .detalles .resumen {
+  font-size: 0.8em;
+  margin: 0;
+}
+article .materiales_libro .libros .ejemplar .detalles .titulo {
+  color: #2480e2;
+  font-family: lucida grande;
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin: 0;
+}
+article .materiales_libro .libros .ejemplar .portada {
   display: block;
+  float: left;
+  margin: 0 1em 0 0;
+  width: 12%;
+}
+article .materiales_libro .libros .ejemplar .portada img {
   height: auto;
-  width: 7em;
+  width: 90px;
+}
+article .materiales_libro .libros .grupo {
+  font-size: 1.2em;
+  padding: 0 0 1em 0;
+}
+article .materiales_libro .guias {
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+}
+article .materiales_libro .guias .ejemplar {
+  padding: 0 0 0 1.5em;
+  position: relative;
+}
+article .materiales_libro .guias .ejemplar .detalles {
+  left: 8.5em;
+  position: absolute;
+  top: 0em;
+}
+article .materiales_libro .guias .ejemplar .detalles .autor {
+  color: #515151;
+  font-size: 0.7em;
+  font-weight: bold;
+  margin: 0;
+}
+article .materiales_libro .guias .ejemplar .detalles .idioma {
+  margin: 0.5em 0 0 0;
+}
+article .materiales_libro .guias .ejemplar .detalles .idioma img {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+article .materiales_libro .guias .ejemplar .detalles .resumen {
+  font-size: 0.8em;
+  margin: 0;
+}
+article .materiales_libro .guias .ejemplar .detalles .titulo {
+  color: #2480e2;
+  font-family: lucida grande;
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin: 0;
+}
+article .materiales_libro .guias .ejemplar .portada {
+  display: block;
+  float: left;
+  margin: 0 1em 0 0;
+  width: 12%;
+}
+article .materiales_libro .guias .ejemplar .portada img {
+  height: auto;
+  width: 90px;
+}
+article .materiales_libro .guias .grupo {
+  font-size: 1.2em;
+  padding: 0 0 1em 0;
 }
 body {
   background: #edf1f3;
@@ -210,7 +308,7 @@ p {
   margin: 0.5em 2em;
 }
 p:first-child {
-  margin: 0 2em 0 2em;
+  margin: -1em 2em 0 2em;
 }
 .arriba {
   bottom: 1em;
@@ -270,6 +368,19 @@ p:first-child {
   font-size: 1.5em;
   margin: 1em 0.5em;
   text-align: center;
+}
+@media screen and (min-width: 1250px) {
+  article .materiales_libro .libros {
+    border-right: 1px solid #c6cfd3;
+    border-bottom: none;
+    display: inline-block;
+    width: 49%;
+  }
+  article .materiales_libro .guias {
+    display: inline-block;
+    margin: 0 0 0 1em;
+    width: 40%;
+  }
 }
 @media screen and (min-width: 992px) {
   body {
@@ -553,15 +664,30 @@ p:first-child {
     position: absolute;
     top: 0px;
   }
-  .materiales .video {
+  .materiales_video .video {
     width: 45%;
   }
-  .materiales .video:nth-child(odd) {
-    margin: 0 1em 1em 3.5%;
+  .materiales_video .video:nth-child(odd) {
+    margin: 0 1em 0 3.5%;
     width: 45%;
   }
 }
 @media screen and (max-width: 992px) {
+  article:last-child {
+    margin-bottom: 0;
+  }
+  article .materiales_libro .libros .ejemplar .portada {
+    display: block;
+    float: left;
+    margin: 0 1em 0 0;
+    width: 12%;
+  }
+  article .materiales_libro .guias .ejemplar .portada {
+    display: block;
+    float: left;
+    margin: 0 1em 0 0;
+    width: 12%;
+  }
   header {
     margin: 0 0 1em 0;
   }
@@ -704,12 +830,15 @@ p:first-child {
     position: relative;
     width: 109%;
   }
-  .materiales .video {
+  .materiales_video .video {
     width: 45%;
   }
-  .materiales .video:nth-child(odd) {
-    margin: 0 3% 1em 3%;
+  .materiales_video .video:nth-child(odd) {
+    margin: 0 1em 0 3.5%;
     width: 45%;
+  }
+  .materiales_video .video:last-child {
+    margin: 1em 1em 0 3.5%;
   }
   .fixed {
     box-shadow: 0 2px 2px rgba(36,128,226,0.5);
@@ -720,6 +849,32 @@ p:first-child {
   }
 }
 @media screen and (max-width: 630px) {
+  article {
+    margin: 1em 0.5em;
+    padding: 0 0 1em 0;
+  }
+  article:last-child {
+    margin-bottom: 1em;
+  }
+  article .materiales_libro .libros .ejemplar {
+    padding: 0 0 0 1.5em;
+  }
+  article .materiales_libro .libros .ejemplar .detalles {
+    left: 8.5em;
+  }
+  article .materiales_libro .libros .ejemplar .portada {
+    width: 28%;
+  }
+  article .materiales_libro .guias .ejemplar {
+    padding: 0 0 0 1.5em;
+  }
+  article .materiales_libro .guias .ejemplar .detalles {
+    left: 8.5em;
+  }
+  article .materiales_libro .guias .ejemplar .portada {
+    margin: 0 1em 2em 0;
+    width: 28%;
+  }
   footer {
     background: #2480e2;
     height: 10em;
@@ -822,17 +977,24 @@ p:first-child {
   footer .social .email:hover {
     color: #f6ca2d;
   }
+  p {
+    line-height: 1.4;
+    margin: 0.5em 0.7em;
+  }
+  p:first-child {
+    margin: -1em 0.7em 0 0.7em;
+  }
   section {
     background: #e4e1df;
     margin: -0.6em 0;
     padding: 0.6em 0;
   }
-  .materiales .video:nth-child(odd) {
-    margin: 1em 5%;
-    width: 90%;
+  .materiales_video .video:nth-child(odd) {
+    margin: 1em 3%;
+    width: 95%;
   }
-  .materiales .video:nth-child(even) {
-    margin: 1em 5%;
-    width: 90%;
+  .materiales_video .video:nth-child(even) {
+    margin: 1em 3%;
+    width: 95%;
   }
 }

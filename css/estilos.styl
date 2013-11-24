@@ -80,7 +80,7 @@ article
 	// box-shadow: 0 0 6px rgba(0,0,0,0.2);
 	box-shadow: 0 2px 2px rgba(0,0,0,0.3);
 	margin 1em
-	padding 0 0 2em 0
+	padding 0 0 1em 0
 	&:last-child
 		margin-bottom 4.5em
 	.encabezado
@@ -144,19 +144,12 @@ article
 				position absolute
 				right .6em
 				top .3em
-	.materiales
+	.materiales_video
 		background claro
 		border-bottom 1px solid borde
 		border-top 1px solid borde
 		margin 1em 0 3em 0 
-		padding 1em 0 0 0 
-		.video
-		.libro
-			p
-				color rgba(gris,.8)
-				font-family mayuscula
-				font-size 1.1em
-				letter-spacing -1px
+		padding 1em 
 		.video
 			background white
 			border 1px solid rgba(gris,.3)
@@ -178,50 +171,128 @@ article
 					position absolute
 					top 0
 					width 100%
-		.detalles
-			padding .5em .5em
-			.autor
-				color rgba(gris,1)
-				display inline-block
-				float left
-				font-size .7em
-				font-weight bold
-				margin 0 0 .5em 18px
-				vertical-align top
-				width 45%
-			.fecha
-				color rgba(gris,.4)
-				display inline-block
-				font-size .7em
-				margin 0 0 .5em .5em
-				vertical-align top
-				width 45%
-			.resumen
-				display inline-block
-				font-size .8em
-				margin -.2em 1.5em .5em 1.5em
-				vertical-align top
-			.titulo
-				border-bottom 1px solid borde
-				color azul
-				font-family mayuscula
-				font-size 1.2em
-				letter-spacing -1px
-				margin 0 0 1em 0
-				padding .2em  
-
-		.libro
+			.detalles
+				padding .5em .5em
+				.autor
+					color rgba(gris,1)
+					display inline-block
+					float left
+					font-size .7em
+					font-weight bold
+					margin 0 .0 .5em 18px
+					vertical-align top
+				.fecha
+					color rgba(gris,.4)
+					display inline-block
+					font-size .7em
+					margin 0 0 .5em 18px
+					vertical-align top
+				.resumen
+					display inline-block
+					font-size .8em
+					margin -.2em 1.5em .5em 1.5em
+					vertical-align top
+				.titulo
+					border-bottom 1px solid borde
+					color azul
+					font-family mayuscula
+					font-size 1.2em
+					letter-spacing -1px
+					margin 0 0 1em 0
+					padding .2em  
+	.materiales_libro
+		background white
+		border-bottom 1px solid borde
+		border-top 1px solid borde
+		margin 1em 0 3em 0 
+		padding 1em 
+		.libros
+			border-bottom 1px solid borde
 			display inline-block
-			// margin 0
-			// width 45%
-			// &:last-child
-			// 	margin 0
-			// &:nth-child(even)
-			// 	margin 0
-			img
-				display block
-				height auto
-				width 7em
+			margin 0 0 1em 0
+			padding 0 0 .5em 0 
+			width 100%
+			.ejemplar
+				padding 0 0 0 1.5em
+				position relative
+				.detalles
+					left 8.5em
+					position absolute
+					top 0em
+					.autor
+						color rgba(gris,1)
+						font-size .7em
+						font-weight bold
+						margin 0
+					.idioma
+						margin .5em 0 0 0 
+						img
+							border-radius 50%
+							width 20px
+							height 20px
+					.resumen
+						font-size .8em
+						margin 0
+					.titulo
+						color azul
+						font-family mayuscula
+						font-size 1.2em
+						letter-spacing -1px
+						margin 0
+				.portada
+					display block
+					float left
+					margin 0 1em 0 0 
+					width 12%
+					img
+						height auto
+						width 90px
+			.grupo
+				font-size 1.2em
+				padding 0 0 1em 0
+		.guias
+			display inline-block
+			margin 0
+			width 100%
+			.ejemplar
+				padding 0 0 0 1.5em
+				position relative
+				.detalles
+					left 8.5em
+					position absolute
+					top 0em
+					.autor
+						color rgba(gris,1)
+						font-size .7em
+						font-weight bold
+						margin 0
+					.idioma
+						margin .5em 0 0 0 
+						img
+							border-radius 50%
+							width 20px
+							height 20px
+					.resumen
+						font-size .8em
+						margin 0
+					.titulo
+						color azul
+						font-family mayuscula
+						font-size 1.2em
+						letter-spacing -1px
+						margin 0
+				.portada
+					display block
+					float left
+					margin 0 1em 0 0 
+					width 12%
+					img
+						height auto
+						width 90px
+			.grupo
+				font-size 1.2em
+				padding 0 0 1em 0
+		// .guias
 
 // article#video
 // 	background #dbe6ea
@@ -269,7 +340,7 @@ p
 	line-height 1.4
 	margin .5em 2em
 	&:first-child 
-		margin 0 2em 0 2em
+		margin -1em 2em 0 2em
 
 .arriba
 	bottom 1em
@@ -324,6 +395,9 @@ p
 		text-align center
 
 // Break points
+
+@media screen and (min-width: 1250px) 
+	@import "bp4.styl"
 
 @media screen and (min-width: 992px) 
 	@import "bp3.styl"
