@@ -274,7 +274,7 @@ body {
   font-size: 15px;
 }
 h1 {
-  color: #ebf0f4;
+  color: #fff;
   display: block;
   font-family: lobster, sans-serif;
   font-size: 2.5em;
@@ -283,7 +283,7 @@ h1 {
   text-shadow: 1px 1px 0 #515151;
 }
 h1 small {
-  color: #ebf0f4;
+  color: #fff;
   display: block;
   font-size: 0.5em;
   margin: -0.2em auto 0 auto;
@@ -383,26 +383,9 @@ p:first-child {
     width: 40%;
   }
 }
-@media screen and (min-width: 929px) {
+@media screen and (min-width: 880px) {
   body {
     position: relative;
-  }
-  h1 {
-    color: #fff;
-    display: inline-block;
-    font-size: 2.5em;
-    left: 3em;
-    position: absolute;
-    top: 0.4em;
-  }
-  h1 small {
-    color: #fff;
-    font-size: 0.5em;
-    left: 5px;
-    line-height: -5em;
-    position: absolute;
-    top: 40px;
-    white-space: nowrap;
   }
   header {
     background-attachment: fixed;
@@ -422,6 +405,22 @@ p:first-child {
     position: relative;
     top: 1.2em;
     width: 80px;
+  }
+  header h1 {
+    color: #fff;
+    display: inline-block;
+    font-size: 2.5em;
+    left: 3em;
+    position: absolute;
+    top: 0.3em;
+  }
+  header h1 small {
+    color: #fff;
+    font-size: 0.5em;
+    left: 5px;
+    position: absolute;
+    top: 48px;
+    white-space: nowrap;
   }
   header .hero {
     display: none;
@@ -708,7 +707,7 @@ p:first-child {
     top: 20px;
   }
 }
-@media screen and (max-width: 929px) {
+@media screen and (max-width: 880px) {
   article:last-child {
     margin-bottom: 0;
   }
@@ -741,7 +740,7 @@ p:first-child {
   }
   header .hero {
     height: 100%;
-    left: -6em;
+    left: -9em;
     margin: 0 auto;
     position: absolute;
     top: 0;
@@ -1055,4 +1054,8 @@ p:first-child {
   }
 }
 @media screen and (max-width: 430px) {
+  header .hero {
+    left: -12em;
+    width: auto;
+  }
 }
