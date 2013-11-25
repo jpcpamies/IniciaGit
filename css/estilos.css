@@ -274,19 +274,21 @@ body {
   font-size: 15px;
 }
 h1 {
-  font-size: 3em;
+  color: #ebf0f4;
+  display: block;
   font-family: lobster, sans-serif;
+  font-size: 2.5em;
   font-weight: normal;
   margin: 0;
-  text-align: center;
+  text-shadow: 1px 1px 0 #515151;
 }
 h1 small {
-  color: #515151;
+  color: #ebf0f4;
   display: block;
-  font-size: 0.39em;
-  line-height: -5em;
-  margin: 0.1em auto 0 auto;
+  font-size: 0.5em;
+  margin: -0.2em auto 0 auto;
   max-width: 17em;
+  text-shadow: 1px 1px 0 #515151;
 }
 h2 {
   display: inline-block;
@@ -388,19 +390,13 @@ p:first-child {
   h1 {
     color: #fff;
     display: inline-block;
-    font-family: lobster, sans-serif;
     font-size: 2.5em;
-    font-weight: normal;
-    left: 35px;
-    margin: 0 0 0 2.2em;
+    left: 3em;
     position: absolute;
-    text-shadow: 2px 2px 0 #515151;
-    top: 15px;
+    top: 0.4em;
   }
   h1 small {
-    border-top: none;
     color: #fff;
-    display: inline-block;
     font-size: 0.5em;
     left: 5px;
     line-height: -5em;
@@ -737,12 +733,9 @@ p:first-child {
     position: relative;
   }
   header h1 {
-    color: #ebf0f4;
-    text-shadow: 2px 2px 0 #515151;
-  }
-  header h1 small {
-    color: #ebf0f4;
-    text-shadow: 2px 2px 0 #515151;
+    text-align: center;
+small
+    color: #f00;
   }
   header img {
     display: block;
