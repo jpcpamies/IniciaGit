@@ -41,7 +41,7 @@ var num = 180; //number of pixels before modifying styles
 // Script nav fixed movil =============================================================
 // ==============================================================================
 
-  var num2 = 170; //number of pixels before modifying styles
+  var num2 = 175; //number of pixels before modifying styles
 
   $(window).bind('scroll', function () {
       if ($(window).scrollTop() > num2) {

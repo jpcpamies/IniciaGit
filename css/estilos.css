@@ -400,18 +400,18 @@ p:first-child {
     z-index: 0;
   }
   header img {
-    left: 1.2em;
+    left: 2em;
     height: auto;
     position: relative;
-    top: 1.2em;
-    width: 80px;
+    top: 1.3em;
+    width: 75px;
     z-index: 3;
   }
   header h1 {
     color: #fff;
     display: inline-block;
     font-size: 2.5em;
-    left: 3em;
+    left: 3.5em;
     position: absolute;
     top: 0.3em;
     z-index: 4;
@@ -421,7 +421,7 @@ p:first-child {
     font-size: 0.5em;
     left: 5px;
     position: absolute;
-    top: 48px;
+    top: 47px;
     white-space: nowrap;
   }
   header .hero {
@@ -527,6 +527,27 @@ p:first-child {
   footer .social .twitter:hover {
     background: #21b2e9;
     color: #fff;
+  }
+  footer .titulo {
+    color: #b3b3b3;
+    display: block;
+    font-family: lobster, sans-serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+    right: 7.5em;
+    top: 1px;
+  }
+  footer .titulo small {
+    color: #b3b3b3;
+    display: block;
+    font-size: 0.6em;
+    max-width: 17em;
+    position: absolute;
+    right: -10.2em;
+    top: 2em;
+    white-space: nowrap;
   }
   nav {
     bottom: 50px;
@@ -757,7 +778,7 @@ p:first-child {
   header {
     height: 0;
     overflow: hidden;
-    padding-bottom: 150px;
+    padding-bottom: 155px;
     padding-top: 20px;
     position: relative;
   }
@@ -767,7 +788,7 @@ p:first-child {
   header img {
     display: block;
     margin: 0 auto;
-    width: 80px;
+    width: 55px;
   }
   header .hero {
     height: 100%;
@@ -880,6 +901,9 @@ p:first-child {
   footer .social .email:hover {
     color: #f6ca2d;
   }
+  footer .titulo {
+    display: none;
+  }
   nav {
     cursor: pointer;
     overflow-x: hidden;
@@ -930,7 +954,7 @@ p:first-child {
     top: -1px;
   }
   .sombra {
-    height: 170px;
+    height: 175px;
     left: 0px;
     opacity: 0.8;
     position: absolute;
