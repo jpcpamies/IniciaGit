@@ -403,7 +403,7 @@ p:first-child {
     left: 2em;
     height: auto;
     position: relative;
-    top: 1.3em;
+    top: 0.9em;
     width: 90px;
     z-index: 5;
     -webkit-filter: brightness(1.2);
