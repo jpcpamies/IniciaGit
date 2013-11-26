@@ -34,12 +34,11 @@
         <li><a class='solo video' href="#video">Clases en vídeo</a></li>
         <li><a class='solo libro' href="#libro">Libros y guías</a></li>
         <li><a class='solo oro' href="#">Resumen de comandos</a></li>
-        <Li><a class='capitulo uno' href="#dos">Empezando con Github</a>
+        <Li><a class='capitulo uno' href="#empezando_con_github">Empezando con Github</a>
             <ul>
-                <li><a class='tema' href="#tres">Crear una cuenta de Github</a></li>
-                <li><a class='tema' href="#cuatro">Instalar GitHub</a></li>
-                <li><a class='tema' href="#cinco">Identificarse como usuario</a></li>
-                <li><a class='tema' href="#seis">Vincular el ordenador con GitHub por SSH</a></li>
+                <li><a class='tema' href="#instalar">Instalar GitHub</a></li>
+                <li><a class='tema' href="#identificarse">Identificarse como usuario</a></li>
+                <li><a class='tema' href="#vincular">Vincular el ordenador con GitHub por SSH</a></li>
             </ul>
         </li>
         <li><a class='solo ejercicio' href="#">Ejercicios prácticos</a></li>
@@ -143,6 +142,71 @@
                     </div>
                 </div>
             </div>
+    </article>
+    <article id="empezando_con_github">
+        <div class="encabezado">
+            <h2>
+                <span class='numero'>1</span>
+                <span class="nombre">Empezando con Github</span>
+            </h2>
+        </div>
+        <div class="contenido">
+            <p>Los pasos de este apartado solo los tendrás que hacer una vez. Eso si, necesitarás repetirlos en cada ordenador que vayas a usar con tu cuenta de GitHub.</p>
+
+            <h3 id='instalar'><span>Instalar</span> GitHub</h3>
+            <p>El primer paso para empezar a usar GitHub en tu ordenador es instalarlo. Descarga GitHub para tu SO e instálalo.</p>
+            <div class="comando">
+                <p class='enunciado_comando'>Comprueba que Github se ha instalado en el ordenador</p>
+                <pre>git —version</pre>
+            </div>
+
+            <h3 id='identificarse'><span>Identificarte</span> como usuario</h3>
+            <p>Una vez instalado GitHub en local tienes que identificarte como usuario con tu nombre y email.</p>
+            <div class="comando">
+                <p class='enunciado_comando'>Introduce tu nombre y email</p>
+                <pre>git config user.name “nombre”</pre>
+                <pre>git config user.email “tu@email.com”</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Comprueba que los datos se han registrado correctamente</p>
+                <pre>git config list</pre>
+            </div>
+
+            <h3 id='vincular'><span>Vincular</span> el ordenador con GitHub por SSH</h3>
+            <p>La llave SSH permitirá vincular tu directorio local con tu directorio remoto en GitHub de forma segura.</p>
+            <div class="comando">
+                <p class='enunciado_comando'>Generar una llave SSH</p>
+                <pre>$ssh-keygengit</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Agrega una contraseña</p>
+                <pre>Enter passphrase (empty for no passphrase): [Contraseña]</pre>
+                <pre>Enter same passphrase again: [Repetir contraseña]</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Te devolverá un mensaje como este</p>
+                <pre>Your identification has been saved in /home/you/.ssh/id_rsa</pre>
+                <pre>Your public key has been saved in /home/you/.ssh/id_rsa.pub</pre>
+                <pre>The key fingerprint is:</pre>
+                <pre>01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db tucorreo@tucorreo.com</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Para ver la llave SSH</p>
+                <pre>$cd .ssh</pre>
+                <pre>$cat id_rsa.pub</pre>
+            </div>
+            <p>Copia toda la llave desde "ssh-rsa" hasta el final.</p>
+            <!-- Terminal -->
+            <figure class='terminal'>
+                <div class='ventana_terminal'>
+                    <div class="barra">
+                        <pre class='nombre_barra'>Terminal</pre>
+                    </div>
+                    <pre>iMac-de-Jordi:~ jordiimac$ Applications  Documents  Dropbox  Movies  Pictures  Desktop  Downloads  Library  Music  Public</pre>
+                </div>
+            </figure>
+            <!--/ Terminal -->
+        </div>
     </article>
 </section>
 <div class="boton">

@@ -49,9 +49,9 @@ article .encabezado .numero {
   background: #2480e2;
   color: #edf1f3;
   float: left;
-  font-family: lucida grande;
+  font-family: arial;
   font-size: 0.5em;
-  font-weight: bold;
+  font-weight: normal;
   height: 1.7em;
   line-height: 1.5;
   margin: 1em 1.5em 0 0;
@@ -86,6 +86,19 @@ article .encabezado .video:before {
   position: absolute;
   right: 0.6em;
   top: 0.3em;
+}
+article .contenido .comando {
+  background: rgba(0,0,0,0.05);
+  margin: 2em 0;
+}
+article .contenido .comando .enunciado_comando {
+  padding: 0.5em 0;
+  text-transform: uppercase;
+}
+article .contenido .comando pre {
+  color: #7c2887;
+  margin: 0 2em -0.5em 2em;
+  padding: 0 0 1em 0;
 }
 article .materiales_video {
   background: #ebf0f4;
@@ -267,6 +280,39 @@ article .materiales_libro .guias .grupo {
   font-size: 1.2em;
   padding: 0 0 1em 0;
 }
+article .terminal {
+  background: #ebf0f4;
+  border-bottom: 1px solid #c6cfd3;
+  border-top: 1px solid #c6cfd3;
+  padding: 20px 0 0 0;
+}
+article .terminal .ventana_terminal {
+  background: #424242;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+  margin: 30px 25px;
+  padding: 0.3em 0 0.5em 0;
+  position: relative;
+}
+article .terminal .ventana_terminal .barra {
+  background: #d3d3d3;
+  border-radius: 6px 6px 0 0;
+  height: 25px;
+  position: absolute;
+  top: -25px;
+  width: 100%;
+}
+article .terminal .ventana_terminal .barra .nombre_barra {
+  color: #515151;
+  left: 45%;
+  position: absolute;
+  top: -12px;
+}
+article .terminal .ventana_terminal pre {
+  color: #fff;
+  padding: 0 0 0 1em;
+  text-align: left;
+}
 body {
   background: #edf1f3;
   color: #515151;
@@ -299,10 +345,12 @@ h2 {
   margin: 0.5em 0 0.5em 0;
 }
 h3 {
-  color: #2480e2;
-  font-family: lucida grande;
+  font-size: 1.2em;
   font-weight: normal;
-  letter-spacing: -2px;
+  margin: 2em 1.7em 0.5em 1.7em;
+}
+h3 span {
+  font-weight: bold;
 }
 p {
   line-height: 1.4;
@@ -364,6 +412,10 @@ p:first-child {
   font-size: 1.5em;
   margin: 1em 0.5em;
   text-align: center;
+}
+::selection {
+  background: #ff0;
+  color: #000;
 }
 @media screen and (min-width: 1250px) {
   article .materiales_libro .libros {
