@@ -13,7 +13,7 @@ $(function(){
 // ==============================================================================
 
 $(function(){
-$('#mobileMenu').mobileMenu({
+$('.mobileMenu').mobileMenu({
   combine: false,         
   groupPageText: '',     
   nested: true,        
