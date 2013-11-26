@@ -190,16 +190,16 @@ article
 				.resumen
 					display inline-block
 					font-size .8em
-					margin -.2em 1.5em .5em 1.5em
+					margin -.5em 1.5em .5em 1.5em
 					vertical-align top
 				.titulo
-					border-bottom 1px solid borde
+					border-bottom 1px solid rgba(borde,.3)
 					color azul
 					font-family mayuscula
 					font-size 1.2em
 					letter-spacing -1px
 					margin 0 0 1em 0
-					padding .2em  
+					padding .2em .2em .4em .2em  
 	.materiales_libro
 		background white
 		border-bottom 1px solid borde
@@ -207,10 +207,10 @@ article
 		margin 1em 0 3em 0 
 		padding 1em 
 		.libros
-			border-bottom 1px solid borde
+			border-bottom 1px solid rgba(borde,.5)
 			display inline-block
 			margin 0 0 1em 0
-			padding 0 0 .5em 0 
+			padding 0 0 1.2em 0 
 			width 100%
 			.ejemplar
 				padding 0 0 0 1.5em
@@ -340,10 +340,7 @@ p
 	bottom 1em
 	color white
 	left 1.2em
-	opacity .95
 	position fixed
-	-webkit-transition all .1s ease
-	transition all .1s ease
 	z-index 10
 	a 
 		background #d9d9d9
@@ -353,8 +350,6 @@ p
 		height 3em
 		position relative
 		text-decoration none
-		transition all .2s ease
-		-webkit-transition all .2s ease
 		width 3em
 		&:after
 			content "\e610"

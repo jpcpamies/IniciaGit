@@ -140,17 +140,17 @@ article .materiales_video .video .detalles .fecha {
 article .materiales_video .video .detalles .resumen {
   display: inline-block;
   font-size: 0.8em;
-  margin: -0.2em 1.5em 0.5em 1.5em;
+  margin: -0.5em 1.5em 0.5em 1.5em;
   vertical-align: top;
 }
 article .materiales_video .video .detalles .titulo {
-  border-bottom: 1px solid #c6cfd3;
+  border-bottom: 1px solid rgba(198,207,211,0.3);
   color: #2480e2;
   font-family: lucida grande;
   font-size: 1.2em;
   letter-spacing: -1px;
   margin: 0 0 1em 0;
-  padding: 0.2em;
+  padding: 0.2em 0.2em 0.4em 0.2em;
 }
 article .materiales_libro {
   background: #fff;
@@ -160,10 +160,10 @@ article .materiales_libro {
   padding: 1em;
 }
 article .materiales_libro .libros {
-  border-bottom: 1px solid #c6cfd3;
+  border-bottom: 1px solid rgba(198,207,211,0.5);
   display: inline-block;
   margin: 0 0 1em 0;
-  padding: 0 0 0.5em 0;
+  padding: 0 0 1.2em 0;
   width: 100%;
 }
 article .materiales_libro .libros .ejemplar {
@@ -315,10 +315,7 @@ p:first-child {
   bottom: 1em;
   color: #fff;
   left: 1.2em;
-  opacity: 0.95;
   position: fixed;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
   z-index: 10;
 }
 .arriba a {
@@ -329,8 +326,6 @@ p:first-child {
   height: 3em;
   position: relative;
   text-decoration: none;
-  transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
   width: 3em;
 }
 .arriba a:after {
@@ -372,7 +367,7 @@ p:first-child {
 }
 @media screen and (min-width: 1250px) {
   article .materiales_libro .libros {
-    border-right: 1px solid #c6cfd3;
+    border-right: 1px solid rgba(198,207,211,0.5);
     border-bottom: none;
     display: inline-block;
     width: 49%;
@@ -384,6 +379,16 @@ p:first-child {
   }
 }
 @media screen and (min-width: 880px) {
+  article figure {
+    text-align: center;
+  }
+  article figure .laptop,
+  article figure .movil,
+  article figure .tablet {
+    display: inline-block;
+    height: 130px;
+    width: auto;
+  }
   body {
     position: relative;
   }
@@ -406,7 +411,6 @@ p:first-child {
     top: 0.9em;
     width: 90px;
     z-index: 5;
-    -webkit-filter: brightness(1.2);
   }
   header h1 {
     color: #fff;
@@ -442,11 +446,13 @@ p:first-child {
     left: 341px;
     padding: 0 10px 0 5px;
     position: absolute;
+    -webkit-filter: grayscale(1);
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
   }
   footer .avatar:hover {
     background: rgba(0,0,0,0.05);
+    -webkit-filter: grayscale(0);
   }
   footer .avatar:hover p {
     color: #515151;
@@ -530,7 +536,7 @@ p:first-child {
     color: #fff;
   }
   footer .titulo {
-    color: #550868;
+    color: #7c2887;
     display: block;
     font-family: lobster, sans-serif;
     font-size: 1.3em;
@@ -733,6 +739,16 @@ p:first-child {
   }
 }
 @media screen and (max-width: 880px) {
+  article figure {
+    text-align: center;
+  }
+  article figure .laptop,
+  article figure .movil,
+  article figure .tablet {
+    display: inline-block;
+    height: 130px;
+    width: auto;
+  }
   article:last-child {
     margin-bottom: 0;
   }
@@ -762,7 +778,6 @@ p:first-child {
     display: block;
     margin: 0 auto;
     width: 85px;
-    -webkit-filter: brightness(1.1);
   }
   header .hero {
     height: 100%;
@@ -784,6 +799,8 @@ p:first-child {
     height: 10em;
     position: relative;
     width: 9.5em;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
   }
   footer .avatar:after {
     border-bottom: solid 10em transparent;
@@ -796,24 +813,26 @@ p:first-child {
     top: 0px;
   }
   footer .avatar img {
-    border: 2px solid #fff;
     border-radius: 50%;
-    box-shadow: 0 0 2px #000;
     height: auto;
-    left: 1em;
+    left: 1.2em;
     position: absolute;
     top: 1em;
     width: 3em;
     z-index: 5;
+    -webkit-filter: grayscale(1);
+  }
+  footer .avatar img:hover {
+    -webkit-filter: grayscale(0);
   }
   footer .avatar p {
     color: #515151;
     font-size: 1em;
-    left: 3.2em;
+    left: 2.7em;
     line-height: 1.1em;
     position: absolute;
     text-align: left;
-    top: 1.5em;
+    top: 1.4em;
     white-space: nowrap;
     z-index: 4;
   }
@@ -964,6 +983,12 @@ p:first-child {
     margin: 0 1em 2em 0;
     width: 28%;
   }
+  article figure .laptop,
+  article figure .movil,
+  article figure .tablet {
+    display: block;
+    margin: 0 auto;
+  }
   footer {
     background: #2480e2;
     height: 10em;
@@ -975,6 +1000,8 @@ p:first-child {
     height: 10em;
     position: relative;
     width: 9.5em;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
   }
   footer .avatar:after {
     border-bottom: solid 10em transparent;
@@ -987,24 +1014,26 @@ p:first-child {
     top: 0px;
   }
   footer .avatar img {
-    border: 2px solid #fff;
     border-radius: 50%;
-    box-shadow: 0 0 2px #000;
     height: auto;
-    left: 1em;
+    left: 1.2em;
     position: absolute;
     top: 1em;
     width: 3em;
     z-index: 5;
+    -webkit-filter: grayscale(1);
+  }
+  footer .avatar img:hover {
+    -webkit-filter: grayscale(0);
   }
   footer .avatar p {
     color: #515151;
     font-size: 1em;
-    left: 4.5em;
+    left: 4.2em;
     line-height: 1.1em;
     position: absolute;
     text-align: left;
-    top: 1.5em;
+    top: 1.4em;
     white-space: nowrap;
     z-index: 4;
   }

@@ -20,6 +20,12 @@ article
 				.portada
 					margin 0 1em 2em 0
 					width 28%
+	figure
+		.laptop
+		.movil
+		.tablet
+			display block
+			margin 0 auto
 
 footer
 	background azul
@@ -31,6 +37,8 @@ footer
 		height 10em
 		position relative
 		width 9.5em
+		transition all .2s ease
+		-webkit-transition all .2s ease
 		&:after
 			border-bottom solid 10em transparent
 			border-left solid 5em white
@@ -41,24 +49,25 @@ footer
 			position absolute
 			top 0px
 		img
-			border 2px solid white
 			border-radius 50%
-			box-shadow 0 0 2px black
 			height auto
-			left 1em
+			left 1.2em
 			position absolute
 			top 1em
 			width 3em
 			z-index 5
+			-webkit-filter: grayscale(1);
+			&:hover
+				-webkit-filter: grayscale(0);
 
 		p
 			color gris
 			font-size 1em
-			left 4.5em
+			left 4.2em
 			line-height 1.1em;
 			position absolute
 			text-align left
-			top 1.5em
+			top 1.4em
 			white-space nowrap
 			z-index 4
 

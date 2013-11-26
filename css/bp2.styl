@@ -1,5 +1,14 @@
 
 article
+	figure
+		text-align center
+		.laptop
+		.movil
+		.tablet
+			display inline-block
+			height 130px
+			width auto
+
 	&:last-child
 		margin-bottom 0
 	.materiales_libro
@@ -31,7 +40,7 @@ header
 		display block
 		margin  0 auto
 		width 85px
-		-webkit-filter: brightness(1.1);
+		// -webkit-filter: brightness(1.1);
 	.hero
 		height 100%
 		left -9em
@@ -51,6 +60,8 @@ footer
 		height 10em
 		position relative
 		width 9.5em
+		transition all .2s ease
+		-webkit-transition all .2s ease
 		&:after
 			border-bottom solid 10em transparent
 			border-left solid 5em white
@@ -61,29 +72,28 @@ footer
 			position absolute
 			top 0px
 		img
-			border 2px solid white
 			border-radius 50%
-			box-shadow 0 0 2px black
 			height auto
-			left 1em
+			left 1.2em
 			position absolute
 			top 1em
 			width 3em
 			z-index 5
-
+			-webkit-filter: grayscale(1);
+			&:hover
+				-webkit-filter: grayscale(0);
 		p
 			color gris
 			font-size 1em
-			left 3.2em
+			left 2.7em
 			line-height 1.1em;
 			position absolute
 			text-align left
-			top 1.5em
+			top 1.4em
 			white-space nowrap
 			z-index 4
 	.social
 		position relative
-		// text-shadow 1px 1px 0px rgba(black,.5)
 		z-index 3
 		a
 			color white

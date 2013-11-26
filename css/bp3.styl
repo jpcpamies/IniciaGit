@@ -1,4 +1,14 @@
 
+article
+	figure
+		text-align center
+		.laptop
+		.movil
+		.tablet
+			display inline-block
+			height 130px
+			width auto
+	
 body
 	position relative
 
@@ -20,7 +30,7 @@ header
 		top .9em
 		width 90px
 		z-index 5
-		-webkit-filter: brightness(1.2);
+		// -webkit-filter: brightness(1);
 	h1
 		color white
 		display inline-block
@@ -53,10 +63,12 @@ footer
 		left 341px
 		padding 0 10px 0 5px 
 		position absolute
+		-webkit-filter: grayscale(1);
 		transition all .2s ease
 		-webkit-transition all .2s ease
 		&:hover
 			background rgba(black,.05)
+			-webkit-filter: grayscale(0);
 			p
 				color gris
 		img
@@ -133,7 +145,7 @@ footer
 				background #21b2e9
 				color white
 	.titulo
-		color #550868 
+		color #7c2887 
 		display block
 		font-family titulo
 		font-size 1.3em
