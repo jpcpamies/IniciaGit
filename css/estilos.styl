@@ -1,3 +1,6 @@
+// Margenes =========================================
+margen = 30px
+
 // Fuentes =========================================
 titulo = lobster, sans-serif
 texto = raleway, sans-serif
@@ -9,7 +12,9 @@ fondo = #edf1f3
 borde = rgb(198,207,211)
 boton = rgba(111,129,148, .5)
 hover = rgba(0,0,0,.7)
-azul = #2480e2
+// azul = #2480e2
+azul = lila
+lila = #7c2887 
 // azul = #3b84bf
 // gris = #343434
 gris = #515151
@@ -146,11 +151,14 @@ article
 				top .3em
 	.contenido
 		.comando
-			background rgba(black,.05)
-			// border-left 3px solid rgba(black,.07)
-			margin 2em 0
+			background rgba(black,.03)
+			margin 1em 0 2em 0
+
 			.enunciado_comando
-				padding .5em 0
+				font-size .8em
+				letter-spacing 2px
+				margin 0 0 0 margen
+				padding .5em 0 1.5em 0
 				text-transform uppercase
 			pre
 				color #7c2887
@@ -305,34 +313,6 @@ article
 				font-size 1.2em
 				padding 0 0 1em 0
 		// .guias
-	.terminal
-		background claro
-		border-bottom 1px solid borde
-		border-top 1px solid borde
-		padding 20px 0 0 0
-		.ventana_terminal
-			background #424242
-			border-radius 0 0 4px 4px
-			box-shadow 0px 5px 15px rgba(0,0,0,.5)
-			margin 30px 25px
-			padding .3em 0 .5em 0
-			position relative
-			.barra
-				background lightgrey
-				border-radius 6px 6px 0 0
-				height 25px
-				position absolute
-				top -25px
-				width 100%
-				.nombre_barra
-					color gris
-					left 45%
-					position absolute 
-					top -12px
-			pre
-				color white
-				padding 0 0 0 1em
-				text-align left
 
 body 
 	background fondo
@@ -365,9 +345,10 @@ h2
 	margin .5em 0 .5em 0
 
 h3
-	font-size 1.2em
+	color gris
+	font-size 1.5em
 	font-weight normal
-	margin 2em 1.7em .5em 1.7em
+	margin 2em 1.7em .5em margen
 	span
 		font-weight bold
 
