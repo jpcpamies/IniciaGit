@@ -22,8 +22,34 @@ article {
 article:last-child {
   margin-bottom: 4.5em;
 }
+article .contenido .comando {
+  background: rgba(0,0,0,0.03);
+  margin: 1em 0 2em 0;
+}
+article .contenido .comando .enunciado_comando {
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  margin: 0 0 0 30px;
+  padding: 0.5em 0 1.5em 0;
+  text-transform: uppercase;
+}
+article .contenido .comando pre {
+  color: #7c2887;
+  margin: 0 2em -0.5em 2em;
+  padding: 0 0 1em 0;
+}
 article .encabezado {
   margin: 0 0 1em 0;
+}
+article .encabezado .comando:before {
+  color: #ebf0f4;
+  content: "\e604";
+  font-family: icono;
+  font-size: 0.9em;
+  font-weight: none;
+  position: absolute;
+  right: 0.6em;
+  top: 0.3em;
 }
 article .encabezado .iniciando:before {
   color: #ebf0f4;
@@ -359,6 +385,15 @@ p:first-child {
   border: 1px solid #515151;
   color: #ebf0f4;
 }
+.pdf {
+  margin: 3em auto 2em auto;
+  width: 12em;
+}
+.pdf:before {
+  content: '\e620';
+  font-family: icono2;
+  margin: 0 0.5em 0 0;
+}
 .caja {
   background: #ebf0f4;
   border-top: 1px solid #c6cfd3;
@@ -434,7 +469,7 @@ p:first-child {
   content: '$ ';
 }
 .terminal .ventana_terminal .retorno {
-  color: #3fc1fb;
+  color: #e5db74;
 }
 ::selection {
   background: #ff0;

@@ -33,7 +33,7 @@
         <Li><a class='solo iniciando' href="#iniciando">Iniciando</a></Li>
         <li><a class='solo video' href="#video">Clases en vídeo</a></li>
         <li><a class='solo libro' href="#libro">Libros y guías</a></li>
-        <li><a class='solo oro' href="#">Resumen de comandos</a></li>
+        <li><a class='solo oro' href="#comandos">Resumen de comandos</a></li>
         <Li><a class='capitulo uno' href="#empezando_con_github">Empezando con Github</a>
             <ul>
                 <li><a class='tema' href="#instalar">Instalar GitHub</a></li>
@@ -143,6 +143,56 @@
                 </div>
             </div>
     </article>
+    <article id="comandos">
+        <div class="encabezado">
+            <h2>
+                <span class='numero comando'></span>
+                <span class="nombre">Resumen de comandos</span>
+            </h2>
+        </div>
+        <div class="contenido">
+             <h3><span>Instalar</span> GitHub</h3>
+            <div class="comando">
+                <p class='enunciado_comando'>Comprueba que Github se ha instalado en el ordenador</p>
+                <pre>git —version</pre>
+            </div>
+
+            <h3><span>Identificarte</span> como usuario</h3>
+            <div class="comando">
+                <p class='enunciado_comando'>Introduce tu nombre y email</p>
+                <pre>git config user.name “nombre”</pre>
+                <pre>git config user.email “tu@email.com”</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Comprueba que los datos se han registrado correctamente</p>
+                <pre>git config list</pre>
+            </div>
+
+            <h3><span>Vincular</span> el ordenador con GitHub por SSH</h3>
+            <div class="comando">
+                <p class='enunciado_comando'>Generar una llave SSH</p>
+                <pre>$ssh-keygengit</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Agrega una contraseña</p>
+                <pre>Enter passphrase (empty for no passphrase): [Contraseña]</pre>
+                <pre>Enter same passphrase again: [Repetir contraseña]</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Te devolverá un mensaje como este</p>
+                <pre>Your identification has been saved in /home/you/.ssh/id_rsa</pre>
+                <pre>Your public key has been saved in /home/you/.ssh/id_rsa.pub</pre>
+                <pre>The key fingerprint is:</pre>
+                <pre>01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db tucorreo@tucorreo.com</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Para ver la llave SSH</p>
+                <pre>$cd .ssh</pre>
+                <pre>$cat id_rsa.pub</pre>
+            </div>
+            <div><a  class="instalar pdf" href="#">DESCARGAR EL PDF</a></div>
+        </div>
+    </article>
     <article id="empezando_con_github">
         <div class="encabezado">
             <h2>
@@ -224,6 +274,7 @@
             <p>Copia toda la llave desde "ssh-rsa" hasta el final.</p>
         </div>
     </article>
+
 </section>
 <div class="boton">
     <a href="#inicio"></a>
