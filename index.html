@@ -155,46 +155,72 @@
 
             <h3 id='instalar'><span>Instalar</span> GitHub</h3>
             <p>El primer paso para empezar a usar GitHub en tu ordenador es instalarlo. Descarga GitHub para tu SO e instálalo.</p>
-            <div class="comando">
-                <p class='enunciado_comando'>Comprueba que Github se ha instalado en el ordenador</p>
-                <pre>git —version</pre>
-            </div>
+            <div><a  class="instalar" href="">INSTALAR GITHUB</a></div>
+            <!-- Terminal -->
+            <figure class='terminal'>
+                <div class='ventana_terminal'>
+                    <div class="barra">
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Comprueba que Github se ha instalado en el ordenador</p>
+                        <pre class='dolar'>git —version</pre>
+                    </div>
+                </div>
+            </figure>
+            <!--/ Terminal -->
 
             <h3 id='identificarse'><span>Identificarte</span> como usuario</h3>
             <p>Una vez instalado GitHub en local tienes que identificarte como usuario con tu nombre y email.</p>
-            <div class="comando">
-                <p class='enunciado_comando'>Introduce tu nombre y email</p>
-                <pre>git config user.name “nombre”</pre>
-                <pre>git config user.email “tu@email.com”</pre>
-            </div>
-            <div class="comando">
-                <p class='enunciado_comando'>Comprueba que los datos se han registrado correctamente</p>
-                <pre>git config list</pre>
-            </div>
+            <!-- Terminal -->
+            <figure class='terminal'>
+                <div class='ventana_terminal'>
+                    <div class="barra">
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Introduce tu nombre y email</p>
+                        <pre class='dolar'>git config user.name “nombre”</pre>
+                        <pre class='dolar'>git config user.email “tu@email.com”</pre>
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Comprueba que los datos se han registrado correctamente</p>
+                        <pre class='dolar'>git config list</pre>
+                    </div>
+                </div>
+            </figure>
+            <!--/ Terminal -->
 
             <h3 id='vincular'><span>Vincular</span> el ordenador con GitHub por SSH</h3>
             <p>La llave SSH permitirá vincular tu directorio local con tu directorio remoto en GitHub de forma segura.</p>
-            <div class="comando">
-                <p class='enunciado_comando'>Generar una llave SSH</p>
-                <pre>$ssh-keygengit</pre>
-            </div>
-            <div class="comando">
-                <p class='enunciado_comando'>Agrega una contraseña</p>
-                <pre>Enter passphrase (empty for no passphrase): [Contraseña]</pre>
-                <pre>Enter same passphrase again: [Repetir contraseña]</pre>
-            </div>
-            <div class="comando">
-                <p class='enunciado_comando'>Te devolverá un mensaje como este</p>
-                <pre>Your identification has been saved in /home/you/.ssh/id_rsa</pre>
-                <pre>Your public key has been saved in /home/you/.ssh/id_rsa.pub</pre>
-                <pre>The key fingerprint is:</pre>
-                <pre>01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db tucorreo@tucorreo.com</pre>
-            </div>
-            <div class="comando">
-                <p class='enunciado_comando'>Para ver la llave SSH</p>
-                <pre>$cd .ssh</pre>
-                <pre>$cat id_rsa.pub</pre>
-            </div>
+
+            <!-- Terminal -->
+            <figure class='terminal'>
+                <div class='ventana_terminal'>
+                    <div class="barra">
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Generar una llave SSH</p>
+                        <pre class='dolar'>ssh-keygengit</pre>
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Agrega una contraseña</p>
+                        <pre class='dolar'>Enter passphrase (empty for no passphrase): [Contraseña]</pre>
+                        <pre class='dolar'>Enter same passphrase again: [Repetir contraseña]</pre>
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Te devolverá un mensaje como este</p>
+                        <pre class='retorno'>Your identification has been saved in /home/you/.ssh/id_rsa</pre>
+                        <pre class='retorno'>Your public key has been saved in /home/you/.ssh/id_rsa.pub</pre>
+                        <pre class='retorno'>The key fingerprint is:</pre>
+                        <pre class='retorno'>01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db tucorreo@tucorreo.com</pre>
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Para ver la llave SSH</p>
+                        <pre class='dolar'>cd .ssh</pre>
+                        <pre class='dolar'>cat id_rsa.pub</pre>
+                    </div>
+                </div>
+            </figure>
+            <!--/ Terminal -->
             <p>Copia toda la llave desde "ssh-rsa" hasta el final.</p>
         </div>
     </article>

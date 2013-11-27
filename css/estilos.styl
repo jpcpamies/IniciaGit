@@ -149,21 +149,6 @@ article
 				position absolute
 				right .6em
 				top .3em
-	.contenido
-		.comando
-			background rgba(black,.03)
-			margin 1em 0 2em 0
-
-			.enunciado_comando
-				font-size .8em
-				letter-spacing 2px
-				margin 0 0 0 margen
-				padding .5em 0 1.5em 0
-				text-transform uppercase
-			pre
-				color #7c2887
-				margin 0 2em -.5em 2em
-				padding 0 0 1em 0
 	.materiales_video
 		background claro
 		border-bottom 1px solid borde
@@ -384,6 +369,21 @@ p
 		&:hover
 			background gris
 
+.instalar
+	color lila
+	border 1px solid lila
+	border-radius 5px
+	text-decoration none
+	display block
+	margin 2em auto 2em auto
+	text-align center
+	padding .5em 2em
+	width 10em
+	&:hover
+		background gris
+		border 1px solid gris
+		color claro
+
 .caja
 	background claro
 	border-top 1px solid borde
@@ -404,6 +404,51 @@ p
 		font-size 1.5em
 		margin 1em .5em
 		text-align center
+
+.terminal
+	background claro
+	border-bottom 1px solid borde
+	border-top 1px solid borde
+	margin 1em 0
+	padding 20px 0 0 0
+	.enunciado_comando
+		color white
+		font-size .8em
+		letter-spacing 2px
+		margin 0 margen
+		text-align left
+		text-transform uppercase
+		&:first-child
+			margin .2em margen 0 margen
+	.dialogo 
+		&:nth-child(odd)
+			background rgba(white,.1)
+			padding 1em 0
+		&:nth-child(even)
+			padding 1em 0
+	.ventana_terminal
+		background rgba(black,.7)
+		border-radius 0 0 5px 5px
+		box-shadow 0px 5px 15px rgba(0,0,0,.5)
+		margin 30px 25px
+		padding .3em 0 0 0
+		position relative
+		pre
+			color #a6da27
+			padding 0 margen 0 margen
+			text-align left
+		.barra
+			background lightgrey
+			border-radius 6px 6px 0 0
+			height 25px
+			position absolute
+			top -25px
+			width 100%
+		.dolar
+			&:before
+				content '$ '
+		.retorno
+			color #3fc1fb
 
 ::selection
 	background yellow

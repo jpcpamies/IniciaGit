@@ -87,22 +87,6 @@ article .encabezado .video:before {
   right: 0.6em;
   top: 0.3em;
 }
-article .contenido .comando {
-  background: rgba(0,0,0,0.03);
-  margin: 1em 0 2em 0;
-}
-article .contenido .comando .enunciado_comando {
-  font-size: 0.8em;
-  letter-spacing: 2px;
-  margin: 0 0 0 30px;
-  padding: 0.5em 0 1.5em 0;
-  text-transform: uppercase;
-}
-article .contenido .comando pre {
-  color: #7c2887;
-  margin: 0 2em -0.5em 2em;
-  padding: 0 0 1em 0;
-}
 article .materiales_video {
   background: #ebf0f4;
   border-bottom: 1px solid #c6cfd3;
@@ -359,6 +343,22 @@ p:first-child {
 .arriba a:hover {
   background: #515151;
 }
+.instalar {
+  color: #7c2887;
+  border: 1px solid #7c2887;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+  margin: 2em auto 2em auto;
+  text-align: center;
+  padding: 0.5em 2em;
+  width: 10em;
+}
+.instalar:hover {
+  background: #515151;
+  border: 1px solid #515151;
+  color: #ebf0f4;
+}
 .caja {
   background: #ebf0f4;
   border-top: 1px solid #c6cfd3;
@@ -383,6 +383,58 @@ p:first-child {
   font-size: 1.5em;
   margin: 1em 0.5em;
   text-align: center;
+}
+.terminal {
+  background: #ebf0f4;
+  border-bottom: 1px solid #c6cfd3;
+  border-top: 1px solid #c6cfd3;
+  margin: 1em 0;
+  padding: 20px 0 0 0;
+}
+.terminal .enunciado_comando {
+  color: #fff;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  margin: 0 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.terminal .enunciado_comando:first-child {
+  margin: 0.2em 30px 0 30px;
+}
+.terminal .dialogo:nth-child(odd) {
+  background: rgba(255,255,255,0.1);
+  padding: 1em 0;
+}
+.terminal .dialogo:nth-child(even) {
+  padding: 1em 0;
+}
+.terminal .ventana_terminal {
+  background: rgba(0,0,0,0.7);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+  margin: 30px 25px;
+  padding: 0.3em 0 0 0;
+  position: relative;
+}
+.terminal .ventana_terminal pre {
+  color: #a6da27;
+  padding: 0 30px 0 30px;
+  text-align: left;
+}
+.terminal .ventana_terminal .barra {
+  background: #d3d3d3;
+  border-radius: 6px 6px 0 0;
+  height: 25px;
+  position: absolute;
+  top: -25px;
+  width: 100%;
+}
+.terminal .ventana_terminal .dolar:before {
+  content: '$ ';
+}
+.terminal .ventana_terminal .retorno {
+  color: #3fc1fb;
 }
 ::selection {
   background: #ff0;
@@ -1171,6 +1223,9 @@ background: rgb(254,172,130); /* Old browsers */
   .materiales_video .video:nth-child(even) {
     margin: 0.5em 3%;
     width: 95%;
+  }
+  .terminal .ventana_terminal .barra .nombre_barra {
+    left: 30%;
   }
 }
 @media screen and (max-width: 430px) {
