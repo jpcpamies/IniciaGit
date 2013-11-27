@@ -34,7 +34,7 @@ article .contenido .comando .enunciado_comando {
   text-transform: uppercase;
 }
 article .contenido .comando pre {
-  color: #7c2887;
+  color: #e0275c;
   margin: 0 2em -0.5em 2em;
   padding: 0 0 1em 0;
 }
@@ -814,6 +814,9 @@ p:first-child {
   nav ul ul a:hover {
     background: rgba(0,0,0,0.05);
   }
+  nav .contacto {
+    display: none;
+  }
   section {
     left: 325px;
     max-width: 1000px;
@@ -1044,7 +1047,7 @@ background: rgb(254,172,130); /* Old browsers */
     padding: 0.6em 0 2em 0;
   }
   #mm0 {
-    background: #7c2887;
+    background: #1e004b;
     border: 0.5px solid rgba(124,40,135,0.05);
     color: #fff;
     cursor: pointer;
@@ -1068,6 +1071,7 @@ background: rgb(254,172,130); /* Old browsers */
     box-shadow: 0 2px 0 rgba(81,81,81,0.2);
     left: 0px;
     position: fixed;
+    opacity: 0.98;
     right: 0px;
     top: -1px;
   }
@@ -1259,8 +1263,8 @@ background: rgb(254,172,130); /* Old browsers */
     margin: 0.5em 3%;
     width: 95%;
   }
-  .terminal .ventana_terminal .barra .nombre_barra {
-    left: 30%;
+  .terminal .ventana_terminal {
+    margin: 30px 0.5em;
   }
 }
 @media screen and (max-width: 430px) {
