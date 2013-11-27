@@ -504,7 +504,7 @@ p:first-child {
   }
   header {
     background-attachment: fixed;
-    background-image: url("../img/hero.jpg");
+    background-image: url("../img/hero.png");
     background-position: center 50px;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -841,6 +841,9 @@ p:first-child {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
+  .social .comentario {
+    padding: 0 1em;
+  }
   .sombra {
     height: 100px;
     left: 0px;
@@ -1047,7 +1050,7 @@ background: rgb(254,172,130); /* Old browsers */
     padding: 0.6em 0 2em 0;
   }
   #mm0 {
-    background: #1e004b;
+    background: #6a2273;
     border: 0.5px solid rgba(124,40,135,0.05);
     color: #fff;
     cursor: pointer;
