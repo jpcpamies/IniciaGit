@@ -1124,7 +1124,7 @@ background: rgb(254,172,130); /* Old browsers */
     left: 8.5em;
   }
   article .materiales_libro .guias .ejemplar .portada {
-    margin: 0 1em 2em 0;
+    margin: 0 1em 0 0;
     width: 28%;
   }
   article figure .laptop,
