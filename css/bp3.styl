@@ -13,11 +13,7 @@ body
 	position relative
 
 header
-	background-attachment: fixed;
-	background-image url(../img/hero.png)
-	background-position center 50px
-	background-repeat no-repeat
-	background-size  100% auto
+	background gris
 	height 100px
 	left 0px
 	top 0px
@@ -27,27 +23,17 @@ header
 		left 2em
 		height auto
 		position relative
-		top .9em
-		width 90px
-		z-index 5
-		// -webkit-filter: brightness(1);
+		top .78em
+		width 7em
 	h1
-		color white
-		display inline-block
-		font-size 2.5em
-		left 3.5em
+		left 4.3em
 		position absolute
 		top .3em
-		z-index 4
 		small
-			color white
-			font-size .5em
 			left 5px
 			position absolute
 			top 47px
 			white-space nowrap
-	.hero
-		display none
 
 footer
 	background claro
@@ -324,22 +310,3 @@ section
 .social
 	.comentario
 		padding 0 1em
-
-.sombra
-	height 100px
-	left 0px
-	position absolute
-	top 0px
-	width 100%
-	z-index -1
-	@css {
-		background: rgb(254,172,130); /* Old browsers */
-		background: -moz-linear-gradient(top,  rgba(254,172,130,1) 0%, rgba(255,206,151,1) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,172,130,1)), color-stop(100%,rgba(255,206,151,1))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  rgba(254,172,130,1) 0%,rgba(255,206,151,1) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top,  rgba(254,172,130,1) 0%,rgba(255,206,151,1) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top,  rgba(254,172,130,1) 0%,rgba(255,206,151,1) 100%); /* IE10+ */
-		background: linear-gradient(to bottom,  rgba(254,172,130,1) 0%,rgba(255,206,151,1) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feac82', endColorstr='#ffce97',GradientType=0 ); /* IE6-9 */
-	}
-

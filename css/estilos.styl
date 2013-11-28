@@ -3,20 +3,18 @@ margen = 30px
 
 // Fuentes =========================================
 titulo = lobster, sans-serif
+subtitulo = BenchNine, sans-serif
 texto = raleway, sans-serif
 mayuscula = lucida grande
 
 // Colores =========================================
-// fondo = rgb(237,241,243)
 fondo = #edf1f3
 borde = rgb(198,207,211)
 boton = rgba(111,129,148, .5)
-hover = rgba(0,0,0,.7)
-// azul = #2480e2
+hover = #fc5845
 azul = lila
-lila = #7c2887 
-// azul = #3b84bf
-// gris = #343434
+turquesa = #21baad 
+lila = #21baad  
 gris = #515151
 claro = #ebf0f4
 
@@ -337,14 +335,15 @@ h1
 	font-size 2.5em
 	font-weight normal
 	margin 0 
-	text-shadow 1px 1px 0 gris
+	// text-shadow 1px 1px 0 gris
 	small
-		color white
+		color rgba(white,.5)
 		display block
+		font-family subtitulo 
 		font-size .5em
-		margin -.2em auto 0 auto
-		max-width 17em
-		text-shadow 1px 1px 0 gris
+		letter-spacing 2px
+		text-transform uppercase
+		whitespace nowrap
 
 h2
 	display inline-block
@@ -500,9 +499,6 @@ p
 
 @media screen and (max-width: 641px) 
 	@import "bp1.styl"
-
-@media screen and (max-width: 430px) 
-	@import "bp0.styl"
 
 
 

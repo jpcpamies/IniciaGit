@@ -39,7 +39,8 @@ var disqus_shortname = 'iniciagit';
 $(function(){
       $.stellar({
           horizontalScrolling: false,
-          verticalOffset: 170
+          verticalOffset: 50
+
       });
   });
 
