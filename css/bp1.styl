@@ -123,6 +123,7 @@ header
 	h1
 		small
 			font-size .4em
+			letter-spacing 2px
 	img
 		width 70px
 
@@ -148,7 +149,46 @@ section
 
 .terminal
 	.ventana_terminal
-		margin 30px .5em	
+		margin 30px .7em	
 
-
-
+.social
+	padding 2em 24px
+	.consejos
+		border-bottom 1px solid borde
+		padding 0 0 1em 0
+		transtition all .2s ease
+		-webkit-transtition all .2s ease
+		ul
+		li
+			display inline-block
+			margin 0
+			padding .2em 0
+			text-align center
+			width 100%
+		a
+			color gris
+			font-size .7em
+			margin 0 2em 3em 0
+			text-decoration none
+			text-transform uppercase
+			&:hover
+				color turquesa
+			&:before
+				content '- '
+			&:after
+				content ' -'
+	.compartir
+		border-bottom none
+		border-right none
+		display inline-block
+		margin 1em 1em 0 0
+		width 100%
+		.facebook
+			display inline-block
+			margin 0
+			width 25%
+		p
+			color #404040
+			font-weight bold
+			font-size 1.2em
+			margin 0

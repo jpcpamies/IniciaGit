@@ -34,15 +34,15 @@ var disqus_shortname = 'iniciagit';
     
 
 
-// Script efecto parallax ============================================================
-// ==============================================================================
-$(function(){
-      $.stellar({
-          horizontalScrolling: false,
-          verticalOffset: 50
+// // Script efecto parallax ============================================================
+// // ==============================================================================
+// $(function(){
+//       $.stellar({
+//           horizontalScrolling: false,
+//           verticalOffset: 50b
 
-      });
-  });
+//       });
+//   });
 
 
 // Script mobileMenu ============================================================

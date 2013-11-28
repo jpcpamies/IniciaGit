@@ -312,7 +312,7 @@ h1 small {
   display: block;
   font-family: BenchNine, sans-serif;
   font-size: 0.5em;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   whitespace: nowrap;
 }
@@ -346,6 +346,8 @@ p:first-child {
   left: 1.2em;
   position: fixed;
   z-index: 10;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
 .arriba a {
   background: #d9d9d9;
@@ -454,7 +456,7 @@ p:first-child {
 }
 .terminal .ventana_terminal pre {
   color: #a6da27;
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
   text-align: left;
 }
 .terminal .ventana_terminal .barra {
@@ -514,8 +516,8 @@ p:first-child {
     left: 2em;
     height: auto;
     position: relative;
-    top: 0.78em;
-    width: 7em;
+    top: 0.9em;
+    width: 6.5em;
   }
   header h1 {
     left: 4.3em;
@@ -524,6 +526,7 @@ p:first-child {
   }
   header h1 small {
     left: 5px;
+    letter-spacing: 5px;
     position: absolute;
     top: 47px;
     white-space: nowrap;
@@ -827,8 +830,47 @@ p:first-child {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  .social .comentario {
-    padding: 0 1em;
+  .social {
+    padding: 2em 24px;
+    position: relative;
+  }
+  .social .consejos {
+    border-bottom: 1px solid #c6cfd3;
+    padding: 0 0 2em 0;
+    transtition: all 0.2s ease;
+    -webkit-transtition: all 0.2s ease;
+  }
+  .social .consejos ul,
+  .social .consejos li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .social .consejos a {
+    color: #515151;
+    font-size: 0.7em;
+    margin: 0 2em 3em 0;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .social .consejos a:hover {
+    color: #21baad;
+  }
+  .social .compartir {
+    display: inline-block;
+    margin: 1em 1em 1em 0;
+    width: 60%;
+  }
+  .social .compartir .facebook,
+  .social .compartir .twitter {
+    display: inline-block;
+    padding: 1em 1em 1em 0;
+  }
+  .social .compartir p {
+    color: #404040;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
   }
 }
 @media screen and (max-width: 880px) {
@@ -1028,6 +1070,53 @@ p:first-child {
     right: 0px;
     top: -1px;
   }
+  .social {
+    padding: 2em 24px;
+    position: relative;
+  }
+  .social .consejos {
+    border-bottom: 1px solid #c6cfd3;
+    padding: 0 0 2em 0;
+    transtition: all 0.2s ease;
+    -webkit-transtition: all 0.2s ease;
+  }
+  .social .consejos ul,
+  .social .consejos li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .social .consejos a {
+    color: #515151;
+    font-size: 0.7em;
+    margin: 0 2em 3em 0;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .social .consejos a:hover {
+    color: #21baad;
+  }
+  .social .compartir {
+    display: inline-block;
+    margin: 1em 1em 1em 0;
+    width: 60%;
+  }
+  .social .compartir .facebook,
+  .social .compartir .google,
+  .social .compartir .twitter {
+    display: inline-block;
+    padding: 1em 1em 1em 0;
+  }
+  .social .compartir .twitter {
+    margin: 0 -1.15em 0 0;
+    padding: 1em 0 1em 0;
+  }
+  .social .compartir p {
+    color: #404040;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+  }
 }
 @media screen and (max-width: 641px) {
   article {
@@ -1170,6 +1259,7 @@ p:first-child {
   }
   header h1 small {
     font-size: 0.4em;
+    letter-spacing: 2px;
   }
   header img {
     width: 70px;
@@ -1195,6 +1285,57 @@ p:first-child {
     width: 95%;
   }
   .terminal .ventana_terminal {
-    margin: 30px 0.5em;
+    margin: 30px 0.7em;
+  }
+  .social {
+    padding: 2em 24px;
+  }
+  .social .consejos {
+    border-bottom: 1px solid #c6cfd3;
+    padding: 0 0 1em 0;
+    transtition: all 0.2s ease;
+    -webkit-transtition: all 0.2s ease;
+  }
+  .social .consejos ul,
+  .social .consejos li {
+    display: inline-block;
+    margin: 0;
+    padding: 0.2em 0;
+    text-align: center;
+    width: 100%;
+  }
+  .social .consejos a {
+    color: #515151;
+    font-size: 0.7em;
+    margin: 0 2em 3em 0;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .social .consejos a:hover {
+    color: #21baad;
+  }
+  .social .consejos a:before {
+    content: '- ';
+  }
+  .social .consejos a:after {
+    content: ' -';
+  }
+  .social .compartir {
+    border-bottom: none;
+    border-right: none;
+    display: inline-block;
+    margin: 1em 1em 0 0;
+    width: 100%;
+  }
+  .social .compartir .facebook {
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+  }
+  .social .compartir p {
+    color: #404040;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
   }
 }
