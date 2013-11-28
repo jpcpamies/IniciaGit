@@ -17,7 +17,6 @@ article {
   border-radius: 5px;
   box-shadow: 0 2px 2px rgba(0,0,0,0.3);
   margin: 1em;
-  padding: 0 0 1em 0;
 }
 article:last-child {
   margin-bottom: 4.5em;
@@ -117,7 +116,7 @@ article .materiales_video {
   background: #ebf0f4;
   border-bottom: 1px solid #c6cfd3;
   border-top: 1px solid #c6cfd3;
-  margin: 1em 0 3em 0;
+  margin: 1em 0 1em 0;
   padding: 1em;
 }
 article .materiales_video .video {
@@ -182,7 +181,7 @@ article .materiales_libro {
   background: #fff;
   border-bottom: 1px solid #c6cfd3;
   border-top: 1px solid #c6cfd3;
-  margin: 1em 0 3em 0;
+  margin: 1em 0 1em 0;
   padding: 1em;
 }
 article .materiales_libro .libros {
@@ -471,7 +470,7 @@ p:first-child {
   content: '$ ';
 }
 .terminal .ventana_terminal .retorno {
-  color: #e5db74;
+  color: #3ec1fb;
 }
 ::selection {
   background: #ff0;
@@ -1126,6 +1125,9 @@ p:first-child {
   article:last-child {
     margin-bottom: 1em;
   }
+  article .materiales_libro {
+    margin: 1em 0 0 0;
+  }
   article .materiales_libro .libros .ejemplar {
     padding: 0 0 0 1.5em;
   }
@@ -1144,6 +1146,9 @@ p:first-child {
   article .materiales_libro .guias .ejemplar .portada {
     margin: 0 1em 0 0;
     width: 28%;
+  }
+  article .materiales_video {
+    margin: 1em 0 0 0;
   }
   article figure .laptop,
   article figure .movil,
