@@ -1168,6 +1168,12 @@ p:first-child {
   footer .social .email:hover {
     color: #f6ca2d;
   }
+  header h1 small {
+    font-size: 0.4em;
+  }
+  header img {
+    width: 70px;
+  }
   p {
     line-height: 1.4;
     margin: 0.5em 0.7em;
