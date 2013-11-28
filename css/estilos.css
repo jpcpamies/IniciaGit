@@ -1284,8 +1284,30 @@ p:first-child {
     margin: 0.5em 3%;
     width: 95%;
   }
+  .terminal {
+    background: #ebf0f4;
+    border-bottom: 1px solid #c6cfd3;
+    border-top: 1px solid #c6cfd3;
+    margin: 1em 0;
+    padding: 20px 0 0 0;
+  }
+  .terminal .enunciado_comando {
+    color: #fff;
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    margin: 0 1em 0 -1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .terminal .enunciado_comando:first-child {
+    margin: 0.2em 30px 0 30px;
+  }
   .terminal .ventana_terminal {
-    margin: 30px 0.7em;
+    margin: 30px 1em;
+  }
+  .terminal .ventana_terminal pre {
+    font-size: 0.9em;
+    padding: 0 1em;
   }
   .social {
     padding: 2em 24px;
@@ -1327,10 +1349,10 @@ p:first-child {
     margin: 1em 1em 0 0;
     width: 100%;
   }
-  .social .compartir .facebook {
+  .social .compartir .facebook,
+  .social .compartir .twitter {
     display: inline-block;
-    margin: 0;
-    width: 25%;
+    padding: 1em 1em 1em 0;
   }
   .social .compartir p {
     color: #404040;
