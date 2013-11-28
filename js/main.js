@@ -1,5 +1,4 @@
-// Script Facebook ============================================================
-// ==============================================================================
+// Script Facebook
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -10,18 +9,16 @@
 
 
 
-// Script Disqus ============================================================
-// Carga los comentarios======================================================
-var disqus_shortname = 'iniciagit'; 
+// Script Disqus
+// Carga los comentarios
 
 (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
-
-// Script Disqus ============================================================
-// Llama al API de Disqus======================================================
+// Script Disqus
+// Llama al API de Disqus
 var disqus_shortname = 'iniciagit'; 
 
 (function () {
@@ -31,23 +28,8 @@ var disqus_shortname = 'iniciagit';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
 
-    
 
-
-// // Script efecto parallax ============================================================
-// // ==============================================================================
-// $(function(){
-//       $.stellar({
-//           horizontalScrolling: false,
-//           verticalOffset: 50b
-
-//       });
-//   });
-
-
-// Script mobileMenu ============================================================
-// ==============================================================================
-
+// Script mobileMenu
 $(function(){
 $('.mobileMenu').mobileMenu({
   combine: false,         
@@ -60,9 +42,7 @@ $('.mobileMenu').mobileMenu({
 })
 
 
-// Script Ir inicio =============================================================
-// ==============================================================================
-
+// Script Ir inicio 
 var num = 180; //number of pixels before modifying styles
 
 		$(window).bind('scroll', function () {
@@ -74,9 +54,7 @@ var num = 180; //number of pixels before modifying styles
 		});
 
 
-// Script nav fixed movil =============================================================
-// ==============================================================================
-
+// Script nav fixed movil
   var num2 = 175; //number of pixels before modifying styles
 
   $(window).bind('scroll', function () {
@@ -88,9 +66,7 @@ var num = 180; //number of pixels before modifying styles
   });
 
 
-// Script nav fixed escitorio =============================================================
-// ==============================================================================
-
+// Script nav fixed escitorio
   var num3 = 120; //number of pixels before modifying styles
 
   $(window).bind('scroll', function () {
@@ -100,5 +76,3 @@ var num = 180; //number of pixels before modifying styles
           $('.tope').removeClass('fijo');
       }
   });
-
-
