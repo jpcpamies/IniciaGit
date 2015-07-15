@@ -1,0 +1,214 @@
+
+article
+	margin 1em .5em
+	padding 0 0 1em 0
+	&:last-child
+		margin-bottom 1em
+	.materiales_libro
+		margin 1em 0 0 0 
+		.libros
+			.ejemplar
+				padding 0 0 0 1.5em
+				.detalles
+					left 8.5em
+				.portada
+					width 28%
+		.guias
+			.ejemplar
+				padding 0 0 0 1.5em
+				.detalles
+					left 8.5em
+				.portada
+					margin 0 1em 0 0
+					width 28%
+	.materiales_video
+		margin 1em 0 0 0 
+	figure
+		.laptop
+		.movil
+		.tablet
+			display block
+			margin 0 auto
+
+footer
+	background azul
+	height 10em
+	.avatar
+		background white
+		display inline-block
+		float left
+		height 10em
+		position relative
+		width 9.5em
+		transition all .2s ease
+		-webkit-transition all .2s ease
+		&:after
+			border-bottom solid 10em transparent
+			border-left solid 5em white
+			border-right solid 10px transparent
+			border-top solid 0 green
+			content ""
+			left 9.5em
+			position absolute
+			top 0px
+		img
+			border-radius 50%
+			height auto
+			left 1.2em
+			position absolute
+			top 1em
+			width 3em
+			z-index 5
+			-webkit-filter: grayscale(1);
+			&:hover
+				-webkit-filter: grayscale(0);
+
+		p
+			color gris
+			font-size 1em
+			left 4.2em
+			line-height 1.1em;
+			position absolute
+			text-align left
+			top 1.4em
+			white-space nowrap
+			z-index 4
+
+	.social
+		position relative
+		// text-shadow 1px 1px 0px rgba(black,.5)
+		z-index 3
+		a
+			color white
+			font-family texto
+			font-size 1.5em
+			font-weight bold
+		.twitter
+		.github
+		.email
+			position absolute
+			transition all .2s ease
+			-webkit-transition all .2s ease
+			&:before
+				font-family icono
+				margin 0 .5em 0 0
+				vertical-align bottom
+
+		.twitter
+			right .5em
+			text-decoration none
+			top .7em
+			&:before
+				content "\e606"
+			&:hover
+				color #21b2e9
+				
+		.github
+			right .5em
+			text-decoration none
+			top 2.7em
+			&:before
+				content "\e609"
+			&:hover
+				color gris
+				text-decoration none
+
+		.email
+			right .5em
+			text-decoration none
+			top 4.7em
+			&:before
+				content "\e602"
+			&:hover
+				color #f6ca2d
+
+header
+	h1
+		small
+			font-size .4em
+			letter-spacing 2px
+	img
+		width 70px
+
+p
+	line-height 1.4
+	margin .5em .7em
+	&:first-child 
+		margin -1em .7em 0 .7em
+
+section
+	background #e4e1df
+	margin -.6em .0
+	padding .6em 0
+
+.materiales_video
+	.video
+		&:nth-child(odd)
+			margin .5em 3% 
+			width 95%
+		&:nth-child(even)
+			margin .5em 3% 
+			width 95%
+
+.terminal
+	background claro
+	border-bottom 1px solid borde
+	border-top 1px solid borde
+	margin 1em 0
+	padding 20px 0 0 0
+	.enunciado_comando
+		color white
+		font-size .6em
+		letter-spacing 2px
+		margin 0 1em 0 -1em
+		text-align center
+		text-transform uppercase
+		&:first-child
+			margin .2em margen 0 margen
+	.ventana_terminal
+		margin 30px 1em
+		pre
+			font-size .9em
+			padding 0 1em 
+
+.social
+	padding 2em 24px
+	.consejos
+		border-bottom 1px solid borde
+		padding 0 0 1em 0
+		transtition all .2s ease
+		-webkit-transtition all .2s ease
+		ul
+		li
+			display inline-block
+			margin 0
+			padding .2em 0
+			text-align center
+			width 100%
+		a
+			color gris
+			font-size .7em
+			margin 0 2em 3em 0
+			text-decoration none
+			text-transform uppercase
+			&:hover
+				color turquesa
+			&:before
+				content '- '
+			&:after
+				content ' -'
+	.compartir
+		border-bottom none
+		border-right none
+		display inline-block
+		margin 1em 1em 0 0
+		width 100%
+		.facebook
+		.twitter
+			display inline-block
+			padding 1em 1em 1em 0
+		p
+			color #404040
+			font-weight bold
+			font-size 1.2em
+			margin 0

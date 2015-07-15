@@ -1,0 +1,344 @@
+
+article
+	figure
+		text-align center
+		.laptop
+		.movil
+		.tablet
+			display inline-block
+			height 130px
+			width auto
+	
+body
+	position relative
+
+header
+	background gris
+	height 100px
+	left 0px
+	top 0px
+	width 100%
+	z-index 0
+	img 
+		left 2em
+		height auto
+		position relative
+		top .9em
+		width 6.5em
+	h1
+		left 4.3em
+		position absolute
+		top .3em
+		small
+			left 5px
+			letter-spacing 5px
+			position absolute
+			top 47px
+			white-space nowrap
+
+footer
+	background claro
+	border-top 1px solid white
+	bottom 0px
+	box-shadow 0 -1px 0 borde
+	height 50px
+	left 0px
+	position fixed
+	width 100%
+	.avatar
+		// background red
+		left 341px
+		padding 0 10px 0 5px 
+		position absolute
+		-webkit-filter: grayscale(1);
+		transition all .2s ease
+		-webkit-transition all .2s ease
+		&:hover
+			background rgba(black,.05)
+			-webkit-filter: grayscale(0);
+			p
+				color gris
+		img
+			// border 3px solid white
+			border-radius 50%
+			// box-shadow 0 0 1px rgba(black,.5)
+			height auto
+			margin .4em 0 0 .3em
+			width 37px
+		p
+			color #b3b3b3 
+			font-family texto
+			font-weight normal
+			left 22px
+			position relative 
+			top -41px
+			transition all .2s ease
+			-webkit-transition all .2s ease
+	.social
+		.email
+			// background green
+			color #b3b3b3 
+			left 551px
+			line-height 3.2em
+			padding 0 15px 
+			position absolute
+			text-decoration none
+			top 0px
+			transition all .2s ease
+			-webkit-transition all .2s ease
+			&:before
+				content "\e602"
+				font-family icono
+				font-size 1.2em
+			&:hover
+				background #f6ca2d
+				color white
+		.github
+			// background blue
+			border-right 1px solid rgba(borde,.5)
+			color #b3b3b3 
+			left 0px
+			line-height 3.2em
+			padding 0 159.5px  
+			position absolute
+			text-decoration none
+			top 0px
+			transition all .2s ease
+			-webkit-transition all .2s ease
+			&:before
+				content "\e609"
+				font-family icono
+				font-size 1.35em
+			&:hover
+				background rgba(black,.05)
+				border-color borde
+				color gris
+		.twitter
+			// background blue
+			color #b3b3b3 
+			left 503px
+			line-height 3.2em
+			padding 0 15px 
+			position absolute
+			text-decoration none
+			top 0px
+			transition all .2s ease
+			-webkit-transition all .2s ease
+			&:before
+				content "\e606"
+				font-family icono
+				font-size 1.2em
+			&:hover
+				background #21b2e9
+				color white
+	.titulo
+		color lila
+		display block
+		font-family titulo
+		font-size 1.3em
+		font-weight normal
+		margin 0 
+		position absolute 
+		right 1em
+		top .5em
+
+nav
+	bottom 50px
+	left 0px
+	overflow-y auto
+	// position fixed
+	position relative
+	top 20px
+	width 325px
+	ul
+		margin 0
+		padding 0
+		li
+			position relative
+			a
+				text-decoration none
+				display block
+			.capitulo
+				background azul
+				border-radius 5px
+				color claro
+				margin 1.2em 0 1.3em 1em
+				padding .4em 1.5em .4em 1em
+				transition all .2s ease
+				-webkit-transition all .2s ease
+				&:hover
+					background gris
+			.ejercicio
+				&:after
+					color rgba(azul,.7)
+					content "\e603"
+					font-family icono
+					font-size 1.2em
+					font-weight none
+					position absolute
+					right .4em
+					top .4em
+				&:hover
+					background rgba(black,.05)
+			.iniciando
+				&:after
+					color rgba(azul,.7)
+					content "\e605"
+					font-family icono
+					font-size 1.2em
+					font-weight none
+					position absolute
+					right .5em
+					top .4em
+				&:hover
+					background rgba(black,.05)
+			.libro
+				&:after
+					color rgba(azul,.7)
+					content "\e600"
+					font-family icono
+					font-size 1.1em
+					font-weight none
+					position absolute
+					right .5em
+					top .4em
+				&:hover
+					background rgba(black,.05)
+			.oro
+				&:after
+					color rgba(azul,.7)
+					content "\e604"
+					font-family icono
+					font-size 1.2em
+					font-weight none
+					position absolute
+					right .4em
+					top .4em
+				&:hover
+					background rgba(black,.05)
+			.solo
+				border 1px solid boton
+				border-radius 5px
+				color azul
+				margin 0 0 .2em 1em
+				padding .4em 1.5em .4em 1em
+				position relative
+				transition all .2s ease
+				-webkit-transition all .2s ease
+				&:hover
+					background rgba(black,.05)
+			.uno
+				&:after
+					background claro
+					border-radius 50%
+					color azul
+					content "1"
+					font-family arial
+					font-size .9em
+					font-weight none
+					height 1.2em
+					position absolute
+					right .5em
+					text-align center
+					top .55em
+					width 1.2em
+				&:hover
+					&:after
+						color gris
+			.video
+				&:after
+					color rgba(azul,.7)
+					content "\e601"
+					font-family icono
+					font-size 1.1em
+					font-weight none
+					position absolute
+					right .5em
+					top .4em
+				&:hover
+					background rgba(black,.05)
+		ul 
+			border 1px solid boton
+			border-radius 5px
+			margin -1.1em 0 1em 1em
+			li 
+				border-bottom 1px solid boton
+				&:last-child
+					border-bottom none
+			a
+				color azul
+				padding .4em 1.5em .4em 1em
+				position relative
+				transition all .2s ease
+				-webkit-transition all .2s ease
+				&:after
+					color rgba(azul,.7)
+					content "\e613"
+					font-family icono2
+					font-size 1.2em
+					font-weight none
+					position absolute
+					right .2em
+					top .4em
+				&:hover
+					background rgba(black,.05)
+	.contacto
+		display none
+
+section
+	left 325px
+	max-width 1000px
+	position absolute
+	top 105px
+
+.materiales_video
+	.video
+		width 45%
+		&:nth-child(odd)
+			margin 0 1em 0 3.5%
+			width 45%
+		&:last-child
+			margin -1em 1em 0 3.5%
+
+.fijo
+	left 0px
+	position fixed
+	right 0px
+	top 20px
+	-webkit-transition all .5s ease
+	transition all .5s ease
+
+.social
+	padding 2em 24px
+	position relative
+	.consejos
+		border-bottom 1px solid borde
+		padding 0 0 2em 0
+		transtition all .2s ease
+		-webkit-transtition all .2s ease
+		ul
+		li
+			display inline-block
+			margin 0
+			padding 0
+		a
+			color gris
+			font-size .7em
+			margin 0 2em 3em 0
+			text-decoration none
+			text-transform uppercase
+			&:hover
+				color turquesa
+	.compartir
+		display inline-block
+		margin 1em 1em 1em 0
+		width 60%
+		.facebook
+		.twitter
+			display inline-block
+			padding 1em 1em 1em 0
+		p
+			color #404040
+			font-weight bold
+			font-size 1.2em
+			margin 0

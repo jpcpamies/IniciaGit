@@ -1,98 +1,403 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
 <html lang="es_ES" />
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Programa Festes Quinquenals Ulldecona 2014</title>
-    <meta name="description" content="Programa de les festes Quinquenals d'Ulldecona 2014" />
-    <meta name="author" content="Ivan Bardón | Jordi Pàmies | Marc Ferré" />
+    <title>IniciaGit: Hacer un commit es como pagar un tiro</title>
+    <meta name="description" content="Incluso si eres principiante te va a resultar facil aprender a usar Github con esta guía." />
+    <meta name="author" content="Jordi Pàmies" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Ulldecona">
 
-    <link rel="stylesheet" href="css/normalize.min.css" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/estilosDia.css" />
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href='http://fonts.googleapis.com/css?family=BenchNine|Lobster|Raleway:400,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 <div id="fb-root"></div>
-    <div class="core">
-        <div class="bg"></div>
-        <div class="bgEvento"></div>
-        <div class="bgHeader">
-            <div class="montsia"></div>
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div id='inicio'></div>
+<header>
+    <a href="#"><img src="img/logo.png" alt="Logo"></a>
+    <h1>IniciaGit<small>Hacer un commit es como pegar un tiro</small></h1>
+</header>
+<nav class="menu tope">
+    <ul class='mobileMenu'>
+        <Li><a class='solo iniciando' href="#iniciando">Iniciando</a></Li>
+        <li><a class='solo video' href="#video">Clases en vídeo</a></li>
+        <li><a class='solo libro' href="#libro">Libros y guías</a></li>
+        <li><a class='solo oro' href="#comandos">Resumen de comandos</a></li>
+        <Li><a class='capitulo uno' href="#empezando_con_github">Empezando con Github</a>
+            <ul>
+                <li><a class='tema' href="#instalar">Instalar GitHub</a></li>
+                <li><a class='tema' href="#identificarse">Identificarse como usuario</a></li>
+                <li><a class='tema' href="#vincular">Vincular el ordenador con GitHub por SSH</a></li>
+            </ul>
+        </li>
+        <li><a class='solo ejercicio' href="#">Ejercicios prácticos</a></li>
+        <li><a class='contacto' href="#footer">Contacto</a></li>
+    </ul>
+</nav>
+<section>
+    <article id='iniciando'>
+        <div class="encabezado">
+            <h2>
+                <span class='numero iniciando'></span>
+                <span class="nombre">Iniciando</span>
+            </h2>
         </div>
-        <div class="patron"></div>
-        <div class="efectos">
-            <div class="dia">
-                <div class="sol"></div>
-                <div class="nubes">
-                    <div class="nube1"></div>
-                    <div class="nube2"></div>
-                    <div class="nube3"></div>
+        <div class="contenido">
+            <figure>
+                <img src="img/movil.png" alt="vista movil" class="movil" />
+                <img src="img/tablet.png" alt="vista tablet" class="tablet" />
+                <img src="img/laptop.png" alt="vista escritorio" class="laptop" />
+            </figure>
+            <p>Esta guía básica te ayudará a <strong>usar GitHub con la terminal</strong> desde cero. En ella encontrarás un resumen de los pasos y comandos básicos necesarios para empezar a trabajar con GitHub desde tu ordenador con la terminal. Tanto si ya usas GitHub como si empiezas hoy mismo esta guía</p>
+            <p>Con esta guía empezarás un proyecto propio en local y subirás cambios a tu repositorio en GitHub. <strong>Trabajarás en colaboración</strong> con personas de todo el mundo, haciendo Fork, Pull request y Merge. Además podrás alojar tu proyecto en un subdominio de GitHub, igual que lo está esta guía.</p>
+            <p>No encontrarás explicaciones teóricas explicando que es un sistema de control de versiones o funcionan las entrañas de GitHub. Pero sí encontrarás enlaces a varias fuentes en vídeo y texto que bien seguro te ayudarán asimilar mejor los conceptos.</p>
+        </div>
+        <div class="social">
+            <div class="consejos">
+                <ul>
+                    <li><a href="#video">Clases en vídeo</a></li>
+                    <li><a href="#libro">Libros y guías</a></li>
+                    <li><a href="#comandos">Resumen de comandos</a></li>
+                </ul>
+            </div>
+            <div class="compartir">
+                <p>Compártelo</p>
+                <div class="facebook">
+                    <div class="fb-like" data-href="http://asiestudio.site88.net/" data-width="50" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
                 </div>
-                <div class="rayos">
-                    <div class="rayo2"></div>
-                    <div class="rayo3"></div>
-                    <div class="rayo4"></div>
-                    <div class="rayo4a"></div>
-                    <div class="rayo5"></div>
-                    <div class="rayo5a"></div>
-                    <div class="rayo6"></div>
-                    <div class="rayo6a"></div>
-                    <div class="rayo7"></div>
-                    <div class="rayo8"></div>
+                <div class="twitter">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://asiestudio.site88.net/" data-text="IniciaGit | Hacer un commit es como pegar un tiro" data-via="jpcpamies" data-lang="es">Twittear</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                 </div>
-                <div class="moverDestellos">
-                    <div class="destellos">
-                        <div class="destello1"></div>
-                        <div class="destello2"></div>
-                        <div class="destello3"></div>
-                        <div class="destello4"></div>
-                        <div class="destello5"></div>
+            </div>
+        </div>
+    </article>
+    <article id='video'>
+        <div class="encabezado">
+            <h2>
+                <span class='numero video'></span>
+                <span class="nombre">Clases en vídeo</span>
+            </h2>
+        </div>
+        <div class="materiales_video">
+            <div class="video">
+                <div class="contenedor">
+                    <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/C_xFDRsEM7A?showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="detalles">
+                   <p class="titulo">Introducción a Git + GitHub</p>
+                   <p class="resumen">Una introducción a Git y GitHub, su utilidad y un pequeño ejercicio para instalar las llaves SSH y conectar repositorios.</p>
+                   <p class="autor">Miguel Nieva @mikenieva</p> 
+                   <p class="fecha">Publicado el 09/02/2013</p>
+                </div>
+            </div>
+            <div class="video">
+                <div class="contenedor">
+                    <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/H5otM7wnvnM?showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="detalles">
+                   <p class="titulo">Git: Branches</p>
+                   <p class="resumen">Una clase especial dedicada a GitHub, Git y el comportamiento de los branches. Dirigida por Christian Van Der Henst y Miguel Nieva.</p>
+                   <p class="autor">Christian Van Der Henst @cvander - Miguel Nieva @mikenieva</p> 
+                   <p class="fecha">Publicado el 19/03/2013</p>
+                </div>
+            </div>
+            <div class="video">
+                <div class="contenedor">
+                    <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/MfYw97qPiEQ?showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="detalles">
+                   <p class="titulo">Colaboración con GitHub</p>
+                   <p class="resumen">En esta ocasión, complementando a los materiales de GIT dentro de la plataforma, vemos la forma de colaborar en los proyectos estudiantiles.</p>
+                   <p class="autor">Miguel Nieva @mikenieva</p> 
+                   <p class="fecha">Publicado el 14/05/2013</p>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <div class="consejos">
+                <ul>
+                    <li><a href="#video">Clases en vídeo</a></li>
+                    <li><a href="#libro">Libros y guías</a></li>
+                    <li><a href="#comandos">Resumen de comandos</a></li>
+                </ul>
+            </div>
+            <div class="compartir">
+                <p>Compártelo</p>
+                <div class="facebook">
+                    <div class="fb-like" data-href="http://asiestudio.site88.net/" data-width="50" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://asiestudio.site88.net/" data-text="IniciaGit | Hacer un commit es como pegar un tiro" data-via="jpcpamies" data-lang="es">Twittear</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article id='libro'>
+        <div class="encabezado">
+            <h2>
+                <span class='numero libro'></span>
+                <span class="nombre">Libros y guías</span>
+            </h2>
+        </div>
+        <div class="materiales_libro">
+            <div class="libros">
+                <div class="grupo">Libros</div>
+                <div class="ejemplar">
+                    <div class="portada">
+                        <a href="http://git-scm.com/book/es?codekitCB=406257843.239258" target='blanck'><img src="img/progit.jpg" alt="Pro Git"></a>
+                    </div>
+                    <div class="detalles">
+                       <p class="titulo">Pro Git</p>
+                       <p class="resumen">Un libro completo para combertirte en un ninja de Github.</p>
+                       <p class="autor">Scott Chacon</p> 
+                       <!-- <p class="idioma"><img src="img/esp.jpg" alt="idioma español"></p> -->
                     </div>
                 </div>
             </div>
-            <div class="nit">
-                <div class="contenedorCastell">
-                    <div class="castell"></div>
-                    <div class="castellFosc"></div>
+            <div class="guias">
+                <div class="grupo">Guías</div>
+                <div class="ejemplar">
+                    <div class="portada">
+                        <a href="http://rogerdudler.github.io/git-guide/index.es.html?codekitCB=407001770.571911" target='blanck'><img src="img/guia.png" alt="Git - La guía sencilla"></a>
+                    </div>
+                    <div class="detalles">
+                       <p class="titulo">Git - La guía sencilla</p>
+                       <p class="resumen">Una guía sencilla para comenzar con Git sin complicaciones.</p>
+                       <p class="autor">Roger Dudler</p> 
+                       <!-- <p class="idioma"><img src="img/esp.jpg" alt="idioma español"></p> -->
+                    </div>
                 </div>
-                <div class="estrellas">
-                    <div class="moverFugaz"><div class="fugaz"></div></div>
-                    <div class="moverConstelacion"><div class="constelacion"></div></div>
-                </div>
-                <div class="degradadoA"></div>
-                <div class="degradadoB"></div>
             </div>
-    </div>
-    <header>
-        <div class="calendari">
-            <div id='divDia' class="dia"><span></span></div>
-            <div id='divNumero' class="numero"><span></span></div>
-            <div id='divMes' class="mes"><span></span></div>   
-    </header>
+        </div>
+        <div class="social">
+            <div class="consejos">
+                <ul>
+                    <li><a href="#video">Clases en vídeo</a></li>
+                    <li><a href="#libro">Libros y guías</a></li>
+                    <li><a href="#comandos">Resumen de comandos</a></li>
+                </ul>
+            </div>
+            <div class="compartir">
+                <p>Compártelo</p>
+                <div class="facebook">
+                    <div class="fb-like" data-href="http://asiestudio.site88.net/" data-width="50" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://asiestudio.site88.net/" data-text="IniciaGit | Hacer un commit es como pegar un tiro" data-via="jpcpamies" data-lang="es">Twittear</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article id="comandos">
+        <div class="encabezado">
+            <h2>
+                <span class='numero comando'></span>
+                <span class="nombre">Resumen de comandos</span>
+            </h2>
+        </div>
+        <div class="contenido">
+            <h3><span>Instalar</span> GitHub</h3>
+            <div class="comando">
+                <p class='enunciado_comando'>Comprueba que Github se ha instalado en el ordenador</p>
+                <pre>git —version</pre>
+            </div>
 
-    <!-- Area per a els scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')
-    </script>
-    <script src="js/main.js"></script>
-    <script src="js/vendor/scrolltop.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-48704435-1', 'auto');
-      ga('require', 'displayfeatures');
-      ga('send', 'pageview');
-    </script>
+            <h3><span>Identificarte</span> como usuario</h3>
+            <div class="comando">
+                <p class='enunciado_comando'>Introduce tu nombre y email</p>
+                <pre>git config user.name “nombre”</pre>
+                <pre>git config user.email “tu@email.com”</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Comprueba que los datos se han registrado correctamente</p>
+                <pre>git config list</pre>
+            </div>
+
+            <h3><span>Vincular</span> el ordenador con GitHub por SSH</h3>
+            <div class="comando">
+                <p class='enunciado_comando'>Generar una llave SSH</p>
+                <pre>$ssh-keygengit</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Agrega una contraseña</p>
+                <pre>Enter passphrase (empty for no passphrase): [Contraseña]</pre>
+                <pre>Enter same passphrase again: [Repetir contraseña]</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Te devolverá un mensaje como este</p>
+                <pre>Your identification has been saved in /home/you/.ssh/id_rsa</pre>
+                <pre>Your public key has been saved in /home/you/.ssh/id_rsa.pub</pre>
+                <pre>The key fingerprint is:</pre>
+                <pre>01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db tucorreo@tucorreo.com</pre>
+            </div>
+            <div class="comando">
+                <p class='enunciado_comando'>Para ver la llave SSH</p>
+                <pre>$cd .ssh</pre>
+                <pre>$cat id_rsa.pub</pre>
+            </div>
+            <div><a  class="instalar pdf" href="#">DESCARGAR EL PDF</a></div>
+        </div>
+        <div class="social">
+            <div class="consejos">
+                <ul>
+                    <li><a href="#video">Clases en vídeo</a></li>
+                    <li><a href="#libro">Libros y guías</a></li>
+                    <li><a href="#comandos">Resumen de comandos</a></li>
+                </ul>
+            </div>
+            <div class="compartir">
+                <p>Compártelo</p>
+                <div class="facebook">
+                    <div class="fb-like" data-href="http://asiestudio.site88.net/" data-width="50" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://asiestudio.site88.net/" data-text="IniciaGit | Hacer un commit es como pegar un tiro" data-via="jpcpamies" data-lang="es">Twittear</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article id="empezando_con_github">
+        <div class="encabezado">
+            <h2>
+                <span class='numero'>1</span>
+                <span class="nombre">Empezando con Github</span>
+            </h2>
+        </div>
+        <div class="contenido">
+            <p>Los pasos de este apartado solo los tendrás que hacer una vez. Eso si, necesitarás repetirlos en cada ordenador que vayas a usar con tu cuenta de GitHub.</p>
+
+            <h3 id='instalar'><span>Instalar</span> GitHub</h3>
+            <p>El primer paso para empezar a usar GitHub en tu ordenador es instalarlo. Descarga GitHub para tu SO e instálalo.</p>
+            <div><a  class="instalar" href="">INSTALAR GITHUB</a></div>
+            <!-- Terminal -->
+            <figure class='terminal'>
+                <div class='ventana_terminal'>
+                    <div class="barra">
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Comprueba que Github se ha instalado en el ordenador</p>
+                        <pre class='dolar'>git —version</pre>
+                    </div>
+                </div>
+            </figure>
+            <!--/ Terminal -->
+
+            <h3 id='identificarse'><span>Identificarte</span> como usuario</h3>
+            <p>Una vez instalado GitHub en local tienes que identificarte como usuario con tu nombre y email.</p>
+            <!-- Terminal -->
+            <figure class='terminal'>
+                <div class='ventana_terminal'>
+                    <div class="barra">
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Introduce tu nombre y email</p>
+                        <pre class='dolar'>git config user.name “nombre”</pre>
+                        <pre class='dolar'>git config user.email “tu@email.com”</pre>
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Comprueba que los datos se han registrado correctamente</p>
+                        <pre class='dolar'>git config list</pre>
+                    </div>
+                </div>
+            </figure>
+            <!--/ Terminal -->
+
+            <h3 id='vincular'><span>Vincular</span> el ordenador con GitHub por SSH</h3>
+            <p>La llave SSH permitirá vincular tu directorio local con tu directorio remoto en GitHub de forma segura.</p>
+
+            <!-- Terminal -->
+            <figure class='terminal'>
+                <div class='ventana_terminal'>
+                    <div class="barra">
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Generar una llave SSH</p>
+                        <pre class='dolar'>ssh-keygengit</pre>
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Agrega una contraseña</p>
+                        <pre class='dolar'>Enter passphrase (empty for no passphrase): [Contraseña]</pre>
+                        <pre class='dolar'>Enter same passphrase again: [Repetir contraseña]</pre>
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Te devolverá un mensaje como este</p>
+                        <pre class='retorno'>Your identification has been saved in /home/you/.ssh/id_rsa</pre>
+                        <pre class='retorno'>Your public key has been saved in /home/you/.ssh/id_rsa.pub</pre>
+                        <pre class='retorno'>The key fingerprint is:</pre>
+                        <pre class='retorno'>01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db tucorreo@tucorreo.com</pre>
+                    </div>
+                    <div class='dialogo'>
+                        <p class='enunciado_comando'>Para ver la llave SSH</p>
+                        <pre class='dolar'>cd .ssh</pre>
+                        <pre class='dolar'>cat id_rsa.pub</pre>
+                    </div>
+                </div>
+            </figure>
+            <!--/ Terminal -->
+            <p>Copia toda la llave desde "ssh-rsa" hasta el final.</p>
+        </div>
+        <div class="social">
+            <div class="consejos">
+                <ul>
+                    <li><a href="#video">Clases en vídeo</a></li>
+                    <li><a href="#libro">Libros y guías</a></li>
+                    <li><a href="#comandos">Resumen de comandos</a></li>
+                </ul>
+            </div>
+            <div class="compartir">
+                <p>Compártelo</p>
+                <div class="facebook">
+                    <div class="fb-like" data-href="http://asiestudio.site88.net/" data-width="50" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://asiestudio.site88.net/" data-text="IniciaGit | Hacer un commit es como pegar un tiro" data-via="jpcpamies" data-lang="es">Twittear</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </div>
+            </div>
+            <div class="comentario">
+                 <div id="disqus_thread"></div>
+            </div>
+        </div>
+    </article>
+
+</section>
+<div class="boton">
+    <a href="#inicio"></a>
+</div>
+<footer id='footer'>
+    <div class="avatar">
+        <img src="img/avatar.jpg" width='100' height='100' alt="Jordi Pàmies">
+        <p>Jordi Pàmies</p>
+    </div>
+    <div class="social">
+        <a class='twitter' href="https://twitter.com/jpcpamies" target="_blank"></a>
+        <a class='github' href="https://github.com/jpcpamies" target="_blank"></a>
+        <a class='email' href="mailto:jordipamies2@gmail.com"></a>
+    </div>
+    <p class='titulo'>IniciaGit</p>
+</footer>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
+<script src="js/plugins-ck.js"></script>
+<script src="js/main-ck.js"></script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45274381-1', 'site88.net');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
